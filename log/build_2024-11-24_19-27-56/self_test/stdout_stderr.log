@@ -1,0 +1,8 @@
+[ 12%] Built target gtest_main
+[ 25%] Built target run_selftest
+[ 37%] Built target gtest
+[ 50%] Built target selftest_example
+[ 62%] Built target test_error_selftest
+[ 75%] Built target test_exception_selftest
+[ 87%] Built target test_nominal_selftest
+[100%] Built target test_no_id_selftest

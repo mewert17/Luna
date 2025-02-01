@@ -1,0 +1,8 @@
+[0.043s] Invoking command in '/home/mewert/Desktop/luna/build/my_octomap_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mewert/Desktop/luna/build/my_octomap_pkg -- -j6 -l6
+[0.714s] [35m[1mConsolidate compiler generated dependencies of target octomap_launch[0m
+[0.714s] [ 50%] [32m[1mLinking CXX executable octomap_launch[0m
+[867.489s] gmake[2]: *** Deleting file 'octomap_launch'
+[867.489s] gmake[2]: *** [CMakeFiles/octomap_launch.dir/build.make:1172: octomap_launch] Interrupt
+[867.489s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/octomap_launch.dir/all] Interrupt
+[867.489s] gmake: *** [Makefile:146: all] Interrupt
+[867.502s] Invoked command in '/home/mewert/Desktop/luna/build/my_octomap_pkg' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mewert/Desktop/luna/build/my_octomap_pkg -- -j6 -l6

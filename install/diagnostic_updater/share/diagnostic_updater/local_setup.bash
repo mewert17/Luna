@@ -1,0 +1,1 @@
+/home/mewert/Desktop/luna/build/diagnostic_updater/ament_cmake_environment_hooks/local_setup.bash

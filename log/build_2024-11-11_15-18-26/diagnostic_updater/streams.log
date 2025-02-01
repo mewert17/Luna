@@ -1,0 +1,63 @@
+[0.033s] Invoking command in '/home/mewert/Desktop/luna/build/diagnostic_updater': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mewert/Desktop/luna/build/diagnostic_updater -- -j6 -l6
+[0.106s] [ 14%] Built target gtest_main
+[0.107s] [ 28%] Built target diagnostic_updater
+[0.116s] [ 42%] Built target gtest
+[0.138s] [ 42%] Built target ament_cmake_python_symlink_diagnostic_updater
+[0.166s] [ 57%] Built target example
+[0.180s] [ 71%] Built target diagnostic_status_wrapper_test
+[0.185s] [ 85%] Built target status_msg_test
+[0.188s] [100%] Built target diagnostic_updater_test
+[0.523s] running egg_info
+[0.524s] writing diagnostic_updater.egg-info/PKG-INFO
+[0.524s] writing dependency_links to diagnostic_updater.egg-info/dependency_links.txt
+[0.524s] writing top-level names to diagnostic_updater.egg-info/top_level.txt
+[0.527s] reading manifest file 'diagnostic_updater.egg-info/SOURCES.txt'
+[0.577s] [100%] Built target ament_cmake_python_build_diagnostic_updater_egg
+[0.595s] Invoked command in '/home/mewert/Desktop/luna/build/diagnostic_updater' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mewert/Desktop/luna/build/diagnostic_updater -- -j6 -l6
+[0.646s] Invoking command in '/home/mewert/Desktop/luna/build/diagnostic_updater': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --install /home/mewert/Desktop/luna/build/diagnostic_updater
+[0.653s] -- Install configuration: ""
+[0.654s] -- Execute custom install script
+[0.654s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/environment/pythonpath.sh
+[0.654s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/environment/pythonpath.dsv
+[0.654s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/local/lib/python3.10/dist-packages/diagnostic_updater-4.3.1-py3.10.egg-info/PKG-INFO
+[0.655s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/local/lib/python3.10/dist-packages/diagnostic_updater-4.3.1-py3.10.egg-info/SOURCES.txt
+[0.655s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/local/lib/python3.10/dist-packages/diagnostic_updater-4.3.1-py3.10.egg-info/dependency_links.txt
+[0.658s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/local/lib/python3.10/dist-packages/diagnostic_updater-4.3.1-py3.10.egg-info/top_level.txt
+[0.658s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/local/lib/python3.10/dist-packages/diagnostic_updater/__init__.py
+[0.658s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/local/lib/python3.10/dist-packages/diagnostic_updater/_diagnostic_status_wrapper.py
+[0.658s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/local/lib/python3.10/dist-packages/diagnostic_updater/_diagnostic_updater.py
+[0.658s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/local/lib/python3.10/dist-packages/diagnostic_updater/_publisher.py
+[0.658s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/local/lib/python3.10/dist-packages/diagnostic_updater/_update_functions.py
+[0.658s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/local/lib/python3.10/dist-packages/diagnostic_updater/example.py
+[0.659s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/lib/diagnostic_updater/example.py
+[0.659s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/lib/diagnostic_updater/example
+[0.659s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/include/diagnostic_updater/diagnostic_status_wrapper.hpp
+[0.659s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/include/diagnostic_updater/diagnostic_updater.hpp
+[0.659s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/include/diagnostic_updater/publisher.hpp
+[0.659s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/include/diagnostic_updater/update_functions.hpp
+[0.659s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/environment/library_path.sh
+[0.659s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/environment/library_path.dsv
+[0.659s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/ament_index/resource_index/package_run_dependencies/diagnostic_updater
+[0.659s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/ament_index/resource_index/parent_prefix_path/diagnostic_updater
+[0.659s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/environment/ament_prefix_path.sh
+[0.660s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/environment/ament_prefix_path.dsv
+[0.660s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/environment/path.sh
+[0.660s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/environment/path.dsv
+[0.660s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/local_setup.bash
+[0.660s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/local_setup.sh
+[0.666s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/local_setup.zsh
+[0.666s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/local_setup.dsv
+[0.666s] -- Symlinking: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/package.dsv
+[0.669s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/ament_index/resource_index/packages/diagnostic_updater
+[0.669s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/cmake/ament_cmake_export_targets-extras.cmake
+[0.669s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.670s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/cmake/ament_cmake_export_libraries-extras.cmake
+[0.670s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.670s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/cmake/diagnostic_updaterConfig.cmake
+[0.670s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/cmake/diagnostic_updaterConfig-version.cmake
+[0.670s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/package.xml
+[0.670s] -- Up-to-date: /home/mewert/Desktop/luna/install/diagnostic_updater/lib/libdiagnostic_updater.so
+[0.708s] Listing '/home/mewert/Desktop/luna/install/diagnostic_updater/local/lib/python3.10/dist-packages/diagnostic_updater'...
+[0.712s] -- Up-to-date: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/cmake/diagnostic_updaterTargetsExport.cmake
+[0.714s] -- Up-to-date: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/cmake/diagnostic_updaterTargetsExport-noconfig.cmake
+[0.717s] Invoked command in '/home/mewert/Desktop/luna/build/diagnostic_updater' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --install /home/mewert/Desktop/luna/build/diagnostic_updater

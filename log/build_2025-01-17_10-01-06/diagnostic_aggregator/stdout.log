@@ -1,0 +1,16 @@
+[  8%] [32mBuilding CXX object CMakeFiles/add_analyzer.dir/src/add_analyzer.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/diagnostic_aggregator.dir/src/status_item.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/diagnostic_aggregator.dir/src/aggregator.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/diagnostic_aggregator.dir/src/analyzer_group.cpp.o[0m
+[ 33%] Built target ament_cmake_python_symlink_diagnostic_aggregator
+running egg_info
+writing diagnostic_aggregator.egg-info/PKG-INFO
+writing dependency_links to diagnostic_aggregator.egg-info/dependency_links.txt
+writing top-level names to diagnostic_aggregator.egg-info/top_level.txt
+reading manifest file 'diagnostic_aggregator.egg-info/SOURCES.txt'
+[  0%] Built target ament_cmake_python_build_diagnostic_aggregator_egg
+[ 41%] [32m[1mLinking CXX executable add_analyzer[0m
+[ 41%] Built target add_analyzer
+[ 50%] [32m[1mLinking CXX shared library libdiagnostic_aggregator.so[0m
+[ 50%] Built target diagnostic_aggregator
+[ 58%] [32mBuilding CXX object CMakeFiles/diagnostic_aggregator_analyzers.dir/src/generic_analyzer.cpp.o[0m

@@ -1,0 +1,3 @@
+# generated from colcon_core/shell/template/command_prefix.sh.em
+. "/home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/package.sh"
+. "/home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.sh"

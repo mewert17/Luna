@@ -1,0 +1,4 @@
+/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib/libdiagnostic_aggregator.so
+/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib/libdiagnostic_aggregator_analyzers.so
+/home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/cmake/diagnostic_aggregatorTargetsExport.cmake
+/home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/cmake/diagnostic_aggregatorTargetsExport-noconfig.cmake

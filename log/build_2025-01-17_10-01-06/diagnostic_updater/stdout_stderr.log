@@ -1,0 +1,24 @@
+[  0%] Built target ament_cmake_python_symlink_diagnostic_updater
+[  7%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[ 14%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/diagnostic_updater.dir/src/diagnostic_updater.cpp.o[0m
+running egg_info
+writing diagnostic_updater.egg-info/PKG-INFO
+writing dependency_links to diagnostic_updater.egg-info/dependency_links.txt
+writing top-level names to diagnostic_updater.egg-info/top_level.txt
+reading manifest file 'diagnostic_updater.egg-info/SOURCES.txt'
+[ 28%] Built target ament_cmake_python_build_diagnostic_updater_egg
+[ 28%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[ 28%] Built target gtest_main
+[ 35%] [32m[1mLinking CXX static library libgtest.a[0m
+[ 35%] Built target gtest
+[ 42%] [32m[1mLinking CXX shared library libdiagnostic_updater.so[0m
+[ 42%] Built target diagnostic_updater
+[ 50%] [32mBuilding CXX object CMakeFiles/diagnostic_status_wrapper_test.dir/test/diagnostic_status_wrapper_test.cpp.o[0m
+[ 64%] [32m[1mLinking CXX executable diagnostic_status_wrapper_test[0m
+[ 64%] Built target diagnostic_status_wrapper_test
+[ 64%] [32mBuilding CXX object CMakeFiles/status_msg_test.dir/test/status_msg_test.cpp.o[0m
+gmake[2]: *** Deleting file 'CMakeFiles/status_msg_test.dir/test/status_msg_test.cpp.o'
+gmake[2]: *** [CMakeFiles/status_msg_test.dir/build.make:76: CMakeFiles/status_msg_test.dir/test/status_msg_test.cpp.o] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:275: CMakeFiles/status_msg_test.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

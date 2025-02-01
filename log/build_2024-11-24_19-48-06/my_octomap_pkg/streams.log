@@ -1,0 +1,23 @@
+[0.046s] Invoking command in '/home/mewert/Desktop/luna/build/my_octomap_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mewert/Desktop/luna/build/my_octomap_pkg -- -j6 -l6
+[0.775s] [100%] Built target octomap_launch
+[0.822s] Invoked command in '/home/mewert/Desktop/luna/build/my_octomap_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mewert/Desktop/luna/build/my_octomap_pkg -- -j6 -l6
+[0.995s] Invoking command in '/home/mewert/Desktop/luna/build/my_octomap_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --install /home/mewert/Desktop/luna/build/my_octomap_pkg
+[1.015s] -- Install configuration: ""
+[1.016s] -- Execute custom install script
+[1.016s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/my_octomap_pkg/lib/my_octomap_pkg/octomap_launch
+[1.017s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/my_octomap_pkg/share/ament_index/resource_index/package_run_dependencies/my_octomap_pkg
+[1.018s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/my_octomap_pkg/share/ament_index/resource_index/parent_prefix_path/my_octomap_pkg
+[1.018s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/my_octomap_pkg/share/my_octomap_pkg/environment/ament_prefix_path.sh
+[1.019s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/my_octomap_pkg/share/my_octomap_pkg/environment/ament_prefix_path.dsv
+[1.019s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/my_octomap_pkg/share/my_octomap_pkg/environment/path.sh
+[1.021s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/my_octomap_pkg/share/my_octomap_pkg/environment/path.dsv
+[1.027s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/my_octomap_pkg/share/my_octomap_pkg/local_setup.bash
+[1.027s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/my_octomap_pkg/share/my_octomap_pkg/local_setup.sh
+[1.027s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/my_octomap_pkg/share/my_octomap_pkg/local_setup.zsh
+[1.027s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/my_octomap_pkg/share/my_octomap_pkg/local_setup.dsv
+[1.028s] -- Symlinking: /home/mewert/Desktop/luna/install/my_octomap_pkg/share/my_octomap_pkg/package.dsv
+[1.038s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/my_octomap_pkg/share/ament_index/resource_index/packages/my_octomap_pkg
+[1.041s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/my_octomap_pkg/share/my_octomap_pkg/cmake/my_octomap_pkgConfig.cmake
+[1.041s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/my_octomap_pkg/share/my_octomap_pkg/cmake/my_octomap_pkgConfig-version.cmake
+[1.042s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/my_octomap_pkg/share/my_octomap_pkg/package.xml
+[1.050s] Invoked command in '/home/mewert/Desktop/luna/build/my_octomap_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --install /home/mewert/Desktop/luna/build/my_octomap_pkg

@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating open_cv_pkg.egg-info
+writing open_cv_pkg.egg-info/PKG-INFO
+writing dependency_links to open_cv_pkg.egg-info/dependency_links.txt
+writing entry points to open_cv_pkg.egg-info/entry_points.txt
+writing requirements to open_cv_pkg.egg-info/requires.txt
+writing top-level names to open_cv_pkg.egg-info/top_level.txt
+writing manifest file 'open_cv_pkg.egg-info/SOURCES.txt'
+reading manifest file 'open_cv_pkg.egg-info/SOURCES.txt'
+writing manifest file 'open_cv_pkg.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/mewert/Desktop/luna/install/open_cv_pkg/lib/python3.10/site-packages/open-cv-pkg.egg-link (link to .)
+Installing main script to /home/mewert/Desktop/luna/install/open_cv_pkg/lib/open_cv_pkg
+
+Installed /home/mewert/Desktop/luna/build/open_cv_pkg
+running symlink_data
+creating /home/mewert/Desktop/luna/install/open_cv_pkg/share/ament_index
+creating /home/mewert/Desktop/luna/install/open_cv_pkg/share/ament_index/resource_index
+creating /home/mewert/Desktop/luna/install/open_cv_pkg/share/ament_index/resource_index/packages
+symbolically linking /home/mewert/Desktop/luna/build/open_cv_pkg/resource/open_cv_pkg -> /home/mewert/Desktop/luna/install/open_cv_pkg/share/ament_index/resource_index/packages
+symbolically linking /home/mewert/Desktop/luna/build/open_cv_pkg/package.xml -> /home/mewert/Desktop/luna/install/open_cv_pkg/share/open_cv_pkg

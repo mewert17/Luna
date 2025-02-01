@@ -1,0 +1,80 @@
+The MPI test test_mpi for C in mode normal failed to compile with the following output:
+Change Dir: /home/mewert/Desktop/luna/build/pointcloud_to_grid/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_25ca8/fast && gmake[1]: Entering directory '/home/mewert/Desktop/luna/build/pointcloud_to_grid/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_25ca8.dir/build.make CMakeFiles/cmTC_25ca8.dir/build
+gmake[2]: Entering directory '/home/mewert/Desktop/luna/build/pointcloud_to_grid/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_25ca8.dir/test_mpi.c.o
+/usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_25ca8.dir/test_mpi.c.o -c /usr/share/cmake-3.22/Modules/FindMPI/test_mpi.c
+Assembler messages:
+Fatal error: can't create CMakeFiles/cmTC_25ca8.dir/test_mpi.c.o: No such file or directory
+gmake[2]: *** [CMakeFiles/cmTC_25ca8.dir/build.make:78: CMakeFiles/cmTC_25ca8.dir/test_mpi.c.o] Error 1
+gmake[2]: Leaving directory '/home/mewert/Desktop/luna/build/pointcloud_to_grid/CMakeFiles/CMakeTmp'
+gmake[1]: *** [Makefile:127: cmTC_25ca8/fast] Error 2
+gmake[1]: Leaving directory '/home/mewert/Desktop/luna/build/pointcloud_to_grid/CMakeFiles/CMakeTmp'
+
+
+
+The MPI test test_mpi for C in mode normal failed to compile with the following output:
+Change Dir: /home/mewert/Desktop/luna/build/pointcloud_to_grid/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_aa223/fast && gmake[1]: Entering directory '/home/mewert/Desktop/luna/build/pointcloud_to_grid/CMakeFiles/CMakeTmp'
+gmake[1]: *** No rule to make target 'cmTC_aa223/fast'.  Stop.
+gmake[1]: Leaving directory '/home/mewert/Desktop/luna/build/pointcloud_to_grid/CMakeFiles/CMakeTmp'
+
+
+
+The MPI test test_mpi for C in mode normal failed to compile with the following output:
+Change Dir: /home/mewert/Desktop/luna/build/pointcloud_to_grid/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0a03f/fast && gmake[1]: Entering directory '/home/mewert/Desktop/luna/build/pointcloud_to_grid/CMakeFiles/CMakeTmp'
+gmake[1]: Makefile: No such file or directory
+gmake[1]: *** No rule to make target 'Makefile'.  Stop.
+gmake[1]: Leaving directory '/home/mewert/Desktop/luna/build/pointcloud_to_grid/CMakeFiles/CMakeTmp'
+
+
+
+The MPI test test_mpi for C in mode normal failed to compile with the following output:
+Change Dir: /home/mewert/Desktop/luna/build/pointcloud_to_grid/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_30c0a/fast && gmake[1]: Entering directory '/home/mewert/Desktop/luna/build/pointcloud_to_grid/CMakeFiles/CMakeTmp'
+gmake[1]: *** No rule to make target 'cmTC_30c0a/fast'.  Stop.
+gmake[1]: Leaving directory '/home/mewert/Desktop/luna/build/pointcloud_to_grid/CMakeFiles/CMakeTmp'
+
+
+
+The MPI test test_mpi for C in mode normal failed to compile with the following output:
+Change Dir: /home/mewert/Desktop/luna/build/pointcloud_to_grid/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_77638/fast && gmake[1]: Entering directory '/home/mewert/Desktop/luna/build/pointcloud_to_grid/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_77638.dir/build.make CMakeFiles/cmTC_77638.dir/build
+gmake[2]: Entering directory '/home/mewert/Desktop/luna/build/pointcloud_to_grid/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_77638.dir/test_mpi.c.o
+/usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_77638.dir/test_mpi.c.o -c /usr/share/cmake-3.22/Modules/FindMPI/test_mpi.c
+Assembler messages:
+Fatal error: can't create CMakeFiles/cmTC_77638.dir/test_mpi.c.o: No such file or directory
+gmake[2]: *** [CMakeFiles/cmTC_77638.dir/build.make:78: CMakeFiles/cmTC_77638.dir/test_mpi.c.o] Error 1
+gmake[2]: Leaving directory '/home/mewert/Desktop/luna/build/pointcloud_to_grid/CMakeFiles/CMakeTmp'
+gmake[1]: *** [Makefile:127: cmTC_77638/fast] Error 2
+gmake[1]: Leaving directory '/home/mewert/Desktop/luna/build/pointcloud_to_grid/CMakeFiles/CMakeTmp'
+
+
+
+The MPI test test_mpi for C in mode normal failed to compile with the following output:
+Change Dir: /home/mewert/Desktop/luna/build/pointcloud_to_grid/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9f814/fast && gmake[1]: Entering directory '/home/mewert/Desktop/luna/build/pointcloud_to_grid/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_9f814.dir/build.make CMakeFiles/cmTC_9f814.dir/build
+gmake[2]: Entering directory '/home/mewert/Desktop/luna/build/pointcloud_to_grid/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9f814.dir/test_mpi.c.o
+/usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_9f814.dir/test_mpi.c.o -c /usr/share/cmake-3.22/Modules/FindMPI/test_mpi.c
+Linking C executable cmTC_9f814
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f814.dir/link.txt --verbose=1
+Error opening link script "CMakeFiles/cmTC_9f814.dir/link.txt"
+gmake[2]: *** [CMakeFiles/cmTC_9f814.dir/build.make:100: cmTC_9f814] Error 1
+gmake[2]: Leaving directory '/home/mewert/Desktop/luna/build/pointcloud_to_grid/CMakeFiles/CMakeTmp'
+gmake[1]: *** [Makefile:127: cmTC_9f814/fast] Error 2
+gmake[1]: Leaving directory '/home/mewert/Desktop/luna/build/pointcloud_to_grid/CMakeFiles/CMakeTmp'
+
+
+

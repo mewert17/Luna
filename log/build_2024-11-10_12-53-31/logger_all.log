@@ -1,0 +1,713 @@
+[0.124s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.124s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7d9cd1eb0760>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7d9cd1eb01f0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7d9cd1eb01f0>>)
+[0.311s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.311s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.311s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.311s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.311s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.311s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.311s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/mewert/Desktop/luna'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics) by extensions ['ignore', 'ignore_ament_install']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics) by extension 'ignore'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics) by extension 'ignore_ament_install'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics) by extensions ['colcon_pkg']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics) by extension 'colcon_pkg'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics) by extensions ['colcon_meta']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics) by extension 'colcon_meta'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics) by extensions ['ros']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics) by extension 'ros'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics) by extensions ['cmake', 'python']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics) by extension 'cmake'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics) by extension 'python'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics) by extensions ['python_setup_py']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics) by extension 'python_setup_py'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostic_aggregator) by extensions ['ignore', 'ignore_ament_install']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostic_aggregator) by extension 'ignore'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostic_aggregator) by extension 'ignore_ament_install'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostic_aggregator) by extensions ['colcon_pkg']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostic_aggregator) by extension 'colcon_pkg'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostic_aggregator) by extensions ['colcon_meta']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostic_aggregator) by extension 'colcon_meta'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostic_aggregator) by extensions ['ros']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostic_aggregator) by extension 'ros'
+[0.329s] DEBUG:colcon.colcon_core.package_identification:Package 'diagnostics/diagnostic_aggregator' with type 'ros.ament_cmake' and name 'diagnostic_aggregator'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostic_common_diagnostics) by extensions ['ignore', 'ignore_ament_install']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostic_common_diagnostics) by extension 'ignore'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostic_common_diagnostics) by extension 'ignore_ament_install'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostic_common_diagnostics) by extensions ['colcon_pkg']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostic_common_diagnostics) by extension 'colcon_pkg'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostic_common_diagnostics) by extensions ['colcon_meta']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostic_common_diagnostics) by extension 'colcon_meta'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostic_common_diagnostics) by extensions ['ros']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostic_common_diagnostics) by extension 'ros'
+[0.331s] DEBUG:colcon.colcon_core.package_identification:Package 'diagnostics/diagnostic_common_diagnostics' with type 'ros.ament_cmake' and name 'diagnostic_common_diagnostics'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostic_updater) by extensions ['ignore', 'ignore_ament_install']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostic_updater) by extension 'ignore'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostic_updater) by extension 'ignore_ament_install'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostic_updater) by extensions ['colcon_pkg']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostic_updater) by extension 'colcon_pkg'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostic_updater) by extensions ['colcon_meta']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostic_updater) by extension 'colcon_meta'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostic_updater) by extensions ['ros']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostic_updater) by extension 'ros'
+[0.333s] DEBUG:colcon.colcon_core.package_identification:Package 'diagnostics/diagnostic_updater' with type 'ros.ament_cmake' and name 'diagnostic_updater'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostics) by extensions ['ignore', 'ignore_ament_install']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostics) by extension 'ignore'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostics) by extension 'ignore_ament_install'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostics) by extensions ['colcon_pkg']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostics) by extension 'colcon_pkg'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostics) by extensions ['colcon_meta']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostics) by extension 'colcon_meta'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostics) by extensions ['ros']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/diagnostics) by extension 'ros'
+[0.334s] DEBUG:colcon.colcon_core.package_identification:Package 'diagnostics/diagnostics' with type 'ros.ament_cmake' and name 'diagnostics'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/self_test) by extensions ['ignore', 'ignore_ament_install']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/self_test) by extension 'ignore'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/self_test) by extension 'ignore_ament_install'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/self_test) by extensions ['colcon_pkg']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/self_test) by extension 'colcon_pkg'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/self_test) by extensions ['colcon_meta']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/self_test) by extension 'colcon_meta'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/self_test) by extensions ['ros']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(diagnostics/self_test) by extension 'ros'
+[0.335s] DEBUG:colcon.colcon_core.package_identification:Package 'diagnostics/self_test' with type 'ros.ament_cmake' and name 'self_test'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/open_cv_pkg) by extensions ['ignore', 'ignore_ament_install']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/open_cv_pkg) by extension 'ignore'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/open_cv_pkg) by extension 'ignore_ament_install'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/open_cv_pkg) by extensions ['colcon_pkg']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/open_cv_pkg) by extension 'colcon_pkg'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/open_cv_pkg) by extensions ['colcon_meta']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/open_cv_pkg) by extension 'colcon_meta'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/open_cv_pkg) by extensions ['ros']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/open_cv_pkg) by extension 'ros'
+[0.338s] DEBUG:colcon.colcon_core.package_identification:Package 'src/open_cv_pkg' with type 'ros.ament_python' and name 'open_cv_pkg'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['ignore', 'ignore_ament_install']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'ignore'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'ignore_ament_install'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['colcon_pkg']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'colcon_pkg'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['colcon_meta']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'colcon_meta'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['ros']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'ros'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['cmake', 'python']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'cmake'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'python'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['python_setup_py']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'python_setup_py'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extensions ['ignore', 'ignore_ament_install']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'ignore'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'ignore_ament_install'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extensions ['colcon_pkg']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'colcon_pkg'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extensions ['colcon_meta']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'colcon_meta'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extensions ['ros']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'ros'
+[0.346s] DEBUG:colcon.colcon_core.package_identification:Package 'src/realsense-ros/realsense2_camera' with type 'ros.ament_cmake' and name 'realsense2_camera'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'ignore'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'ignore_ament_install'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extensions ['colcon_pkg']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'colcon_pkg'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extensions ['colcon_meta']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'colcon_meta'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extensions ['ros']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'ros'
+[0.347s] DEBUG:colcon.colcon_core.package_identification:Package 'src/realsense-ros/realsense2_camera_msgs' with type 'ros.ament_cmake' and name 'realsense2_camera_msgs'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extensions ['ignore', 'ignore_ament_install']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extension 'ignore'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extension 'ignore_ament_install'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extensions ['colcon_pkg']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extension 'colcon_pkg'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extensions ['colcon_meta']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extension 'colcon_meta'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extensions ['ros']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extension 'ros'
+[0.349s] DEBUG:colcon.colcon_core.package_identification:Package 'src/realsense-ros/realsense2_description' with type 'ros.ament_cmake' and name 'realsense2_description'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'ignore'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'ignore_ament_install'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['colcon_pkg']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'colcon_pkg'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['colcon_meta']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'colcon_meta'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['ros']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'ros'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['cmake', 'python']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'cmake'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'python'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extensions ['python_setup_py']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/scripts) by extension 'python_setup_py'
+[0.350s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.350s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.350s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.350s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.350s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.393s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.393s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.396s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 9 installed packages in /home/mewert/Desktop/luna/install
+[0.398s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 270 installed packages in /opt/ros/humble
+[0.400s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'diagnostic_aggregator' build argument 'cmake_args' from command line to 'None'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'diagnostic_aggregator' build argument 'cmake_target' from command line to 'None'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'diagnostic_aggregator' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'diagnostic_aggregator' build argument 'cmake_clean_cache' from command line to 'False'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'diagnostic_aggregator' build argument 'cmake_clean_first' from command line to 'False'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'diagnostic_aggregator' build argument 'cmake_force_configure' from command line to 'False'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'diagnostic_aggregator' build argument 'ament_cmake_args' from command line to 'None'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'diagnostic_aggregator' build argument 'catkin_cmake_args' from command line to 'None'
+[0.450s] Level 5:colcon.colcon_core.verb:set package 'diagnostic_aggregator' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.450s] DEBUG:colcon.colcon_core.verb:Building package 'diagnostic_aggregator' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mewert/Desktop/luna/build/diagnostic_aggregator', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mewert/Desktop/luna/install/diagnostic_aggregator', 'merge_install': False, 'path': '/home/mewert/Desktop/luna/diagnostics/diagnostic_aggregator', 'symlink_install': True, 'test_result_base': None}
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'diagnostic_updater' build argument 'cmake_args' from command line to 'None'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'diagnostic_updater' build argument 'cmake_target' from command line to 'None'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'diagnostic_updater' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'diagnostic_updater' build argument 'cmake_clean_cache' from command line to 'False'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'diagnostic_updater' build argument 'cmake_clean_first' from command line to 'False'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'diagnostic_updater' build argument 'cmake_force_configure' from command line to 'False'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'diagnostic_updater' build argument 'ament_cmake_args' from command line to 'None'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'diagnostic_updater' build argument 'catkin_cmake_args' from command line to 'None'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'diagnostic_updater' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.451s] DEBUG:colcon.colcon_core.verb:Building package 'diagnostic_updater' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mewert/Desktop/luna/build/diagnostic_updater', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mewert/Desktop/luna/install/diagnostic_updater', 'merge_install': False, 'path': '/home/mewert/Desktop/luna/diagnostics/diagnostic_updater', 'symlink_install': True, 'test_result_base': None}
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'open_cv_pkg' build argument 'cmake_args' from command line to 'None'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'open_cv_pkg' build argument 'cmake_target' from command line to 'None'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'open_cv_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'open_cv_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'open_cv_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'open_cv_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'open_cv_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'open_cv_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'open_cv_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.452s] DEBUG:colcon.colcon_core.verb:Building package 'open_cv_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mewert/Desktop/luna/build/open_cv_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mewert/Desktop/luna/install/open_cv_pkg', 'merge_install': False, 'path': '/home/mewert/Desktop/luna/src/open_cv_pkg', 'symlink_install': True, 'test_result_base': None}
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_args' from command line to 'None'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_target' from command line to 'None'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.452s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.453s] DEBUG:colcon.colcon_core.verb:Building package 'realsense2_camera_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mewert/Desktop/luna/build/realsense2_camera_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mewert/Desktop/luna/install/realsense2_camera_msgs', 'merge_install': False, 'path': '/home/mewert/Desktop/luna/src/realsense-ros/realsense2_camera_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'diagnostic_common_diagnostics' build argument 'cmake_args' from command line to 'None'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'diagnostic_common_diagnostics' build argument 'cmake_target' from command line to 'None'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'diagnostic_common_diagnostics' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'diagnostic_common_diagnostics' build argument 'cmake_clean_cache' from command line to 'False'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'diagnostic_common_diagnostics' build argument 'cmake_clean_first' from command line to 'False'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'diagnostic_common_diagnostics' build argument 'cmake_force_configure' from command line to 'False'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'diagnostic_common_diagnostics' build argument 'ament_cmake_args' from command line to 'None'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'diagnostic_common_diagnostics' build argument 'catkin_cmake_args' from command line to 'None'
+[0.453s] Level 5:colcon.colcon_core.verb:set package 'diagnostic_common_diagnostics' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.453s] DEBUG:colcon.colcon_core.verb:Building package 'diagnostic_common_diagnostics' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mewert/Desktop/luna/build/diagnostic_common_diagnostics', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics', 'merge_install': False, 'path': '/home/mewert/Desktop/luna/diagnostics/diagnostic_common_diagnostics', 'symlink_install': True, 'test_result_base': None}
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_args' from command line to 'None'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_target' from command line to 'None'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_clean_cache' from command line to 'False'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_clean_first' from command line to 'False'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_force_configure' from command line to 'False'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'ament_cmake_args' from command line to 'None'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'catkin_cmake_args' from command line to 'None'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.454s] DEBUG:colcon.colcon_core.verb:Building package 'realsense2_camera' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mewert/Desktop/luna/build/realsense2_camera', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mewert/Desktop/luna/install/realsense2_camera', 'merge_install': False, 'path': '/home/mewert/Desktop/luna/src/realsense-ros/realsense2_camera', 'symlink_install': True, 'test_result_base': None}
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_args' from command line to 'None'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_target' from command line to 'None'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.454s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.455s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.455s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.455s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.455s] DEBUG:colcon.colcon_core.verb:Building package 'realsense2_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mewert/Desktop/luna/build/realsense2_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mewert/Desktop/luna/install/realsense2_description', 'merge_install': False, 'path': '/home/mewert/Desktop/luna/src/realsense-ros/realsense2_description', 'symlink_install': True, 'test_result_base': None}
+[0.455s] Level 5:colcon.colcon_core.verb:set package 'self_test' build argument 'cmake_args' from command line to 'None'
+[0.455s] Level 5:colcon.colcon_core.verb:set package 'self_test' build argument 'cmake_target' from command line to 'None'
+[0.455s] Level 5:colcon.colcon_core.verb:set package 'self_test' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.455s] Level 5:colcon.colcon_core.verb:set package 'self_test' build argument 'cmake_clean_cache' from command line to 'False'
+[0.455s] Level 5:colcon.colcon_core.verb:set package 'self_test' build argument 'cmake_clean_first' from command line to 'False'
+[0.455s] Level 5:colcon.colcon_core.verb:set package 'self_test' build argument 'cmake_force_configure' from command line to 'False'
+[0.455s] Level 5:colcon.colcon_core.verb:set package 'self_test' build argument 'ament_cmake_args' from command line to 'None'
+[0.455s] Level 5:colcon.colcon_core.verb:set package 'self_test' build argument 'catkin_cmake_args' from command line to 'None'
+[0.455s] Level 5:colcon.colcon_core.verb:set package 'self_test' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.455s] DEBUG:colcon.colcon_core.verb:Building package 'self_test' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mewert/Desktop/luna/build/self_test', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mewert/Desktop/luna/install/self_test', 'merge_install': False, 'path': '/home/mewert/Desktop/luna/diagnostics/self_test', 'symlink_install': True, 'test_result_base': None}
+[0.456s] Level 5:colcon.colcon_core.verb:set package 'diagnostics' build argument 'cmake_args' from command line to 'None'
+[0.456s] Level 5:colcon.colcon_core.verb:set package 'diagnostics' build argument 'cmake_target' from command line to 'None'
+[0.456s] Level 5:colcon.colcon_core.verb:set package 'diagnostics' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.456s] Level 5:colcon.colcon_core.verb:set package 'diagnostics' build argument 'cmake_clean_cache' from command line to 'False'
+[0.456s] Level 5:colcon.colcon_core.verb:set package 'diagnostics' build argument 'cmake_clean_first' from command line to 'False'
+[0.456s] Level 5:colcon.colcon_core.verb:set package 'diagnostics' build argument 'cmake_force_configure' from command line to 'False'
+[0.456s] Level 5:colcon.colcon_core.verb:set package 'diagnostics' build argument 'ament_cmake_args' from command line to 'None'
+[0.456s] Level 5:colcon.colcon_core.verb:set package 'diagnostics' build argument 'catkin_cmake_args' from command line to 'None'
+[0.456s] Level 5:colcon.colcon_core.verb:set package 'diagnostics' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.456s] DEBUG:colcon.colcon_core.verb:Building package 'diagnostics' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mewert/Desktop/luna/build/diagnostics', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mewert/Desktop/luna/install/diagnostics', 'merge_install': False, 'path': '/home/mewert/Desktop/luna/diagnostics/diagnostics', 'symlink_install': True, 'test_result_base': None}
+[0.456s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.457s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.458s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mewert/Desktop/luna/diagnostics/diagnostic_updater' with build type 'ament_cmake'
+[0.458s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mewert/Desktop/luna/diagnostics/diagnostic_updater'
+[0.461s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.461s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.461s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.466s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mewert/Desktop/luna/src/realsense-ros/realsense2_camera_msgs' with build type 'ament_cmake'
+[0.466s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mewert/Desktop/luna/src/realsense-ros/realsense2_camera_msgs'
+[0.466s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.466s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.470s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mewert/Desktop/luna/diagnostics/diagnostic_aggregator' with build type 'ament_cmake'
+[0.470s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mewert/Desktop/luna/diagnostics/diagnostic_aggregator'
+[0.471s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.471s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.475s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/mewert/Desktop/luna/src/open_cv_pkg' with build type 'ament_python'
+[0.475s] Level 1:colcon.colcon_core.shell:create_environment_hook('open_cv_pkg', 'ament_prefix_path')
+[0.475s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/open_cv_pkg/share/open_cv_pkg/hook/ament_prefix_path.ps1'
+[0.476s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mewert/Desktop/luna/install/open_cv_pkg/share/open_cv_pkg/hook/ament_prefix_path.dsv'
+[0.477s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/open_cv_pkg/share/open_cv_pkg/hook/ament_prefix_path.sh'
+[0.478s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.478s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.488s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mewert/Desktop/luna/build/diagnostic_updater': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mewert/Desktop/luna/build/diagnostic_updater -- -j6 -l6
+[0.494s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mewert/Desktop/luna/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mewert/Desktop/luna/build/realsense2_camera_msgs -- -j6 -l6
+[0.500s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mewert/Desktop/luna/build/diagnostic_aggregator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mewert/Desktop/luna/build/diagnostic_aggregator -- -j6 -l6
+[0.892s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/mewert/Desktop/luna/src/open_cv_pkg'
+[0.892s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.893s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.004s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mewert/Desktop/luna/build/diagnostic_updater' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mewert/Desktop/luna/build/diagnostic_updater -- -j6 -l6
+[1.014s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mewert/Desktop/luna/build/realsense2_camera_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mewert/Desktop/luna/build/realsense2_camera_msgs -- -j6 -l6
+[1.020s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mewert/Desktop/luna/build/diagnostic_aggregator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mewert/Desktop/luna/build/diagnostic_aggregator -- -j6 -l6
+[1.064s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mewert/Desktop/luna/build/diagnostic_updater': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --install /home/mewert/Desktop/luna/build/diagnostic_updater
+[1.086s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mewert/Desktop/luna/build/diagnostic_aggregator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --install /home/mewert/Desktop/luna/build/diagnostic_aggregator
+[1.146s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(diagnostic_updater)
+[1.146s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mewert/Desktop/luna/build/diagnostic_updater' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --install /home/mewert/Desktop/luna/build/diagnostic_updater
+[1.149s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_updater' for CMake module files
+[1.150s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_updater' for CMake config files
+[1.150s] Level 1:colcon.colcon_core.shell:create_environment_hook('diagnostic_updater', 'cmake_prefix_path')
+[1.150s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/hook/cmake_prefix_path.ps1'
+[1.151s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/hook/cmake_prefix_path.dsv'
+[1.151s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/hook/cmake_prefix_path.sh'
+[1.152s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_updater/lib'
+[1.152s] Level 1:colcon.colcon_core.shell:create_environment_hook('diagnostic_updater', 'ld_library_path_lib')
+[1.153s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/hook/ld_library_path_lib.ps1'
+[1.153s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/hook/ld_library_path_lib.dsv'
+[1.153s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/hook/ld_library_path_lib.sh'
+[1.154s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_updater/bin'
+[1.154s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_updater/lib/pkgconfig/diagnostic_updater.pc'
+[1.154s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_updater/lib/python3.10/site-packages'
+[1.154s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_updater/bin'
+[1.155s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/package.ps1'
+[1.156s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/package.dsv'
+[1.157s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/package.sh'
+[1.158s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/package.bash'
+[1.159s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/package.zsh'
+[1.160s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mewert/Desktop/luna/install/diagnostic_updater/share/colcon-core/packages/diagnostic_updater)
+[1.162s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(diagnostic_aggregator)
+[1.162s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_aggregator' for CMake module files
+[1.163s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mewert/Desktop/luna/build/diagnostic_aggregator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --install /home/mewert/Desktop/luna/build/diagnostic_aggregator
+[1.164s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_aggregator' for CMake config files
+[1.164s] Level 1:colcon.colcon_core.shell:create_environment_hook('diagnostic_aggregator', 'cmake_prefix_path')
+[1.164s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/hook/cmake_prefix_path.ps1'
+[1.165s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/hook/cmake_prefix_path.dsv'
+[1.165s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/hook/cmake_prefix_path.sh'
+[1.166s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib'
+[1.166s] Level 1:colcon.colcon_core.shell:create_environment_hook('diagnostic_aggregator', 'ld_library_path_lib')
+[1.166s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/hook/ld_library_path_lib.ps1'
+[1.167s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/hook/ld_library_path_lib.dsv'
+[1.167s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/hook/ld_library_path_lib.sh'
+[1.167s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_aggregator/bin'
+[1.167s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib/pkgconfig/diagnostic_aggregator.pc'
+[1.168s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib/python3.10/site-packages'
+[1.168s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_aggregator/bin'
+[1.168s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/package.ps1'
+[1.169s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/package.dsv'
+[1.169s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/package.sh'
+[1.170s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/package.bash'
+[1.170s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/package.zsh'
+[1.171s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mewert/Desktop/luna/install/diagnostic_aggregator/share/colcon-core/packages/diagnostic_aggregator)
+[1.188s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mewert/Desktop/luna/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --install /home/mewert/Desktop/luna/build/realsense2_camera_msgs
+[1.210s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(diagnostic_updater)
+[1.211s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_updater' for CMake module files
+[1.214s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_updater' for CMake config files
+[1.214s] Level 1:colcon.colcon_core.shell:create_environment_hook('diagnostic_updater', 'cmake_prefix_path')
+[1.214s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/hook/cmake_prefix_path.ps1'
+[1.215s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/hook/cmake_prefix_path.dsv'
+[1.215s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/hook/cmake_prefix_path.sh'
+[1.216s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_updater/lib'
+[1.216s] Level 1:colcon.colcon_core.shell:create_environment_hook('diagnostic_updater', 'ld_library_path_lib')
+[1.216s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/hook/ld_library_path_lib.ps1'
+[1.217s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/hook/ld_library_path_lib.dsv'
+[1.217s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/hook/ld_library_path_lib.sh'
+[1.217s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_updater/bin'
+[1.217s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_updater/lib/pkgconfig/diagnostic_updater.pc'
+[1.218s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_updater/lib/python3.10/site-packages'
+[1.218s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_updater/bin'
+[1.218s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/package.ps1'
+[1.219s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/package.dsv'
+[1.219s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/package.sh'
+[1.220s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/package.bash'
+[1.220s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/package.zsh'
+[1.221s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mewert/Desktop/luna/install/diagnostic_updater/share/colcon-core/packages/diagnostic_updater)
+[1.222s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mewert/Desktop/luna/diagnostics/diagnostic_common_diagnostics' with build type 'ament_cmake'
+[1.222s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mewert/Desktop/luna/diagnostics/diagnostic_common_diagnostics'
+[1.222s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.222s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.236s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mewert/Desktop/luna/diagnostics/self_test' with build type 'ament_cmake'
+[1.236s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mewert/Desktop/luna/diagnostics/self_test'
+[1.236s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.236s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.245s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(diagnostic_aggregator)
+[1.246s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_aggregator' for CMake module files
+[1.246s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_aggregator' for CMake config files
+[1.247s] Level 1:colcon.colcon_core.shell:create_environment_hook('diagnostic_aggregator', 'cmake_prefix_path')
+[1.247s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/hook/cmake_prefix_path.ps1'
+[1.247s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/hook/cmake_prefix_path.dsv'
+[1.248s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/hook/cmake_prefix_path.sh'
+[1.249s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib'
+[1.249s] Level 1:colcon.colcon_core.shell:create_environment_hook('diagnostic_aggregator', 'ld_library_path_lib')
+[1.249s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/hook/ld_library_path_lib.ps1'
+[1.249s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/hook/ld_library_path_lib.dsv'
+[1.250s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/hook/ld_library_path_lib.sh'
+[1.250s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_aggregator/bin'
+[1.250s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib/pkgconfig/diagnostic_aggregator.pc'
+[1.251s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib/python3.10/site-packages'
+[1.251s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_aggregator/bin'
+[1.251s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/package.ps1'
+[1.252s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/package.dsv'
+[1.253s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/package.sh'
+[1.253s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/package.bash'
+[1.254s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/package.zsh'
+[1.254s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mewert/Desktop/luna/install/diagnostic_aggregator/share/colcon-core/packages/diagnostic_aggregator)
+[1.263s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mewert/Desktop/luna/build/diagnostic_common_diagnostics': CMAKE_PREFIX_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/mewert/Desktop/luna/build/diagnostic_common_diagnostics -- -j6 -l6
+[1.273s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mewert/Desktop/luna/build/self_test': CMAKE_PREFIX_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/mewert/Desktop/luna/build/self_test -- -j6 -l6
+[1.297s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_camera_msgs)
+[1.297s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_camera_msgs' for CMake module files
+[1.298s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mewert/Desktop/luna/build/realsense2_camera_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --install /home/mewert/Desktop/luna/build/realsense2_camera_msgs
+[1.299s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_camera_msgs' for CMake config files
+[1.300s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'cmake_prefix_path')
+[1.300s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.ps1'
+[1.301s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.dsv'
+[1.301s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.sh'
+[1.302s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib'
+[1.302s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'ld_library_path_lib')
+[1.302s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.ps1'
+[1.303s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.dsv'
+[1.303s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.sh'
+[1.304s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/bin'
+[1.304s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib/pkgconfig/realsense2_camera_msgs.pc'
+[1.304s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib/python3.10/site-packages'
+[1.304s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/bin'
+[1.305s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.ps1'
+[1.306s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.dsv'
+[1.306s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.sh'
+[1.307s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.bash'
+[1.307s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.zsh'
+[1.307s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/colcon-core/packages/realsense2_camera_msgs)
+[1.347s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mewert/Desktop/luna/build/open_cv_pkg': PYTHONPATH=/home/mewert/Desktop/luna/build/open_cv_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mewert/Desktop/luna/install/open_cv_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/mewert/Desktop/luna/build/open_cv_pkg/build --no-deps symlink_data
+[1.433s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mewert/Desktop/luna/build/self_test' returned '0': CMAKE_PREFIX_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/mewert/Desktop/luna/build/self_test -- -j6 -l6
+[1.473s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mewert/Desktop/luna/build/self_test': CMAKE_PREFIX_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/mewert/Desktop/luna/build/self_test
+[1.497s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(self_test)
+[1.497s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/self_test' for CMake module files
+[1.497s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mewert/Desktop/luna/build/self_test' returned '0': CMAKE_PREFIX_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/mewert/Desktop/luna/build/self_test
+[1.498s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/self_test' for CMake config files
+[1.499s] Level 1:colcon.colcon_core.shell:create_environment_hook('self_test', 'cmake_prefix_path')
+[1.499s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/self_test/share/self_test/hook/cmake_prefix_path.ps1'
+[1.500s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mewert/Desktop/luna/install/self_test/share/self_test/hook/cmake_prefix_path.dsv'
+[1.500s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/self_test/share/self_test/hook/cmake_prefix_path.sh'
+[1.501s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/self_test/lib'
+[1.501s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/self_test/bin'
+[1.501s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/self_test/lib/pkgconfig/self_test.pc'
+[1.501s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/self_test/lib/python3.10/site-packages'
+[1.501s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/self_test/bin'
+[1.502s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/self_test/share/self_test/package.ps1'
+[1.502s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mewert/Desktop/luna/install/self_test/share/self_test/package.dsv'
+[1.502s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/self_test/share/self_test/package.sh'
+[1.503s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/self_test/share/self_test/package.bash'
+[1.503s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/self_test/share/self_test/package.zsh'
+[1.503s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mewert/Desktop/luna/install/self_test/share/colcon-core/packages/self_test)
+[1.543s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_camera_msgs)
+[1.543s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_camera_msgs' for CMake module files
+[1.544s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_camera_msgs' for CMake config files
+[1.545s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'cmake_prefix_path')
+[1.546s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.ps1'
+[1.546s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.dsv'
+[1.547s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.sh'
+[1.547s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib'
+[1.547s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'ld_library_path_lib')
+[1.547s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.ps1'
+[1.548s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.dsv'
+[1.548s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.sh'
+[1.549s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/bin'
+[1.549s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib/pkgconfig/realsense2_camera_msgs.pc'
+[1.549s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib/python3.10/site-packages'
+[1.549s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/bin'
+[1.550s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.ps1'
+[1.550s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.dsv'
+[1.551s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.sh'
+[1.551s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.bash'
+[1.552s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.zsh'
+[1.552s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/colcon-core/packages/realsense2_camera_msgs)
+[1.553s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mewert/Desktop/luna/src/realsense-ros/realsense2_camera' with build type 'ament_cmake'
+[1.553s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mewert/Desktop/luna/src/realsense-ros/realsense2_camera'
+[1.553s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.554s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.559s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mewert/Desktop/luna/src/realsense-ros/realsense2_description' with build type 'ament_cmake'
+[1.559s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mewert/Desktop/luna/src/realsense-ros/realsense2_description'
+[1.559s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.559s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.565s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(self_test)
+[1.565s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/self_test' for CMake module files
+[1.566s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/self_test' for CMake config files
+[1.566s] Level 1:colcon.colcon_core.shell:create_environment_hook('self_test', 'cmake_prefix_path')
+[1.567s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/self_test/share/self_test/hook/cmake_prefix_path.ps1'
+[1.567s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mewert/Desktop/luna/install/self_test/share/self_test/hook/cmake_prefix_path.dsv'
+[1.568s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/self_test/share/self_test/hook/cmake_prefix_path.sh'
+[1.568s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/self_test/lib'
+[1.568s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/self_test/bin'
+[1.569s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/self_test/lib/pkgconfig/self_test.pc'
+[1.569s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/self_test/lib/python3.10/site-packages'
+[1.569s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/self_test/bin'
+[1.569s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/self_test/share/self_test/package.ps1'
+[1.570s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mewert/Desktop/luna/install/self_test/share/self_test/package.dsv'
+[1.570s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/self_test/share/self_test/package.sh'
+[1.571s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/self_test/share/self_test/package.bash'
+[1.571s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/self_test/share/self_test/package.zsh'
+[1.572s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mewert/Desktop/luna/install/self_test/share/colcon-core/packages/self_test)
+[1.578s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mewert/Desktop/luna/build/realsense2_camera': CMAKE_PREFIX_PATH=/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/mewert/Desktop/luna/build/realsense2_camera -- -j6 -l6
+[1.584s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mewert/Desktop/luna/build/realsense2_description': CMAKE_PREFIX_PATH=/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/mewert/Desktop/luna/build/realsense2_description -- -j6 -l6
+[1.641s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mewert/Desktop/luna/build/realsense2_description' returned '0': CMAKE_PREFIX_PATH=/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/mewert/Desktop/luna/build/realsense2_description -- -j6 -l6
+[1.717s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mewert/Desktop/luna/build/realsense2_description': CMAKE_PREFIX_PATH=/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/mewert/Desktop/luna/build/realsense2_description
+[1.767s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mewert/Desktop/luna/build/realsense2_camera' returned '0': CMAKE_PREFIX_PATH=/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/mewert/Desktop/luna/build/realsense2_camera -- -j6 -l6
+[1.772s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_description)
+[1.772s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_description' for CMake module files
+[1.773s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_description' for CMake config files
+[1.773s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_description', 'cmake_prefix_path')
+[1.773s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.ps1'
+[1.774s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mewert/Desktop/luna/build/realsense2_description' returned '0': CMAKE_PREFIX_PATH=/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/mewert/Desktop/luna/build/realsense2_description
+[1.775s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.dsv'
+[1.775s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.sh'
+[1.776s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_description/bin'
+[1.776s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_description/lib/pkgconfig/realsense2_description.pc'
+[1.777s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_description/lib/python3.10/site-packages'
+[1.777s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_description/bin'
+[1.777s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/package.ps1'
+[1.778s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/package.dsv'
+[1.778s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/package.sh'
+[1.779s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/package.bash'
+[1.779s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/package.zsh'
+[1.779s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mewert/Desktop/luna/install/realsense2_description/share/colcon-core/packages/realsense2_description)
+[1.802s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mewert/Desktop/luna/build/diagnostic_common_diagnostics' returned '0': CMAKE_PREFIX_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/mewert/Desktop/luna/build/diagnostic_common_diagnostics -- -j6 -l6
+[1.828s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_description)
+[1.829s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_description' for CMake module files
+[1.830s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_description' for CMake config files
+[1.830s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_description', 'cmake_prefix_path')
+[1.831s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.ps1'
+[1.831s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.dsv'
+[1.832s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.sh'
+[1.832s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_description/bin'
+[1.833s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_description/lib/pkgconfig/realsense2_description.pc'
+[1.833s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_description/lib/python3.10/site-packages'
+[1.833s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_description/bin'
+[1.833s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/package.ps1'
+[1.834s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/package.dsv'
+[1.835s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/package.sh'
+[1.835s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/package.bash'
+[1.836s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/package.zsh'
+[1.837s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mewert/Desktop/luna/install/realsense2_description/share/colcon-core/packages/realsense2_description)
+[1.840s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mewert/Desktop/luna/build/diagnostic_common_diagnostics': CMAKE_PREFIX_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/mewert/Desktop/luna/build/diagnostic_common_diagnostics
+[1.865s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mewert/Desktop/luna/build/realsense2_camera': CMAKE_PREFIX_PATH=/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/mewert/Desktop/luna/build/realsense2_camera
+[1.901s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_camera)
+[1.902s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_camera' for CMake module files
+[1.903s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mewert/Desktop/luna/build/realsense2_camera' returned '0': CMAKE_PREFIX_PATH=/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/mewert/Desktop/luna/build/realsense2_camera
+[1.903s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_camera' for CMake config files
+[1.904s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera', 'cmake_prefix_path')
+[1.904s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/realsense2_camera/share/realsense2_camera/hook/cmake_prefix_path.ps1'
+[1.905s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mewert/Desktop/luna/install/realsense2_camera/share/realsense2_camera/hook/cmake_prefix_path.dsv'
+[1.906s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/realsense2_camera/share/realsense2_camera/hook/cmake_prefix_path.sh'
+[1.908s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_camera/lib'
+[1.908s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera', 'ld_library_path_lib')
+[1.908s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/realsense2_camera/share/realsense2_camera/hook/ld_library_path_lib.ps1'
+[1.908s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mewert/Desktop/luna/install/realsense2_camera/share/realsense2_camera/hook/ld_library_path_lib.dsv'
+[1.909s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/realsense2_camera/share/realsense2_camera/hook/ld_library_path_lib.sh'
+[1.909s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_camera/bin'
+[1.909s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_camera/lib/pkgconfig/realsense2_camera.pc'
+[1.910s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_camera/lib/python3.10/site-packages'
+[1.910s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_camera/bin'
+[1.910s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/realsense2_camera/share/realsense2_camera/package.ps1'
+[1.911s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mewert/Desktop/luna/install/realsense2_camera/share/realsense2_camera/package.dsv'
+[1.911s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/realsense2_camera/share/realsense2_camera/package.sh'
+[1.912s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/realsense2_camera/share/realsense2_camera/package.bash'
+[1.912s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/realsense2_camera/share/realsense2_camera/package.zsh'
+[1.913s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mewert/Desktop/luna/install/realsense2_camera/share/colcon-core/packages/realsense2_camera)
+[1.915s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(diagnostic_common_diagnostics)
+[1.915s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics' for CMake module files
+[1.916s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mewert/Desktop/luna/build/diagnostic_common_diagnostics' returned '0': CMAKE_PREFIX_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/mewert/Desktop/luna/build/diagnostic_common_diagnostics
+[1.916s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics' for CMake config files
+[1.916s] Level 1:colcon.colcon_core.shell:create_environment_hook('diagnostic_common_diagnostics', 'cmake_prefix_path')
+[1.916s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/diagnostic_common_diagnostics/hook/cmake_prefix_path.ps1'
+[1.917s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/diagnostic_common_diagnostics/hook/cmake_prefix_path.dsv'
+[1.917s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/diagnostic_common_diagnostics/hook/cmake_prefix_path.sh'
+[1.918s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/lib'
+[1.918s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/bin'
+[1.918s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/lib/pkgconfig/diagnostic_common_diagnostics.pc'
+[1.918s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/lib/python3.10/site-packages'
+[1.919s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/bin'
+[1.919s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/diagnostic_common_diagnostics/package.ps1'
+[1.919s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/diagnostic_common_diagnostics/package.dsv'
+[1.920s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/diagnostic_common_diagnostics/package.sh'
+[1.920s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/diagnostic_common_diagnostics/package.bash'
+[1.921s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/diagnostic_common_diagnostics/package.zsh'
+[1.921s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/colcon-core/packages/diagnostic_common_diagnostics)
+[1.949s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(diagnostic_common_diagnostics)
+[1.950s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics' for CMake module files
+[1.950s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics' for CMake config files
+[1.951s] Level 1:colcon.colcon_core.shell:create_environment_hook('diagnostic_common_diagnostics', 'cmake_prefix_path')
+[1.951s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/diagnostic_common_diagnostics/hook/cmake_prefix_path.ps1'
+[1.952s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/diagnostic_common_diagnostics/hook/cmake_prefix_path.dsv'
+[1.952s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/diagnostic_common_diagnostics/hook/cmake_prefix_path.sh'
+[1.953s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/lib'
+[1.953s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/bin'
+[1.953s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/lib/pkgconfig/diagnostic_common_diagnostics.pc'
+[1.954s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/lib/python3.10/site-packages'
+[1.954s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/bin'
+[1.954s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/diagnostic_common_diagnostics/package.ps1'
+[1.955s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/diagnostic_common_diagnostics/package.dsv'
+[1.955s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/diagnostic_common_diagnostics/package.sh'
+[1.956s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/diagnostic_common_diagnostics/package.bash'
+[1.956s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/diagnostic_common_diagnostics/package.zsh'
+[1.957s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/colcon-core/packages/diagnostic_common_diagnostics)
+[1.958s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mewert/Desktop/luna/diagnostics/diagnostics' with build type 'ament_cmake'
+[1.958s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mewert/Desktop/luna/diagnostics/diagnostics'
+[1.958s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.958s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.963s] Level 1:colcon.colcon_core.shell:create_environment_hook('open_cv_pkg', 'pythonpath_develop')
+[1.964s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/build/open_cv_pkg/share/open_cv_pkg/hook/pythonpath_develop.ps1'
+[1.964s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mewert/Desktop/luna/build/open_cv_pkg/share/open_cv_pkg/hook/pythonpath_develop.dsv'
+[1.965s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mewert/Desktop/luna/build/open_cv_pkg' returned '0': PYTHONPATH=/home/mewert/Desktop/luna/build/open_cv_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mewert/Desktop/luna/install/open_cv_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/mewert/Desktop/luna/build/open_cv_pkg/build --no-deps symlink_data
+[1.966s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/build/open_cv_pkg/share/open_cv_pkg/hook/pythonpath_develop.sh'
+[1.967s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/open_cv_pkg' for CMake module files
+[1.968s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/open_cv_pkg' for CMake config files
+[1.968s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/open_cv_pkg/lib'
+[1.969s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/open_cv_pkg/bin'
+[1.969s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/open_cv_pkg/lib/pkgconfig/open_cv_pkg.pc'
+[1.969s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/open_cv_pkg/lib/python3.10/site-packages'
+[1.969s] Level 1:colcon.colcon_core.shell:create_environment_hook('open_cv_pkg', 'pythonpath')
+[1.970s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/open_cv_pkg/share/open_cv_pkg/hook/pythonpath.ps1'
+[1.971s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mewert/Desktop/luna/install/open_cv_pkg/share/open_cv_pkg/hook/pythonpath.dsv'
+[1.971s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/open_cv_pkg/share/open_cv_pkg/hook/pythonpath.sh'
+[1.972s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/open_cv_pkg/bin'
+[1.973s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(open_cv_pkg)
+[1.973s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/open_cv_pkg/share/open_cv_pkg/package.ps1'
+[1.974s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mewert/Desktop/luna/install/open_cv_pkg/share/open_cv_pkg/package.dsv'
+[1.975s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/open_cv_pkg/share/open_cv_pkg/package.sh'
+[1.976s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/open_cv_pkg/share/open_cv_pkg/package.bash'
+[1.976s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/open_cv_pkg/share/open_cv_pkg/package.zsh'
+[1.977s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mewert/Desktop/luna/install/open_cv_pkg/share/colcon-core/packages/open_cv_pkg)
+[1.986s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mewert/Desktop/luna/build/diagnostics': CMAKE_PREFIX_PATH=/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/mewert/Desktop/luna/build/diagnostics -- -j6 -l6
+[1.989s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_camera)
+[1.989s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_camera' for CMake module files
+[1.990s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_camera' for CMake config files
+[1.991s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera', 'cmake_prefix_path')
+[1.991s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/realsense2_camera/share/realsense2_camera/hook/cmake_prefix_path.ps1'
+[1.992s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mewert/Desktop/luna/install/realsense2_camera/share/realsense2_camera/hook/cmake_prefix_path.dsv'
+[1.992s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/realsense2_camera/share/realsense2_camera/hook/cmake_prefix_path.sh'
+[1.993s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_camera/lib'
+[1.993s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera', 'ld_library_path_lib')
+[1.994s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/realsense2_camera/share/realsense2_camera/hook/ld_library_path_lib.ps1'
+[1.995s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mewert/Desktop/luna/install/realsense2_camera/share/realsense2_camera/hook/ld_library_path_lib.dsv'
+[1.995s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/realsense2_camera/share/realsense2_camera/hook/ld_library_path_lib.sh'
+[1.996s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_camera/bin'
+[1.996s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_camera/lib/pkgconfig/realsense2_camera.pc'
+[1.997s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_camera/lib/python3.10/site-packages'
+[1.997s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/realsense2_camera/bin'
+[1.997s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/realsense2_camera/share/realsense2_camera/package.ps1'
+[1.998s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mewert/Desktop/luna/install/realsense2_camera/share/realsense2_camera/package.dsv'
+[1.999s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/realsense2_camera/share/realsense2_camera/package.sh'
+[2.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/realsense2_camera/share/realsense2_camera/package.bash'
+[2.000s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/realsense2_camera/share/realsense2_camera/package.zsh'
+[2.001s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mewert/Desktop/luna/install/realsense2_camera/share/colcon-core/packages/realsense2_camera)
+[2.033s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mewert/Desktop/luna/build/diagnostics' returned '0': CMAKE_PREFIX_PATH=/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/mewert/Desktop/luna/build/diagnostics -- -j6 -l6
+[2.064s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mewert/Desktop/luna/build/diagnostics': CMAKE_PREFIX_PATH=/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/mewert/Desktop/luna/build/diagnostics
+[2.089s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(diagnostics)
+[2.089s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostics' for CMake module files
+[2.090s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mewert/Desktop/luna/build/diagnostics' returned '0': CMAKE_PREFIX_PATH=/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/mewert/Desktop/luna/build/diagnostics
+[2.090s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostics' for CMake config files
+[2.090s] Level 1:colcon.colcon_core.shell:create_environment_hook('diagnostics', 'cmake_prefix_path')
+[2.091s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/diagnostics/share/diagnostics/hook/cmake_prefix_path.ps1'
+[2.091s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mewert/Desktop/luna/install/diagnostics/share/diagnostics/hook/cmake_prefix_path.dsv'
+[2.092s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/diagnostics/share/diagnostics/hook/cmake_prefix_path.sh'
+[2.092s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostics/bin'
+[2.092s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostics/lib/pkgconfig/diagnostics.pc'
+[2.093s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostics/lib/python3.10/site-packages'
+[2.093s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostics/bin'
+[2.093s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/diagnostics/share/diagnostics/package.ps1'
+[2.094s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mewert/Desktop/luna/install/diagnostics/share/diagnostics/package.dsv'
+[2.094s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/diagnostics/share/diagnostics/package.sh'
+[2.094s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/diagnostics/share/diagnostics/package.bash'
+[2.095s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/diagnostics/share/diagnostics/package.zsh'
+[2.095s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mewert/Desktop/luna/install/diagnostics/share/colcon-core/packages/diagnostics)
+[2.122s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(diagnostics)
+[2.122s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostics' for CMake module files
+[2.123s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostics' for CMake config files
+[2.123s] Level 1:colcon.colcon_core.shell:create_environment_hook('diagnostics', 'cmake_prefix_path')
+[2.124s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/diagnostics/share/diagnostics/hook/cmake_prefix_path.ps1'
+[2.124s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mewert/Desktop/luna/install/diagnostics/share/diagnostics/hook/cmake_prefix_path.dsv'
+[2.125s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mewert/Desktop/luna/install/diagnostics/share/diagnostics/hook/cmake_prefix_path.sh'
+[2.125s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostics/bin'
+[2.125s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostics/lib/pkgconfig/diagnostics.pc'
+[2.126s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostics/lib/python3.10/site-packages'
+[2.126s] Level 1:colcon.colcon_core.environment:checking '/home/mewert/Desktop/luna/install/diagnostics/bin'
+[2.126s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/diagnostics/share/diagnostics/package.ps1'
+[2.127s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mewert/Desktop/luna/install/diagnostics/share/diagnostics/package.dsv'
+[2.128s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/diagnostics/share/diagnostics/package.sh'
+[2.128s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/diagnostics/share/diagnostics/package.bash'
+[2.128s] INFO:colcon.colcon_core.shell:Creating package script '/home/mewert/Desktop/luna/install/diagnostics/share/diagnostics/package.zsh'
+[2.129s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mewert/Desktop/luna/install/diagnostics/share/colcon-core/packages/diagnostics)
+[2.129s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.130s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.130s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.130s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.136s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.136s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.136s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.148s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.148s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mewert/Desktop/luna/install/local_setup.ps1'
+[2.150s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mewert/Desktop/luna/install/_local_setup_util_ps1.py'
+[2.152s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mewert/Desktop/luna/install/setup.ps1'
+[2.153s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mewert/Desktop/luna/install/local_setup.sh'
+[2.154s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mewert/Desktop/luna/install/_local_setup_util_sh.py'
+[2.155s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mewert/Desktop/luna/install/setup.sh'
+[2.157s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mewert/Desktop/luna/install/local_setup.bash'
+[2.157s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mewert/Desktop/luna/install/setup.bash'
+[2.159s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mewert/Desktop/luna/install/local_setup.zsh'
+[2.160s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mewert/Desktop/luna/install/setup.zsh'

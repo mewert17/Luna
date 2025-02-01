@@ -1,0 +1,1 @@
+/home/mewert/Desktop/luna/build/diagnostic_aggregator/ament_cmake_core/diagnostic_aggregatorConfig.cmake

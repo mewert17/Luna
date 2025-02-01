@@ -1,0 +1,109 @@
+[0.031s] Invoking command in '/home/mewert/Desktop/luna/build/diagnostic_aggregator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake /home/mewert/Desktop/luna/diagnostics/diagnostic_aggregator -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mewert/Desktop/luna/install/diagnostic_aggregator
+[0.406s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.406s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.406s] -- Found diagnostic_msgs: 4.2.4 (/opt/ros/humble/share/diagnostic_msgs/cmake)
+[0.406s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.406s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.407s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.407s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.407s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.407s] -- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+[0.407s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.408s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.408s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.411s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.428s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.440s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.456s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.477s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.538s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.659s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.699s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.699s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.699s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.232s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.233s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/mewert/Desktop/luna/diagnostics/diagnostic_aggregator/include>
+[1.233s] -- Configured cppcheck exclude dirs and/or files: 
+[1.233s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.233s] -- Configured cpplint exclude dirs and/or files: 
+[1.234s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.284s] -- Added test 'lint_cmake' to check CMake code style
+[1.284s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.284s] -- Added test 'uncrustify' to check C / C++ code style
+[1.284s] -- Configured uncrustify additional arguments: 
+[1.284s] -- Added test 'xmllint' to check XML markup files
+[1.284s] -- Configuring done
+[1.335s] -- Generating done
+[1.350s] -- Build files have been written to: /home/mewert/Desktop/luna/build/diagnostic_aggregator
+[1.374s] Invoked command in '/home/mewert/Desktop/luna/build/diagnostic_aggregator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake /home/mewert/Desktop/luna/diagnostics/diagnostic_aggregator -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mewert/Desktop/luna/install/diagnostic_aggregator
+[1.375s] Invoking command in '/home/mewert/Desktop/luna/build/diagnostic_aggregator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mewert/Desktop/luna/build/diagnostic_aggregator -- -j6 -l6
+[1.471s] [35m[1mConsolidate compiler generated dependencies of target diagnostic_aggregator[0m
+[1.488s] [35m[1mConsolidate compiler generated dependencies of target add_analyzer[0m
+[1.516s] [  0%] Built target ament_cmake_python_symlink_diagnostic_aggregator
+[1.536s] [ 33%] Built target diagnostic_aggregator
+[1.562s] [ 50%] Built target add_analyzer
+[1.580s] [35m[1mConsolidate compiler generated dependencies of target diagnostic_aggregator_analyzers[0m
+[1.594s] [35m[1mConsolidate compiler generated dependencies of target aggregator_node[0m
+[1.632s] [ 66%] Built target aggregator_node
+[1.644s] [100%] Built target diagnostic_aggregator_analyzers
+[2.057s] running egg_info
+[2.057s] writing diagnostic_aggregator.egg-info/PKG-INFO
+[2.057s] writing dependency_links to diagnostic_aggregator.egg-info/dependency_links.txt
+[2.057s] writing top-level names to diagnostic_aggregator.egg-info/top_level.txt
+[2.062s] reading manifest file 'diagnostic_aggregator.egg-info/SOURCES.txt'
+[2.135s] [100%] Built target ament_cmake_python_build_diagnostic_aggregator_egg
+[2.165s] Invoked command in '/home/mewert/Desktop/luna/build/diagnostic_aggregator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mewert/Desktop/luna/build/diagnostic_aggregator -- -j6 -l6
+[2.322s] Invoking command in '/home/mewert/Desktop/luna/build/diagnostic_aggregator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --install /home/mewert/Desktop/luna/build/diagnostic_aggregator
+[2.329s] -- Install configuration: ""
+[2.330s] -- Execute custom install script
+[2.331s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/lib/diagnostic_aggregator/aggregator_node
+[2.331s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/lib/diagnostic_aggregator/add_analyzer
+[2.332s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/include/diagnostic_aggregator/aggregator.hpp
+[2.332s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/include/diagnostic_aggregator/analyzer.hpp
+[2.332s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/include/diagnostic_aggregator/analyzer_group.hpp
+[2.332s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/include/diagnostic_aggregator/discard_analyzer.hpp
+[2.333s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/include/diagnostic_aggregator/generic_analyzer.hpp
+[2.333s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/include/diagnostic_aggregator/generic_analyzer_base.hpp
+[2.333s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/include/diagnostic_aggregator/ignore_analyzer.hpp
+[2.333s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/include/diagnostic_aggregator/other_analyzer.hpp
+[2.333s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/include/diagnostic_aggregator/status_item.hpp
+[2.333s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/include/diagnostic_aggregator/visibility_control.hpp
+[2.334s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/environment/pythonpath.sh
+[2.334s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/environment/pythonpath.dsv
+[2.334s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/local/lib/python3.10/dist-packages/diagnostic_aggregator-4.3.1-py3.10.egg-info/PKG-INFO
+[2.334s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/local/lib/python3.10/dist-packages/diagnostic_aggregator-4.3.1-py3.10.egg-info/SOURCES.txt
+[2.335s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/local/lib/python3.10/dist-packages/diagnostic_aggregator-4.3.1-py3.10.egg-info/dependency_links.txt
+[2.335s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/local/lib/python3.10/dist-packages/diagnostic_aggregator-4.3.1-py3.10.egg-info/top_level.txt
+[2.339s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/local/lib/python3.10/dist-packages/diagnostic_aggregator/__init__.py
+[2.339s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/example.launch.py
+[2.340s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/lib/diagnostic_aggregator/example_pub.py
+[2.340s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/example_analyzers.yaml
+[2.340s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/example_add_analyzers.yaml
+[2.340s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator//plugin_description.xml
+[2.340s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/environment/library_path.sh
+[2.340s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/environment/library_path.dsv
+[2.340s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/share/ament_index/resource_index/package_run_dependencies/diagnostic_aggregator
+[2.340s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/share/ament_index/resource_index/parent_prefix_path/diagnostic_aggregator
+[2.340s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/environment/ament_prefix_path.sh
+[2.340s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/environment/ament_prefix_path.dsv
+[2.341s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/environment/path.sh
+[2.341s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/environment/path.dsv
+[2.341s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/local_setup.bash
+[2.341s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/local_setup.sh
+[2.341s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/local_setup.zsh
+[2.341s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/local_setup.dsv
+[2.342s] -- Symlinking: /home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/package.dsv
+[2.358s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/share/ament_index/resource_index/packages/diagnostic_aggregator
+[2.358s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/share/ament_index/resource_index/diagnostic_aggregator__pluginlib__plugin/diagnostic_aggregator
+[2.358s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/cmake/ament_cmake_export_targets-extras.cmake
+[2.358s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.358s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.359s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/cmake/diagnostic_aggregatorConfig.cmake
+[2.359s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/cmake/diagnostic_aggregatorConfig-version.cmake
+[2.359s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/package.xml
+[2.359s] -- Up-to-date: /home/mewert/Desktop/luna/install/diagnostic_aggregator/lib/libdiagnostic_aggregator.so
+[2.360s] -- Up-to-date: /home/mewert/Desktop/luna/install/diagnostic_aggregator/lib/libdiagnostic_aggregator_analyzers.so
+[2.406s] Listing '/home/mewert/Desktop/luna/install/diagnostic_aggregator/local/lib/python3.10/dist-packages/diagnostic_aggregator'...
+[2.414s] -- Up-to-date: /home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/cmake/diagnostic_aggregatorTargetsExport.cmake
+[2.415s] -- Up-to-date: /home/mewert/Desktop/luna/install/diagnostic_aggregator/share/diagnostic_aggregator/cmake/diagnostic_aggregatorTargetsExport-noconfig.cmake
+[2.417s] Invoked command in '/home/mewert/Desktop/luna/build/diagnostic_aggregator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --install /home/mewert/Desktop/luna/build/diagnostic_aggregator

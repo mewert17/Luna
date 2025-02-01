@@ -1,0 +1,4 @@
+source;share/pointcloud_to_grid/local_setup.bash
+source;share/pointcloud_to_grid/local_setup.dsv
+source;share/pointcloud_to_grid/local_setup.sh
+source;share/pointcloud_to_grid/local_setup.zsh

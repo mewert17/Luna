@@ -1,0 +1,59 @@
+[0.760s] Invoking command in '/home/mewert/Desktop/luna/build/pointcloud_to_grid': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mewert/Desktop/luna/build/pointcloud_to_grid -- -j6 -l6
+[0.853s] [35m[1mConsolidate compiler generated dependencies of target pointcloud_to_grid_node[0m
+[0.895s] [ 50%] Built target grid_trajectory
+[0.898s] [100%] Built target pointcloud_to_grid_node
+[0.923s] Invoked command in '/home/mewert/Desktop/luna/build/pointcloud_to_grid' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mewert/Desktop/luna/build/pointcloud_to_grid -- -j6 -l6
+[0.986s] Invoking command in '/home/mewert/Desktop/luna/build/pointcloud_to_grid': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --install /home/mewert/Desktop/luna/build/pointcloud_to_grid
+[1.007s] -- Install configuration: ""
+[1.008s] -- Execute custom install script
+[1.009s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/launch/demo.launch.py
+[1.009s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/launch/grid_trajectory.launch.py
+[1.009s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/launch/rviz.launch.py
+[1.010s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/doc/default.rviz
+[1.010s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/doc/grid_map01.gif
+[1.010s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/doc/grid_map_conventions.pdf
+[1.010s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/doc/grid_map_conventions.png
+[1.012s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/doc/grid_map_conventions.svg
+[1.012s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/lib/pointcloud_to_grid/pointcloud_to_grid_node
+[1.012s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/lib/pointcloud_to_grid/grid_trajectory
+[1.015s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/ament_index/resource_index/package_run_dependencies/pointcloud_to_grid
+[1.016s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/ament_index/resource_index/parent_prefix_path/pointcloud_to_grid
+[1.017s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/environment/ament_prefix_path.sh
+[1.017s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/environment/ament_prefix_path.dsv
+[1.017s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/environment/path.sh
+[1.018s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/environment/path.dsv
+[1.018s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/local_setup.bash
+[1.018s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/local_setup.sh
+[1.020s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/local_setup.zsh
+[1.020s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/local_setup.dsv
+[1.028s] -- Symlinking: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/package.dsv
+[1.040s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/ament_index/resource_index/packages/pointcloud_to_grid
+[1.040s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/cmake/pointcloud_to_gridConfig.cmake
+[1.041s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/cmake/pointcloud_to_gridConfig-version.cmake
+[1.042s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/package.xml
+[1.042s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/launch/demo.launch.py
+[1.042s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/launch/grid_trajectory.launch.py
+[1.043s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/launch/rviz.launch.py
+[1.043s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/doc/default.rviz
+[1.043s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/doc/grid_map01.gif
+[1.044s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/doc/grid_map_conventions.pdf
+[1.044s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/doc/grid_map_conventions.png
+[1.044s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/doc/grid_map_conventions.svg
+[1.044s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/lib/pointcloud_to_grid/pointcloud_to_grid_node
+[1.045s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/lib/pointcloud_to_grid/grid_trajectory
+[1.045s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/ament_index/resource_index/package_run_dependencies/pointcloud_to_grid
+[1.046s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/ament_index/resource_index/parent_prefix_path/pointcloud_to_grid
+[1.047s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/environment/ament_prefix_path.sh
+[1.047s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/environment/ament_prefix_path.dsv
+[1.047s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/environment/path.sh
+[1.048s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/environment/path.dsv
+[1.048s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/local_setup.bash
+[1.049s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/local_setup.sh
+[1.049s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/local_setup.zsh
+[1.049s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/local_setup.dsv
+[1.049s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/package.dsv
+[1.050s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/ament_index/resource_index/packages/pointcloud_to_grid
+[1.050s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/cmake/pointcloud_to_gridConfig.cmake
+[1.050s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/cmake/pointcloud_to_gridConfig-version.cmake
+[1.050s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/pointcloud_to_grid/share/pointcloud_to_grid/package.xml
+[1.053s] Invoked command in '/home/mewert/Desktop/luna/build/pointcloud_to_grid' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --install /home/mewert/Desktop/luna/build/pointcloud_to_grid

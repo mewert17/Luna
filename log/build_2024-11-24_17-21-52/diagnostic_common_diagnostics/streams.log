@@ -1,0 +1,46 @@
+[0.010s] Invoking command in '/home/mewert/Desktop/luna/build/diagnostic_common_diagnostics': AMENT_PREFIX_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater:/opt/ros/humble LD_LIBRARY_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mewert/Desktop/luna/install/diagnostic_updater/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mewert/Desktop/luna/build/diagnostic_common_diagnostics -- -j6 -l6
+[0.070s] Built target ament_cmake_python_symlink_diagnostic_common_diagnostics
+[0.470s] running egg_info
+[0.470s] writing diagnostic_common_diagnostics.egg-info/PKG-INFO
+[0.470s] writing dependency_links to diagnostic_common_diagnostics.egg-info/dependency_links.txt
+[0.470s] writing top-level names to diagnostic_common_diagnostics.egg-info/top_level.txt
+[0.472s] reading manifest file 'diagnostic_common_diagnostics.egg-info/SOURCES.txt'
+[0.535s] Built target ament_cmake_python_build_diagnostic_common_diagnostics_egg
+[0.552s] Invoked command in '/home/mewert/Desktop/luna/build/diagnostic_common_diagnostics' returned '0': AMENT_PREFIX_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater:/opt/ros/humble LD_LIBRARY_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mewert/Desktop/luna/install/diagnostic_updater/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mewert/Desktop/luna/build/diagnostic_common_diagnostics -- -j6 -l6
+[0.591s] Invoking command in '/home/mewert/Desktop/luna/build/diagnostic_common_diagnostics': AMENT_PREFIX_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater:/opt/ros/humble LD_LIBRARY_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mewert/Desktop/luna/install/diagnostic_updater/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mewert/Desktop/luna/build/diagnostic_common_diagnostics
+[0.598s] -- Install configuration: ""
+[0.599s] -- Execute custom install script
+[0.599s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/diagnostic_common_diagnostics/environment/pythonpath.sh
+[0.599s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/diagnostic_common_diagnostics/environment/pythonpath.dsv
+[0.600s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/local/lib/python3.10/dist-packages/diagnostic_common_diagnostics-4.3.1-py3.10.egg-info/PKG-INFO
+[0.602s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/local/lib/python3.10/dist-packages/diagnostic_common_diagnostics-4.3.1-py3.10.egg-info/SOURCES.txt
+[0.602s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/local/lib/python3.10/dist-packages/diagnostic_common_diagnostics-4.3.1-py3.10.egg-info/dependency_links.txt
+[0.602s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/local/lib/python3.10/dist-packages/diagnostic_common_diagnostics-4.3.1-py3.10.egg-info/top_level.txt
+[0.602s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/local/lib/python3.10/dist-packages/diagnostic_common_diagnostics/__init__.py
+[0.602s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/local/lib/python3.10/dist-packages/diagnostic_common_diagnostics/cpu_monitor.py
+[0.602s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/local/lib/python3.10/dist-packages/diagnostic_common_diagnostics/hd_monitor.py
+[0.602s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/local/lib/python3.10/dist-packages/diagnostic_common_diagnostics/ntp_monitor.py
+[0.602s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/local/lib/python3.10/dist-packages/diagnostic_common_diagnostics/ram_monitor.py
+[0.602s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/local/lib/python3.10/dist-packages/diagnostic_common_diagnostics/sensors_monitor.py
+[0.602s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/lib/diagnostic_common_diagnostics/cpu_monitor.py
+[0.609s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/lib/diagnostic_common_diagnostics/ntp_monitor.py
+[0.609s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/lib/diagnostic_common_diagnostics/ram_monitor.py
+[0.609s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/lib/diagnostic_common_diagnostics/sensors_monitor.py
+[0.609s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/lib/diagnostic_common_diagnostics/hd_monitor.py
+[0.610s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/ament_index/resource_index/package_run_dependencies/diagnostic_common_diagnostics
+[0.610s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/ament_index/resource_index/parent_prefix_path/diagnostic_common_diagnostics
+[0.610s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/diagnostic_common_diagnostics/environment/ament_prefix_path.sh
+[0.610s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/diagnostic_common_diagnostics/environment/ament_prefix_path.dsv
+[0.610s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/diagnostic_common_diagnostics/environment/path.sh
+[0.610s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/diagnostic_common_diagnostics/environment/path.dsv
+[0.610s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/diagnostic_common_diagnostics/local_setup.bash
+[0.610s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/diagnostic_common_diagnostics/local_setup.sh
+[0.610s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/diagnostic_common_diagnostics/local_setup.zsh
+[0.610s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/diagnostic_common_diagnostics/local_setup.dsv
+[0.610s] -- Symlinking: /home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/diagnostic_common_diagnostics/package.dsv
+[0.621s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/ament_index/resource_index/packages/diagnostic_common_diagnostics
+[0.621s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/diagnostic_common_diagnostics/cmake/diagnostic_common_diagnosticsConfig.cmake
+[0.621s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/diagnostic_common_diagnostics/cmake/diagnostic_common_diagnosticsConfig-version.cmake
+[0.621s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/share/diagnostic_common_diagnostics/package.xml
+[0.651s] Listing '/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/local/lib/python3.10/dist-packages/diagnostic_common_diagnostics'...
+[0.667s] Invoked command in '/home/mewert/Desktop/luna/build/diagnostic_common_diagnostics' returned '0': AMENT_PREFIX_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater:/opt/ros/humble LD_LIBRARY_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mewert/Desktop/luna/install/diagnostic_updater/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mewert/Desktop/luna/build/diagnostic_common_diagnostics

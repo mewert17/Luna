@@ -1,0 +1,21 @@
+[0.039s] Invoking command in '/home/mewert/Desktop/luna/build/diagnostic_aggregator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mewert/Desktop/luna/build/diagnostic_aggregator -- -j6 -l6
+[1.602s] [  8%] [32mBuilding CXX object CMakeFiles/add_analyzer.dir/src/add_analyzer.cpp.o[0m
+[1.602s] [ 16%] [32mBuilding CXX object CMakeFiles/diagnostic_aggregator.dir/src/status_item.cpp.o[0m
+[1.602s] [ 33%] [32mBuilding CXX object CMakeFiles/diagnostic_aggregator.dir/src/analyzer_group.cpp.o[0m
+[1.602s] [ 33%] [32mBuilding CXX object CMakeFiles/diagnostic_aggregator.dir/src/aggregator.cpp.o[0m
+[1.602s] [ 33%] Built target ament_cmake_python_symlink_diagnostic_aggregator
+[1.602s] running egg_info
+[1.602s] writing diagnostic_aggregator.egg-info/PKG-INFO
+[1.602s] writing dependency_links to diagnostic_aggregator.egg-info/dependency_links.txt
+[1.602s] writing top-level names to diagnostic_aggregator.egg-info/top_level.txt
+[1.602s] reading manifest file 'diagnostic_aggregator.egg-info/SOURCES.txt'
+[1.602s] [ 33%] Built target ament_cmake_python_build_diagnostic_aggregator_egg
+[22.538s] [ 41%] [32m[1mLinking CXX executable add_analyzer[0m
+[24.357s] [ 41%] Built target add_analyzer
+[47.185s] [ 50%] [32m[1mLinking CXX shared library libdiagnostic_aggregator.so[0m
+[48.673s] [ 50%] Built target diagnostic_aggregator
+[48.795s] [ 58%] [32mBuilding CXX object CMakeFiles/diagnostic_aggregator_analyzers.dir/src/generic_analyzer.cpp.o[0m
+[54.606s] gmake[2]: *** [CMakeFiles/diagnostic_aggregator_analyzers.dir/build.make:76: CMakeFiles/diagnostic_aggregator_analyzers.dir/src/generic_analyzer.cpp.o] Interrupt
+[54.606s] gmake[1]: *** [CMakeFiles/Makefile2:172: CMakeFiles/diagnostic_aggregator_analyzers.dir/all] Interrupt
+[54.626s] gmake: *** [Makefile:146: all] Interrupt
+[54.663s] Invoked command in '/home/mewert/Desktop/luna/build/diagnostic_aggregator' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mewert/Desktop/luna/build/diagnostic_aggregator -- -j6 -l6

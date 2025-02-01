@@ -1,0 +1,38 @@
+[0.532s] Invoking command in '/home/mewert/Desktop/luna/build/pointcloud_to_grid': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mewert/Desktop/luna/build/pointcloud_to_grid -- -j6 -l6
+[0.850s] [ 75%] Built target grid_trajectory
+[0.851s] [ 75%] [32mBuilding CXX object CMakeFiles/pointcloud_to_grid_node.dir/src/pointcloud_to_grid_node.cpp.o[0m
+[7.212s] [01m[K/home/mewert/Desktop/luna/src/pointcloud_to_grid/src/pointcloud_to_grid_node.cpp:117:5:[m[K [01;31m[Kerror: [m[K‘[01m[KGridMap[m[K’ does not name a type
+[7.212s]   117 |     [01;31m[KGridMap[m[K grid_map;
+[7.212s]       |     [01;31m[K^~~~~~~[m[K
+[7.230s] [01m[K/home/mewert/Desktop/luna/src/pointcloud_to_grid/src/pointcloud_to_grid_node.cpp:[m[K In member function ‘[01m[Krcl_interfaces::msg::SetParametersResult PointCloudToGrid::parametersCallback(const std::vector<rclcpp::Parameter>&)[m[K’:
+[7.230s] [01m[K/home/mewert/Desktop/luna/src/pointcloud_to_grid/src/pointcloud_to_grid_node.cpp:33:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kgrid_map[m[K’ was not declared in this scope
+[7.230s]    33 |                 [01;31m[Kgrid_map[m[K.mapi_topic_name = param.as_string();
+[7.230s]       |                 [01;31m[K^~~~~~~~[m[K
+[7.257s] [01m[K/home/mewert/Desktop/luna/src/pointcloud_to_grid/src/pointcloud_to_grid_node.cpp:43:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kgrid_map[m[K’ was not declared in this scope
+[7.257s]    43 |                 [01;31m[Kgrid_map[m[K.intensity_factor = param.as_double();
+[7.257s]       |                 [01;31m[K^~~~~~~~[m[K
+[7.276s] [01m[K/home/mewert/Desktop/luna/src/pointcloud_to_grid/src/pointcloud_to_grid_node.cpp:[m[K In constructor ‘[01m[KPointCloudToGrid::PointCloudToGrid()[m[K’:
+[7.277s] [01m[K/home/mewert/Desktop/luna/src/pointcloud_to_grid/src/pointcloud_to_grid_node.cpp:55:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kgrid_map[m[K’ was not declared in this scope
+[7.277s]    55 |         this->get_parameter("mapi_topic_name", [01;31m[Kgrid_map[m[K.mapi_topic_name);
+[7.277s]       |                                                [01;31m[K^~~~~~~~[m[K
+[7.315s] [01m[K/home/mewert/Desktop/luna/src/pointcloud_to_grid/src/pointcloud_to_grid_node.cpp:[m[K In member function ‘[01m[Kvoid PointCloudToGrid::lidar_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::ConstSharedPtr)[m[K’:
+[7.315s] [01m[K/home/mewert/Desktop/luna/src/pointcloud_to_grid/src/pointcloud_to_grid_node.cpp:76:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kgrid_map[m[K’ was not declared in this scope
+[7.315s]    76 |         [01;31m[Kgrid_map[m[K.initGrid(intensity_grid);
+[7.316s]       |         [01;31m[K^~~~~~~~[m[K
+[7.317s] [01m[K/home/mewert/Desktop/luna/src/pointcloud_to_grid/src/pointcloud_to_grid_node.cpp:86:21:[m[K [01;31m[Kerror: [m[K‘[01m[KPointXY[m[K’ was not declared in this scope; did you mean ‘[01m[Kpcl::PointXY[m[K’?
+[7.317s]    86 |                     [01;31m[KPointXY[m[K cell = grid_map.getIndex(p.x, p.y);
+[7.318s]       |                     [01;31m[K^~~~~~~[m[K
+[7.318s]       |                     [32m[Kpcl::PointXY[m[K
+[7.318s] In file included from [01m[K/usr/include/pcl-1.12/pcl/point_types.h:354[m[K,
+[7.318s]                  from [01m[K/home/mewert/Desktop/luna/src/pointcloud_to_grid/src/pointcloud_to_grid_node.cpp:8[m[K:
+[7.318s] [01m[K/usr/include/pcl-1.12/pcl/impl/point_types.hpp:831:10:[m[K [01;36m[Knote: [m[K‘[01m[Kpcl::PointXY[m[K’ declared here
+[7.318s]   831 |   struct [01;36m[KPointXY[m[K
+[7.318s]       |          [01;36m[K^~~~~~~[m[K
+[7.328s] [01m[K/home/mewert/Desktop/luna/src/pointcloud_to_grid/src/pointcloud_to_grid_node.cpp:87:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcell[m[K’ was not declared in this scope; did you mean ‘[01m[Kceill[m[K’?
+[7.328s]    87 |                     if ([01;31m[Kcell[m[K.x < grid_map.cell_num_x && cell.y < grid_map.cell_num_y)
+[7.328s]       |                         [01;31m[K^~~~[m[K
+[7.328s]       |                         [32m[Kceill[m[K
+[10.849s] gmake[2]: *** [CMakeFiles/pointcloud_to_grid_node.dir/build.make:76: CMakeFiles/pointcloud_to_grid_node.dir/src/pointcloud_to_grid_node.cpp.o] Error 1
+[10.849s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/pointcloud_to_grid_node.dir/all] Error 2
+[10.849s] gmake: *** [Makefile:146: all] Error 2
+[10.853s] Invoked command in '/home/mewert/Desktop/luna/build/pointcloud_to_grid' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mewert/Desktop/luna/build/pointcloud_to_grid -- -j6 -l6

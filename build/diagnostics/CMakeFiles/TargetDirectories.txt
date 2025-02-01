@@ -1,0 +1,9 @@
+/home/mewert/Desktop/luna/build/diagnostics/CMakeFiles/uninstall.dir
+/home/mewert/Desktop/luna/build/diagnostics/CMakeFiles/diagnostics_uninstall.dir
+/home/mewert/Desktop/luna/build/diagnostics/CMakeFiles/test.dir
+/home/mewert/Desktop/luna/build/diagnostics/CMakeFiles/edit_cache.dir
+/home/mewert/Desktop/luna/build/diagnostics/CMakeFiles/rebuild_cache.dir
+/home/mewert/Desktop/luna/build/diagnostics/CMakeFiles/list_install_components.dir
+/home/mewert/Desktop/luna/build/diagnostics/CMakeFiles/install.dir
+/home/mewert/Desktop/luna/build/diagnostics/CMakeFiles/install/local.dir
+/home/mewert/Desktop/luna/build/diagnostics/CMakeFiles/install/strip.dir

@@ -1,0 +1,19 @@
+[8.272s] Invoking command in '/home/mewert/Desktop/luna/build/open_cv_pkg': PYTHONPATH=/home/mewert/Desktop/luna/build/open_cv_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mewert/Desktop/luna/install/open_cv_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/mewert/Desktop/luna/build/open_cv_pkg/build --no-deps symlink_data
+[10.947s] /home/mewert/.local/lib/python3.10/site-packages/setuptools/command/easy_install.py:157: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[10.947s]   warnings.warn(
+[10.947s] running develop
+[11.289s] running egg_info
+[11.289s] writing open_cv_pkg.egg-info/PKG-INFO
+[11.289s] writing dependency_links to open_cv_pkg.egg-info/dependency_links.txt
+[11.289s] writing entry points to open_cv_pkg.egg-info/entry_points.txt
+[11.290s] writing requirements to open_cv_pkg.egg-info/requires.txt
+[11.290s] writing top-level names to open_cv_pkg.egg-info/top_level.txt
+[11.290s] reading manifest file 'open_cv_pkg.egg-info/SOURCES.txt'
+[11.394s] running build_ext
+[11.396s] Creating /home/mewert/Desktop/luna/install/open_cv_pkg/lib/python3.10/site-packages/open-cv-pkg.egg-link (link to .)
+[11.397s] Installing object_detection_node script to /home/mewert/Desktop/luna/install/open_cv_pkg/lib/open_cv_pkg
+[11.407s] Installing og_from_pointcloud script to /home/mewert/Desktop/luna/install/open_cv_pkg/lib/open_cv_pkg
+[11.407s] 
+[11.407s] Installed /home/mewert/Desktop/luna/build/open_cv_pkg
+[11.407s] running symlink_data
+[11.933s] Invoked command in '/home/mewert/Desktop/luna/build/open_cv_pkg' returned '0': PYTHONPATH=/home/mewert/Desktop/luna/build/open_cv_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mewert/Desktop/luna/install/open_cv_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/mewert/Desktop/luna/build/open_cv_pkg/build --no-deps symlink_data

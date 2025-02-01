@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/mewert/Desktop/luna/build/self_test/run_selftest" "/home/mewert/Desktop/luna/build/self_test/selftest_example" "TARGETS" "run_selftest" "selftest_example" "DESTINATION" "lib/self_test")

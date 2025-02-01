@@ -1,0 +1,101 @@
+[0.047s] Invoking command in '/home/mewert/Desktop/luna/build/diagnostic_updater': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake /home/mewert/Desktop/luna/diagnostics/diagnostic_updater -DCMAKE_INSTALL_PREFIX=/home/mewert/Desktop/luna/install/diagnostic_updater
+[0.521s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.522s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.522s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.523s] -- Found diagnostic_msgs: 4.2.4 (/opt/ros/humble/share/diagnostic_msgs/cmake)
+[0.523s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.523s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.523s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.527s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.527s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.527s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.527s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.527s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.618s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.654s] -- Found rclpy: 3.3.14 (/opt/ros/humble/share/rclpy/cmake)
+[0.659s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.823s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.517s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.520s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/mewert/Desktop/luna/diagnostics/diagnostic_updater/include>
+[2.520s] -- Configured cppcheck exclude dirs and/or files: 
+[2.520s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.520s] -- Configured cpplint exclude dirs and/or files: 
+[2.521s] -- Added test 'lint_cmake' to check CMake code style
+[2.522s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.523s] -- Added test 'uncrustify' to check C / C++ code style
+[2.523s] -- Configured uncrustify additional arguments: 
+[2.524s] -- Added test 'xmllint' to check XML markup files
+[2.534s] -- Configuring done
+[2.589s] -- Generating done
+[2.595s] -- Build files have been written to: /home/mewert/Desktop/luna/build/diagnostic_updater
+[2.666s] Invoked command in '/home/mewert/Desktop/luna/build/diagnostic_updater' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake /home/mewert/Desktop/luna/diagnostics/diagnostic_updater -DCMAKE_INSTALL_PREFIX=/home/mewert/Desktop/luna/install/diagnostic_updater
+[2.667s] Invoking command in '/home/mewert/Desktop/luna/build/diagnostic_updater': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mewert/Desktop/luna/build/diagnostic_updater -- -j6 -l6
+[2.740s] [35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[2.742s] [35m[1mConsolidate compiler generated dependencies of target diagnostic_updater[0m
+[2.759s] [35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[2.791s] [ 14%] Built target diagnostic_updater
+[2.791s] [ 14%] Built target ament_cmake_python_symlink_diagnostic_updater
+[2.794s] [ 28%] Built target gtest_main
+[2.814s] [ 42%] Built target gtest
+[2.833s] [35m[1mConsolidate compiler generated dependencies of target example[0m
+[2.840s] [35m[1mConsolidate compiler generated dependencies of target diagnostic_updater_test[0m
+[2.856s] [35m[1mConsolidate compiler generated dependencies of target status_msg_test[0m
+[2.861s] [35m[1mConsolidate compiler generated dependencies of target diagnostic_status_wrapper_test[0m
+[2.872s] [ 57%] Built target example
+[2.884s] [ 71%] Built target diagnostic_updater_test
+[2.912s] [ 85%] Built target status_msg_test
+[2.919s] [100%] Built target diagnostic_status_wrapper_test
+[3.268s] running egg_info
+[3.269s] writing diagnostic_updater.egg-info/PKG-INFO
+[3.270s] writing dependency_links to diagnostic_updater.egg-info/dependency_links.txt
+[3.270s] writing top-level names to diagnostic_updater.egg-info/top_level.txt
+[3.273s] reading manifest file 'diagnostic_updater.egg-info/SOURCES.txt'
+[3.330s] [100%] Built target ament_cmake_python_build_diagnostic_updater_egg
+[3.347s] Invoked command in '/home/mewert/Desktop/luna/build/diagnostic_updater' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mewert/Desktop/luna/build/diagnostic_updater -- -j6 -l6
+[3.410s] Invoking command in '/home/mewert/Desktop/luna/build/diagnostic_updater': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --install /home/mewert/Desktop/luna/build/diagnostic_updater
+[3.421s] -- Install configuration: ""
+[3.421s] -- Execute custom install script
+[3.422s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/environment/pythonpath.sh
+[3.422s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/environment/pythonpath.dsv
+[3.423s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/local/lib/python3.10/dist-packages/diagnostic_updater-4.3.1-py3.10.egg-info/PKG-INFO
+[3.423s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/local/lib/python3.10/dist-packages/diagnostic_updater-4.3.1-py3.10.egg-info/SOURCES.txt
+[3.423s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/local/lib/python3.10/dist-packages/diagnostic_updater-4.3.1-py3.10.egg-info/dependency_links.txt
+[3.423s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/local/lib/python3.10/dist-packages/diagnostic_updater-4.3.1-py3.10.egg-info/top_level.txt
+[3.425s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/local/lib/python3.10/dist-packages/diagnostic_updater/__init__.py
+[3.425s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/local/lib/python3.10/dist-packages/diagnostic_updater/_diagnostic_status_wrapper.py
+[3.425s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/local/lib/python3.10/dist-packages/diagnostic_updater/_diagnostic_updater.py
+[3.426s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/local/lib/python3.10/dist-packages/diagnostic_updater/_publisher.py
+[3.426s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/local/lib/python3.10/dist-packages/diagnostic_updater/_update_functions.py
+[3.426s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/local/lib/python3.10/dist-packages/diagnostic_updater/example.py
+[3.426s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/lib/diagnostic_updater/example.py
+[3.426s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/lib/diagnostic_updater/example
+[3.427s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/include/diagnostic_updater/diagnostic_status_wrapper.hpp
+[3.428s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/include/diagnostic_updater/diagnostic_updater.hpp
+[3.428s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/include/diagnostic_updater/publisher.hpp
+[3.428s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/include/diagnostic_updater/update_functions.hpp
+[3.428s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/environment/library_path.sh
+[3.429s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/environment/library_path.dsv
+[3.430s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/ament_index/resource_index/package_run_dependencies/diagnostic_updater
+[3.430s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/ament_index/resource_index/parent_prefix_path/diagnostic_updater
+[3.430s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/environment/ament_prefix_path.sh
+[3.430s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/environment/ament_prefix_path.dsv
+[3.431s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/environment/path.sh
+[3.431s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/environment/path.dsv
+[3.431s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/local_setup.bash
+[3.431s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/local_setup.sh
+[3.432s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/local_setup.zsh
+[3.432s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/local_setup.dsv
+[3.433s] -- Symlinking: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/package.dsv
+[3.445s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/ament_index/resource_index/packages/diagnostic_updater
+[3.445s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/cmake/ament_cmake_export_targets-extras.cmake
+[3.445s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.446s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/cmake/ament_cmake_export_libraries-extras.cmake
+[3.446s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.446s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/cmake/diagnostic_updaterConfig.cmake
+[3.446s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/cmake/diagnostic_updaterConfig-version.cmake
+[3.447s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/package.xml
+[3.448s] -- Up-to-date: /home/mewert/Desktop/luna/install/diagnostic_updater/lib/libdiagnostic_updater.so
+[3.498s] Listing '/home/mewert/Desktop/luna/install/diagnostic_updater/local/lib/python3.10/dist-packages/diagnostic_updater'...
+[3.505s] -- Up-to-date: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/cmake/diagnostic_updaterTargetsExport.cmake
+[3.505s] -- Up-to-date: /home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/cmake/diagnostic_updaterTargetsExport-noconfig.cmake
+[3.517s] Invoked command in '/home/mewert/Desktop/luna/build/diagnostic_updater' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --install /home/mewert/Desktop/luna/build/diagnostic_updater

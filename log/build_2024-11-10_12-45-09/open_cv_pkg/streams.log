@@ -1,0 +1,19 @@
+[0.836s] Invoking command in '/home/mewert/Desktop/luna/build/open_cv_pkg': PYTHONPATH=/home/mewert/Desktop/luna/build/open_cv_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mewert/Desktop/luna/install/open_cv_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/mewert/Desktop/luna/build/open_cv_pkg/build --no-deps symlink_data
+[1.170s] running develop
+[1.171s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.171s]   warnings.warn(
+[1.370s] running egg_info
+[1.371s] writing open_cv_pkg.egg-info/PKG-INFO
+[1.372s] writing dependency_links to open_cv_pkg.egg-info/dependency_links.txt
+[1.372s] writing entry points to open_cv_pkg.egg-info/entry_points.txt
+[1.373s] writing requirements to open_cv_pkg.egg-info/requires.txt
+[1.373s] writing top-level names to open_cv_pkg.egg-info/top_level.txt
+[1.373s] reading manifest file 'open_cv_pkg.egg-info/SOURCES.txt'
+[1.374s] writing manifest file 'open_cv_pkg.egg-info/SOURCES.txt'
+[1.376s] running build_ext
+[1.376s] Creating /home/mewert/Desktop/luna/install/open_cv_pkg/lib/python3.10/site-packages/open-cv-pkg.egg-link (link to .)
+[1.378s] Installing object_detection script to /home/mewert/Desktop/luna/install/open_cv_pkg/lib/open_cv_pkg
+[1.378s] 
+[1.379s] Installed /home/mewert/Desktop/luna/build/open_cv_pkg
+[1.379s] running symlink_data
+[1.428s] Invoked command in '/home/mewert/Desktop/luna/build/open_cv_pkg' returned '0': PYTHONPATH=/home/mewert/Desktop/luna/build/open_cv_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mewert/Desktop/luna/install/open_cv_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/mewert/Desktop/luna/build/open_cv_pkg/build --no-deps symlink_data

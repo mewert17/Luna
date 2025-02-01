@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: open-cv-pkg
+Version: 0.0.0
+Summary: Package for object detection and occupancy grid generation from point cloud
+Maintainer: mewert
+Maintainer-email: mewert@todo.todo
+License: MIT
+Platform: UNKNOWN
+
+UNKNOWN
+

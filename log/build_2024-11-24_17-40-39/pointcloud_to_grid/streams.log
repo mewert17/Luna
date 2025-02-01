@@ -1,0 +1,129 @@
+[0.688s] Invoking command in '/home/mewert/Desktop/luna/build/pointcloud_to_grid': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake /home/mewert/Desktop/luna/src/pointcloud_to_grid -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mewert/Desktop/luna/install/pointcloud_to_grid
+[0.832s] -- The C compiler identification is GNU 11.4.0
+[1.053s] -- The CXX compiler identification is GNU 11.4.0
+[1.074s] -- Detecting C compiler ABI info
+[1.216s] -- Detecting C compiler ABI info - done
+[1.232s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.234s] -- Detecting C compile features
+[1.237s] -- Detecting C compile features - done
+[1.258s] -- Detecting CXX compiler ABI info
+[1.428s] -- Detecting CXX compiler ABI info - done
+[1.445s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.448s] -- Detecting CXX compile features
+[1.448s] -- Detecting CXX compile features - done
+[1.460s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.459s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.565s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.639s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[2.741s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.752s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.772s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.799s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.837s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.944s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.951s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.103s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.149s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.217s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.245s] -- Looking for pthread.h
+[3.433s] -- Looking for pthread.h - found
+[3.433s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.574s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.576s] -- Found Threads: TRUE  
+[3.732s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[3.826s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[3.904s] -- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)
+[3.953s] -- Found tf2: 0.25.8 (/opt/ros/humble/share/tf2/cmake)
+[3.977s] -- Found tf2_msgs: 0.25.8 (/opt/ros/humble/share/tf2_msgs/cmake)
+[4.091s] -- Found tf2_ros: 0.25.8 (/opt/ros/humble/share/tf2_ros/cmake)
+[4.227s] -- Found tf2_geometry_msgs: 0.25.8 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[4.258s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[4.260s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[4.260s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[4.273s] -- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+[4.393s] -- Checking for module 'eigen3'
+[4.423s] --   Found eigen3, version 3.4.0
+[4.483s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[4.483s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[4.581s] -- Checking for module 'flann'
+[4.608s] --   Found flann, version 1.9.1
+[4.676s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[4.676s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[6.437s] -- Checking for module 'libusb-1.0'
+[6.458s] --   Found libusb-1.0, version 1.0.25
+[6.508s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[6.510s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[6.593s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[6.841s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[6.850s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[6.859s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[7.106s] -- Found Qhull version 8.0.2
+[7.359s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[7.608s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[7.610s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[7.612s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[7.614s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[7.616s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[7.618s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[7.618s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[7.619s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[7.621s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[7.623s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[7.624s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[7.626s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[7.628s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[7.630s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[7.632s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[7.634s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[7.636s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[7.637s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[7.639s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[7.641s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[7.642s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[7.643s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[7.644s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[7.646s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[7.648s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[7.720s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[7.868s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[7.874s] -- Configured cppcheck include dirs: /home/mewert/Desktop/luna/src/pointcloud_to_grid/include
+[7.874s] -- Configured cppcheck exclude dirs and/or files: 
+[7.877s] -- Added test 'flake8' to check Python code syntax and style conventions
+[7.880s] -- Added test 'lint_cmake' to check CMake code style
+[7.882s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[7.887s] -- Added test 'uncrustify' to check C / C++ code style
+[7.887s] -- Configured uncrustify additional arguments: 
+[7.889s] -- Added test 'xmllint' to check XML markup files
+[7.892s] -- Configuring done
+[8.018s] -- Generating done
+[8.024s] -- Build files have been written to: /home/mewert/Desktop/luna/build/pointcloud_to_grid
+[8.052s] Invoked command in '/home/mewert/Desktop/luna/build/pointcloud_to_grid' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake /home/mewert/Desktop/luna/src/pointcloud_to_grid -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mewert/Desktop/luna/install/pointcloud_to_grid
+[8.053s] Invoking command in '/home/mewert/Desktop/luna/build/pointcloud_to_grid': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mewert/Desktop/luna/build/pointcloud_to_grid -- -j6 -l6
+[8.125s] [ 50%] [32mBuilding CXX object CMakeFiles/pointcloud_to_grid_node.dir/src/pointcloud_to_grid_node.cpp.o[0m
+[8.125s] [ 50%] [32mBuilding CXX object CMakeFiles/grid_trajectory.dir/src/grid_trajectory.cpp.o[0m
+[20.709s] [01m[K/home/mewert/Desktop/luna/src/pointcloud_to_grid/src/pointcloud_to_grid_node.cpp:[m[K In constructor ‘[01m[KPointCloudToGrid::PointCloudToGrid()[m[K’:
+[20.709s] [01m[K/home/mewert/Desktop/luna/src/pointcloud_to_grid/src/pointcloud_to_grid_node.cpp:98:60:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K/[m[K’ token
+[20.709s]    98 |     this->declare_parameter<std::string>("cloud_in_topic", [01;31m[K/[m[Kcamera/camera/depth/color/points);
+[20.709s]       |                                                            [01;31m[K^[m[K
+[20.726s] [01m[K/home/mewert/Desktop/luna/src/pointcloud_to_grid/src/pointcloud_to_grid_node.cpp:98:61:[m[K [01;31m[Kerror: [m[K‘[01m[Kcamera[m[K’ was not declared in this scope
+[20.726s]    98 |     this->declare_parameter<std::string>("cloud_in_topic", /[01;31m[Kcamera[m[K/camera/depth/color/points);
+[20.727s]       |                                                             [01;31m[K^~~~~~[m[K
+[20.747s] [01m[K/home/mewert/Desktop/luna/src/pointcloud_to_grid/src/pointcloud_to_grid_node.cpp:98:75:[m[K [01;31m[Kerror: [m[K‘[01m[Kdepth[m[K’ was not declared in this scope
+[20.747s]    98 | are_parameter<std::string>("cloud_in_topic", /camera/camera/[01;31m[Kdepth[m[K/color/points);
+[20.747s]       |                                                             [01;31m[K^~~~~[m[K
+[20.747s] 
+[20.763s] [01m[K/home/mewert/Desktop/luna/src/pointcloud_to_grid/src/pointcloud_to_grid_node.cpp:98:81:[m[K [01;31m[Kerror: [m[K‘[01m[Kcolor[m[K’ was not declared in this scope
+[20.763s]    98 | rameter<std::string>("cloud_in_topic", /camera/camera/depth/[01;31m[Kcolor[m[K/points);
+[20.763s]       |                                                             [01;31m[K^~~~~[m[K
+[20.763s] 
+[20.784s] [01m[K/home/mewert/Desktop/luna/src/pointcloud_to_grid/src/pointcloud_to_grid_node.cpp:98:87:[m[K [01;31m[Kerror: [m[K‘[01m[Kpoints[m[K’ was not declared in this scope; did you mean ‘[01m[Kprintf[m[K’?
+[20.784s]    98 | eter<std::string>("cloud_in_topic", /camera/camera/depth/color/[01;31m[Kpoints[m[K);
+[20.784s]       |                                                                [01;31m[K^~~~~~[m[K
+[20.785s]       |                                                                [32m[Kprintf[m[K
+[25.586s] gmake[2]: *** [CMakeFiles/pointcloud_to_grid_node.dir/build.make:76: CMakeFiles/pointcloud_to_grid_node.dir/src/pointcloud_to_grid_node.cpp.o] Error 1
+[25.586s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/pointcloud_to_grid_node.dir/all] Error 2
+[25.586s] gmake[1]: *** Waiting for unfinished jobs....
+[33.766s] [ 75%] [32m[1mLinking CXX executable grid_trajectory[0m
+[35.108s] [ 75%] Built target grid_trajectory
+[35.110s] gmake: *** [Makefile:146: all] Error 2
+[35.113s] Invoked command in '/home/mewert/Desktop/luna/build/pointcloud_to_grid' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble /usr/bin/cmake --build /home/mewert/Desktop/luna/build/pointcloud_to_grid -- -j6 -l6

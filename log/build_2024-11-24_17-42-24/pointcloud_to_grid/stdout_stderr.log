@@ -1,0 +1,15 @@
+[35m[1mConsolidate compiler generated dependencies of target grid_trajectory[0m
+[35m[1mConsolidate compiler generated dependencies of target pointcloud_to_grid_node[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/pointcloud_to_grid_node.dir/src/pointcloud_to_grid_node.cpp.o[0m
+[ 75%] Built target grid_trajectory
+[01m[K/home/mewert/Desktop/luna/src/pointcloud_to_grid/src/pointcloud_to_grid_node.cpp:[m[K In constructor ‘[01m[KPointCloudToGrid::PointCloudToGrid()[m[K’:
+[01m[K/home/mewert/Desktop/luna/src/pointcloud_to_grid/src/pointcloud_to_grid_node.cpp:98:96:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+   98 | er<std::string>("cloud_in_topic", "/camera/camera/depth/color/points)"[01;31m[K;[m[K
+      |                                                                       [01;31m[K^[m[K
+
+[01m[K/home/mewert/Desktop/luna/src/pointcloud_to_grid/src/pointcloud_to_grid_node.cpp:98:41:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+   98 |     this->declare_parameter<std::string>[01;36m[K([m[K"cloud_in_topic", "/camera/camera/depth/color/points)";
+      |                                         [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/pointcloud_to_grid_node.dir/build.make:76: CMakeFiles/pointcloud_to_grid_node.dir/src/pointcloud_to_grid_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/pointcloud_to_grid_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

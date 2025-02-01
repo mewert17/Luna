@@ -1,0 +1,1 @@
+/home/mewert/Desktop/luna/build/diagnostic_updater/ament_cmake_core/diagnostic_updaterConfig-version.cmake

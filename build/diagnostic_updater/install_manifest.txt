@@ -1,0 +1,3 @@
+/home/mewert/Desktop/luna/install/diagnostic_updater/lib/libdiagnostic_updater.so
+/home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/cmake/diagnostic_updaterTargetsExport.cmake
+/home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/cmake/diagnostic_updaterTargetsExport-noconfig.cmake

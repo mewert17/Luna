@@ -1,0 +1,888 @@
+[0.000000] (-) TimerEvent: {}
+[0.001873] (diagnostic_aggregator) JobQueued: {'identifier': 'diagnostic_aggregator', 'dependencies': OrderedDict()}
+[0.002102] (diagnostic_updater) JobQueued: {'identifier': 'diagnostic_updater', 'dependencies': OrderedDict()}
+[0.002423] (open_cv_pkg) JobQueued: {'identifier': 'open_cv_pkg', 'dependencies': OrderedDict()}
+[0.002463] (pointcloud_to_grid) JobQueued: {'identifier': 'pointcloud_to_grid', 'dependencies': OrderedDict()}
+[0.002488] (realsense2_camera_msgs) JobQueued: {'identifier': 'realsense2_camera_msgs', 'dependencies': OrderedDict()}
+[0.002512] (diagnostic_common_diagnostics) JobQueued: {'identifier': 'diagnostic_common_diagnostics', 'dependencies': OrderedDict([('diagnostic_updater', '/home/mewert/Desktop/luna/install/diagnostic_updater')])}
+[0.002548] (realsense2_camera) JobQueued: {'identifier': 'realsense2_camera', 'dependencies': OrderedDict([('diagnostic_updater', '/home/mewert/Desktop/luna/install/diagnostic_updater'), ('realsense2_camera_msgs', '/home/mewert/Desktop/luna/install/realsense2_camera_msgs')])}
+[0.002801] (realsense2_description) JobQueued: {'identifier': 'realsense2_description', 'dependencies': OrderedDict([('realsense2_camera_msgs', '/home/mewert/Desktop/luna/install/realsense2_camera_msgs')])}
+[0.002845] (self_test) JobQueued: {'identifier': 'self_test', 'dependencies': OrderedDict([('diagnostic_updater', '/home/mewert/Desktop/luna/install/diagnostic_updater')])}
+[0.002882] (diagnostics) JobQueued: {'identifier': 'diagnostics', 'dependencies': OrderedDict([('diagnostic_aggregator', '/home/mewert/Desktop/luna/install/diagnostic_aggregator'), ('diagnostic_updater', '/home/mewert/Desktop/luna/install/diagnostic_updater'), ('diagnostic_common_diagnostics', '/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics'), ('self_test', '/home/mewert/Desktop/luna/install/self_test')])}
+[0.002941] (diagnostic_updater) JobStarted: {'identifier': 'diagnostic_updater'}
+[0.014786] (realsense2_camera_msgs) JobStarted: {'identifier': 'realsense2_camera_msgs'}
+[0.021405] (diagnostic_aggregator) JobStarted: {'identifier': 'diagnostic_aggregator'}
+[0.026790] (open_cv_pkg) JobStarted: {'identifier': 'open_cv_pkg'}
+[0.039050] (pointcloud_to_grid) JobStarted: {'identifier': 'pointcloud_to_grid'}
+[0.045930] (diagnostic_updater) JobProgress: {'identifier': 'diagnostic_updater', 'progress': 'cmake'}
+[0.046633] (diagnostic_updater) JobProgress: {'identifier': 'diagnostic_updater', 'progress': 'build'}
+[0.047870] (diagnostic_updater) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mewert/Desktop/luna/build/diagnostic_updater', '--', '-j6', '-l6'], 'cwd': '/home/mewert/Desktop/luna/build/diagnostic_updater', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mewert'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mewert'), ('OLDPWD', '/home/mewert/Desktop/luna'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3194'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mewert/Desktop/luna/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mewert'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mewert'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/mewert/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Luna:@/tmp/.ICE-unix/3152,unix/Luna:/tmp/.ICE-unix/3152'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7c487d56_80ca_4859_b5f7_e5881b5d64d8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Y5XWX2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.420'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/pointcloud_to_grid:/home/mewert/Desktop/luna/install/open_cv_pkg:/home/mewert/Desktop/luna/install/my_pointcloud_pkg:/home/mewert/Desktop/luna/install/my_octomap_pkg:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mewert/Desktop/luna/build/diagnostic_updater'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/mewert/Desktop/luna/build/open_cv_pkg:/home/mewert/Desktop/luna/install/open_cv_pkg/lib/python3.10/site-packages:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/local/lib/python3.10/dist-packages:/home/mewert/Desktop/luna/install/diagnostic_updater/local/lib/python3.10/dist-packages:/home/mewert/Desktop/luna/install/diagnostic_aggregator/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/pointcloud_to_grid:/home/mewert/Desktop/luna/install/my_pointcloud_pkg:/home/mewert/Desktop/luna/install/my_octomap_pkg:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble')]), 'shell': False}
+[0.052307] (realsense2_camera_msgs) JobProgress: {'identifier': 'realsense2_camera_msgs', 'progress': 'cmake'}
+[0.053555] (realsense2_camera_msgs) JobProgress: {'identifier': 'realsense2_camera_msgs', 'progress': 'build'}
+[0.054490] (realsense2_camera_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mewert/Desktop/luna/build/realsense2_camera_msgs', '--', '-j6', '-l6'], 'cwd': '/home/mewert/Desktop/luna/build/realsense2_camera_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mewert'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mewert'), ('OLDPWD', '/home/mewert/Desktop/luna'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3194'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mewert/Desktop/luna/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mewert'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mewert'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/mewert/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Luna:@/tmp/.ICE-unix/3152,unix/Luna:/tmp/.ICE-unix/3152'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7c487d56_80ca_4859_b5f7_e5881b5d64d8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Y5XWX2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.420'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/pointcloud_to_grid:/home/mewert/Desktop/luna/install/open_cv_pkg:/home/mewert/Desktop/luna/install/my_pointcloud_pkg:/home/mewert/Desktop/luna/install/my_octomap_pkg:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mewert/Desktop/luna/build/realsense2_camera_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/mewert/Desktop/luna/build/open_cv_pkg:/home/mewert/Desktop/luna/install/open_cv_pkg/lib/python3.10/site-packages:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/local/lib/python3.10/dist-packages:/home/mewert/Desktop/luna/install/diagnostic_updater/local/lib/python3.10/dist-packages:/home/mewert/Desktop/luna/install/diagnostic_aggregator/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/pointcloud_to_grid:/home/mewert/Desktop/luna/install/my_pointcloud_pkg:/home/mewert/Desktop/luna/install/my_octomap_pkg:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble')]), 'shell': False}
+[0.057218] (diagnostic_aggregator) JobProgress: {'identifier': 'diagnostic_aggregator', 'progress': 'cmake'}
+[0.057682] (diagnostic_aggregator) JobProgress: {'identifier': 'diagnostic_aggregator', 'progress': 'build'}
+[0.058745] (diagnostic_aggregator) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mewert/Desktop/luna/build/diagnostic_aggregator', '--', '-j6', '-l6'], 'cwd': '/home/mewert/Desktop/luna/build/diagnostic_aggregator', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mewert'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mewert'), ('OLDPWD', '/home/mewert/Desktop/luna'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3194'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mewert/Desktop/luna/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mewert'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mewert'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/mewert/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Luna:@/tmp/.ICE-unix/3152,unix/Luna:/tmp/.ICE-unix/3152'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7c487d56_80ca_4859_b5f7_e5881b5d64d8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Y5XWX2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.420'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/pointcloud_to_grid:/home/mewert/Desktop/luna/install/open_cv_pkg:/home/mewert/Desktop/luna/install/my_pointcloud_pkg:/home/mewert/Desktop/luna/install/my_octomap_pkg:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mewert/Desktop/luna/build/diagnostic_aggregator'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/mewert/Desktop/luna/build/open_cv_pkg:/home/mewert/Desktop/luna/install/open_cv_pkg/lib/python3.10/site-packages:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/local/lib/python3.10/dist-packages:/home/mewert/Desktop/luna/install/diagnostic_updater/local/lib/python3.10/dist-packages:/home/mewert/Desktop/luna/install/diagnostic_aggregator/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/pointcloud_to_grid:/home/mewert/Desktop/luna/install/my_pointcloud_pkg:/home/mewert/Desktop/luna/install/my_octomap_pkg:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble')]), 'shell': False}
+[0.099855] (-) TimerEvent: {}
+[0.207150] (-) TimerEvent: {}
+[0.307813] (-) TimerEvent: {}
+[0.423099] (-) TimerEvent: {}
+[0.530845] (-) TimerEvent: {}
+[0.645811] (-) TimerEvent: {}
+[0.751927] (-) TimerEvent: {}
+[0.852304] (-) TimerEvent: {}
+[0.982040] (-) TimerEvent: {}
+[1.106910] (-) TimerEvent: {}
+[1.212034] (-) TimerEvent: {}
+[1.327584] (-) TimerEvent: {}
+[1.452467] (-) TimerEvent: {}
+[1.558940] (diagnostic_updater) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[1.559617] (-) TimerEvent: {}
+[1.559872] (diagnostic_updater) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[1.560027] (diagnostic_updater) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/diagnostic_updater.dir/src/diagnostic_updater.cpp.o\x1b[0m\n'}
+[1.560123] (diagnostic_updater) StdoutLine: {'line': b'[ 21%] Built target ament_cmake_python_symlink_diagnostic_updater\n'}
+[1.560198] (diagnostic_updater) StdoutLine: {'line': b'running egg_info\n'}
+[1.560266] (diagnostic_updater) StdoutLine: {'line': b'writing diagnostic_updater.egg-info/PKG-INFO\n'}
+[1.560334] (diagnostic_updater) StdoutLine: {'line': b'writing dependency_links to diagnostic_updater.egg-info/dependency_links.txt\n'}
+[1.560403] (diagnostic_updater) StdoutLine: {'line': b'writing top-level names to diagnostic_updater.egg-info/top_level.txt\n'}
+[1.560469] (diagnostic_updater) StdoutLine: {'line': b"reading manifest file 'diagnostic_updater.egg-info/SOURCES.txt'\n"}
+[1.560535] (diagnostic_updater) StdoutLine: {'line': b'[ 21%] Built target ament_cmake_python_build_diagnostic_updater_egg\n'}
+[1.573693] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 11%] Built target realsense2_camera_msgs__rosidl_generator_c\n'}
+[1.574079] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 12%] Built target realsense2_camera_msgs__cpp\n'}
+[1.574395] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_symlink_realsense2_camera_msgs\n'}
+[1.574503] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 23%] Built target realsense2_camera_msgs__rosidl_typesupport_c\n'}
+[1.574579] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/realsense2_camera_msgs/msg/imu_info__type_support.cpp.o\x1b[0m\n'}
+[1.574660] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 36%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_c\n'}
+[1.574728] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/realsense2_camera_msgs/msg/detail/dds_fastrtps/imu_info__type_support.cpp.o\x1b[0m\n'}
+[1.574800] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/msg/detail/imu_info__type_support_c.cpp.o\x1b[0m\n'}
+[1.574868] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/realsense2_camera_msgs/msg/extrinsics__type_support.cpp.o\x1b[0m\n'}
+[1.575081] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/realsense2_camera_msgs/msg/metadata__type_support.cpp.o\x1b[0m\n'}
+[1.575154] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/msg/detail/imu_info__type_support.cpp.o\x1b[0m\n'}
+[1.575234] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/msg/detail/extrinsics__type_support_c.cpp.o\x1b[0m\n'}
+[1.575305] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/msg/detail/extrinsics__type_support.cpp.o\x1b[0m\n'}
+[1.575373] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/realsense2_camera_msgs/msg/detail/dds_fastrtps/extrinsics__type_support.cpp.o\x1b[0m\n'}
+[1.575448] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/msg/detail/metadata__type_support_c.cpp.o\x1b[0m\n'}
+[1.575516] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/realsense2_camera_msgs/msg/rgbd__type_support.cpp.o\x1b[0m\n'}
+[1.575583] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/realsense2_camera_msgs/srv/device_info__type_support.cpp.o\x1b[0m\n'}
+[1.612888] (pointcloud_to_grid) JobProgress: {'identifier': 'pointcloud_to_grid', 'progress': 'cmake'}
+[1.613011] (pointcloud_to_grid) JobProgress: {'identifier': 'pointcloud_to_grid', 'progress': 'build'}
+[1.613053] (pointcloud_to_grid) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mewert/Desktop/luna/build/pointcloud_to_grid', '--', '-j6', '-l6'], 'cwd': '/home/mewert/Desktop/luna/build/pointcloud_to_grid', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mewert'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mewert'), ('OLDPWD', '/home/mewert/Desktop/luna'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3194'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mewert/Desktop/luna/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mewert'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mewert'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/mewert/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Luna:@/tmp/.ICE-unix/3152,unix/Luna:/tmp/.ICE-unix/3152'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7c487d56_80ca_4859_b5f7_e5881b5d64d8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Y5XWX2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.420'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/pointcloud_to_grid:/home/mewert/Desktop/luna/install/open_cv_pkg:/home/mewert/Desktop/luna/install/my_pointcloud_pkg:/home/mewert/Desktop/luna/install/my_octomap_pkg:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mewert/Desktop/luna/build/pointcloud_to_grid'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/mewert/Desktop/luna/build/open_cv_pkg:/home/mewert/Desktop/luna/install/open_cv_pkg/lib/python3.10/site-packages:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/local/lib/python3.10/dist-packages:/home/mewert/Desktop/luna/install/diagnostic_updater/local/lib/python3.10/dist-packages:/home/mewert/Desktop/luna/install/diagnostic_aggregator/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/pointcloud_to_grid:/home/mewert/Desktop/luna/install/my_pointcloud_pkg:/home/mewert/Desktop/luna/install/my_octomap_pkg:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble')]), 'shell': False}
+[1.622945] (diagnostic_aggregator) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/add_analyzer.dir/src/add_analyzer.cpp.o\x1b[0m\n'}
+[1.623205] (diagnostic_aggregator) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/diagnostic_aggregator.dir/src/status_item.cpp.o\x1b[0m\n'}
+[1.623332] (diagnostic_aggregator) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/diagnostic_aggregator.dir/src/analyzer_group.cpp.o\x1b[0m\n'}
+[1.623421] (diagnostic_aggregator) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/diagnostic_aggregator.dir/src/aggregator.cpp.o\x1b[0m\n'}
+[1.623493] (diagnostic_aggregator) StdoutLine: {'line': b'[ 33%] Built target ament_cmake_python_symlink_diagnostic_aggregator\n'}
+[1.623562] (diagnostic_aggregator) StdoutLine: {'line': b'running egg_info\n'}
+[1.623627] (diagnostic_aggregator) StdoutLine: {'line': b'writing diagnostic_aggregator.egg-info/PKG-INFO\n'}
+[1.623692] (diagnostic_aggregator) StdoutLine: {'line': b'writing dependency_links to diagnostic_aggregator.egg-info/dependency_links.txt\n'}
+[1.623756] (diagnostic_aggregator) StdoutLine: {'line': b'writing top-level names to diagnostic_aggregator.egg-info/top_level.txt\n'}
+[1.623825] (diagnostic_aggregator) StdoutLine: {'line': b"reading manifest file 'diagnostic_aggregator.egg-info/SOURCES.txt'\n"}
+[1.623889] (diagnostic_aggregator) StdoutLine: {'line': b'[ 33%] Built target ament_cmake_python_build_diagnostic_aggregator_egg\n'}
+[1.722989] (-) TimerEvent: {}
+[1.834348] (pointcloud_to_grid) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.834640] (-) TimerEvent: {}
+[1.836719] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/msg/detail/rgbd__type_support_c.cpp.o\x1b[0m\n'}
+[1.973507] (-) TimerEvent: {}
+[2.081409] (-) TimerEvent: {}
+[2.199832] (-) TimerEvent: {}
+[2.304107] (-) TimerEvent: {}
+[2.406563] (-) TimerEvent: {}
+[2.530033] (-) TimerEvent: {}
+[2.658606] (-) TimerEvent: {}
+[2.759063] (-) TimerEvent: {}
+[2.861854] (-) TimerEvent: {}
+[3.008629] (-) TimerEvent: {}
+[3.161592] (-) TimerEvent: {}
+[3.268309] (pointcloud_to_grid) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[3.268601] (-) TimerEvent: {}
+[3.306851] (diagnostic_updater) StdoutLine: {'line': b'[ 28%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[3.370953] (-) TimerEvent: {}
+[3.413371] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/realsense2_camera_msgs/srv/detail/device_info__type_support_c.cpp.o\x1b[0m\n'}
+[3.513114] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32m\x1b[1mLinking CXX shared library librealsense2_camera_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.513376] (-) TimerEvent: {}
+[3.601475] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/realsense2_camera_msgs/msg/detail/dds_fastrtps/metadata__type_support.cpp.o\x1b[0m\n'}
+[3.668702] (pointcloud_to_grid) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[3.668955] (-) TimerEvent: {}
+[3.686671] (diagnostic_updater) StdoutLine: {'line': b'[ 28%] Built target gtest_main\n'}
+[3.771868] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 55%] Built target realsense2_camera_msgs__rosidl_typesupport_cpp\n'}
+[3.772148] (-) TimerEvent: {}
+[3.849471] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/msg/detail/metadata__type_support.cpp.o\x1b[0m\n'}
+[3.878352] (-) TimerEvent: {}
+[3.884868] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/realsense2_camera_msgs/msg/detail/dds_fastrtps/rgbd__type_support.cpp.o\x1b[0m\n'}
+[3.959618] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/realsense2_camera_msgs/srv/detail/dds_fastrtps/device_info__type_support.cpp.o\x1b[0m\n'}
+[3.989920] (-) TimerEvent: {}
+[4.127672] (-) TimerEvent: {}
+[4.253134] (-) TimerEvent: {}
+[4.321258] (pointcloud_to_grid) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[4.336721] (pointcloud_to_grid) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.353579] (-) TimerEvent: {}
+[4.381325] (pointcloud_to_grid) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[4.440920] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library librealsense2_camera_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[4.478720] (-) TimerEvent: {}
+[4.585479] (-) TimerEvent: {}
+[4.614924] (pointcloud_to_grid) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.716589] (-) TimerEvent: {}
+[4.723968] (pointcloud_to_grid) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.830322] (-) TimerEvent: {}
+[4.976346] (-) TimerEvent: {}
+[5.082990] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/msg/detail/rgbd__type_support.cpp.o\x1b[0m\n'}
+[5.091182] (-) TimerEvent: {}
+[5.189249] (pointcloud_to_grid) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[5.209090] (-) TimerEvent: {}
+[5.209579] (pointcloud_to_grid) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[5.254418] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 68%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c\n'}
+[5.334670] (-) TimerEvent: {}
+[5.351615] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/realsense2_camera_msgs/srv/detail/device_info__type_support.cpp.o\x1b[0m\n'}
+[5.434921] (-) TimerEvent: {}
+[5.546417] (-) TimerEvent: {}
+[5.549284] (realsense2_camera_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[5.552493] (realsense2_camera_msgs) StdoutLine: {'line': b'writing realsense2_camera_msgs.egg-info/PKG-INFO\n'}
+[5.577777] (realsense2_camera_msgs) StdoutLine: {'line': b'writing dependency_links to realsense2_camera_msgs.egg-info/dependency_links.txt\n'}
+[5.578353] (realsense2_camera_msgs) StdoutLine: {'line': b'writing top-level names to realsense2_camera_msgs.egg-info/top_level.txt\n'}
+[5.585047] (realsense2_camera_msgs) StdoutLine: {'line': b"reading manifest file 'realsense2_camera_msgs.egg-info/SOURCES.txt'\n"}
+[5.673776] (-) TimerEvent: {}
+[5.849368] (-) TimerEvent: {}
+[5.971795] (-) TimerEvent: {}
+[6.087691] (-) TimerEvent: {}
+[6.155525] (open_cv_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/mewert/Desktop/luna/build/open_cv_pkg/build', '--no-deps', 'symlink_data'], 'cwd': '/home/mewert/Desktop/luna/build/open_cv_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'mewert', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/mewert', 'OLDPWD': '/home/mewert/Desktop/luna', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '3194', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/mewert/Desktop/luna/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'mewert', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'mewert', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/mewert/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/Luna:@/tmp/.ICE-unix/3152,unix/Luna:/tmp/.ICE-unix/3152', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/7c487d56_80ca_4859_b5f7_e5881b5d64d8', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.Y5XWX2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.420', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/pointcloud_to_grid:/home/mewert/Desktop/luna/install/open_cv_pkg:/home/mewert/Desktop/luna/install/my_pointcloud_pkg:/home/mewert/Desktop/luna/install/my_octomap_pkg:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/mewert/Desktop/luna/build/open_cv_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/mewert/Desktop/luna/build/open_cv_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mewert/Desktop/luna/install/open_cv_pkg/lib/python3.10/site-packages:/home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/mewert/Desktop/luna/build/open_cv_pkg:/home/mewert/Desktop/luna/install/open_cv_pkg/lib/python3.10/site-packages:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/local/lib/python3.10/dist-packages:/home/mewert/Desktop/luna/install/diagnostic_updater/local/lib/python3.10/dist-packages:/home/mewert/Desktop/luna/install/diagnostic_aggregator/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/pointcloud_to_grid:/home/mewert/Desktop/luna/install/my_pointcloud_pkg:/home/mewert/Desktop/luna/install/my_octomap_pkg:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostic_aggregator'}, 'shell': False}
+[6.185743] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 14%] Built target ament_cmake_python_build_realsense2_camera_msgs_egg\n'}
+[6.192739] (-) TimerEvent: {}
+[6.357916] (-) TimerEvent: {}
+[6.483756] (-) TimerEvent: {}
+[6.630307] (-) TimerEvent: {}
+[6.741737] (-) TimerEvent: {}
+[6.845336] (-) TimerEvent: {}
+[7.023726] (pointcloud_to_grid) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[7.023998] (-) TimerEvent: {}
+[7.137125] (-) TimerEvent: {}
+[7.332489] (-) TimerEvent: {}
+[7.511582] (-) TimerEvent: {}
+[7.718493] (-) TimerEvent: {}
+[7.834671] (-) TimerEvent: {}
+[7.960093] (-) TimerEvent: {}
+[8.172750] (-) TimerEvent: {}
+[8.239831] (pointcloud_to_grid) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[8.353115] (-) TimerEvent: {}
+[8.478155] (-) TimerEvent: {}
+[8.479182] (pointcloud_to_grid) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[8.600605] (-) TimerEvent: {}
+[8.777604] (-) TimerEvent: {}
+[8.778088] (pointcloud_to_grid) StdoutLine: {'line': b'-- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[8.817554] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library librealsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[8.916265] (-) TimerEvent: {}
+[8.930332] (pointcloud_to_grid) StdoutLine: {'line': b'-- Found tf2: 0.25.8 (/opt/ros/humble/share/tf2/cmake)\n'}
+[8.960135] (pointcloud_to_grid) StdoutLine: {'line': b'-- Found tf2_msgs: 0.25.8 (/opt/ros/humble/share/tf2_msgs/cmake)\n'}
+[9.029949] (-) TimerEvent: {}
+[9.143933] (-) TimerEvent: {}
+[9.373625] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 73%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[9.374084] (-) TimerEvent: {}
+[9.543141] (-) TimerEvent: {}
+[9.595525] (pointcloud_to_grid) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.8 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[9.660917] (-) TimerEvent: {}
+[9.809132] (-) TimerEvent: {}
+[9.913160] (-) TimerEvent: {}
+[9.933332] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library librealsense2_camera_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[10.022481] (open_cv_pkg) StdoutLine: {'line': b'running develop\n'}
+[10.022813] (-) TimerEvent: {}
+[10.023061] (open_cv_pkg) StderrLine: {'line': b'/home/mewert/.local/lib/python3.10/site-packages/setuptools/command/easy_install.py:157: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.\n'}
+[10.023256] (open_cv_pkg) StderrLine: {'line': b'  warnings.warn(\n'}
+[10.222895] (-) TimerEvent: {}
+[10.254355] (pointcloud_to_grid) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.8 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[10.351825] (-) TimerEvent: {}
+[10.387565] (pointcloud_to_grid) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[10.401868] (pointcloud_to_grid) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[10.402277] (pointcloud_to_grid) StdoutLine: {'line': b'-- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)\n'}
+[10.477660] (-) TimerEvent: {}
+[10.612264] (-) TimerEvent: {}
+[10.720529] (-) TimerEvent: {}
+[10.823725] (-) TimerEvent: {}
+[10.931280] (-) TimerEvent: {}
+[10.939837] (pointcloud_to_grid) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[11.059373] (-) TimerEvent: {}
+[11.186718] (pointcloud_to_grid) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[11.187238] (-) TimerEvent: {}
+[11.198996] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 79%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_cpp\n'}
+[11.301969] (-) TimerEvent: {}
+[11.476718] (-) TimerEvent: {}
+[11.523479] (open_cv_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[11.530425] (open_cv_pkg) StdoutLine: {'line': b'writing open_cv_pkg.egg-info/PKG-INFO\n'}
+[11.536829] (open_cv_pkg) StdoutLine: {'line': b'writing dependency_links to open_cv_pkg.egg-info/dependency_links.txt\n'}
+[11.537186] (open_cv_pkg) StdoutLine: {'line': b'writing entry points to open_cv_pkg.egg-info/entry_points.txt\n'}
+[11.537334] (open_cv_pkg) StdoutLine: {'line': b'writing requirements to open_cv_pkg.egg-info/requires.txt\n'}
+[11.537422] (open_cv_pkg) StdoutLine: {'line': b'writing top-level names to open_cv_pkg.egg-info/top_level.txt\n'}
+[11.602373] (open_cv_pkg) StdoutLine: {'line': b"reading manifest file 'open_cv_pkg.egg-info/SOURCES.txt'\n"}
+[11.602629] (-) TimerEvent: {}
+[11.811082] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 79%] Built target realsense2_camera_msgs\n'}
+[11.811388] (-) TimerEvent: {}
+[11.811640] (open_cv_pkg) StdoutLine: {'line': b'running build_ext\n'}
+[11.811842] (open_cv_pkg) StdoutLine: {'line': b'Creating /home/mewert/Desktop/luna/install/open_cv_pkg/lib/python3.10/site-packages/open-cv-pkg.egg-link (link to .)\n'}
+[11.826751] (open_cv_pkg) StdoutLine: {'line': b'Installing object_detection_node script to /home/mewert/Desktop/luna/install/open_cv_pkg/lib/open_cv_pkg\n'}
+[11.827047] (open_cv_pkg) StdoutLine: {'line': b'Installing og_from_pointcloud script to /home/mewert/Desktop/luna/install/open_cv_pkg/lib/open_cv_pkg\n'}
+[11.827184] (open_cv_pkg) StdoutLine: {'line': b'\n'}
+[11.827271] (open_cv_pkg) StdoutLine: {'line': b'Installed /home/mewert/Desktop/luna/build/open_cv_pkg\n'}
+[11.827340] (open_cv_pkg) StdoutLine: {'line': b'running symlink_data\n'}
+[11.913546] (-) TimerEvent: {}
+[11.985705] (open_cv_pkg) CommandEnded: {'returncode': 0}
+[12.023948] (-) TimerEvent: {}
+[12.119641] (open_cv_pkg) JobEnded: {'identifier': 'open_cv_pkg', 'rc': 0}
+[12.133919] (-) TimerEvent: {}
+[12.144702] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 80%] Built target realsense2_camera_msgs__py\n'}
+[12.289308] (-) TimerEvent: {}
+[12.308485] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/msg/_imu_info_s.c.o\x1b[0m\n'}
+[12.390343] (-) TimerEvent: {}
+[12.521850] (-) TimerEvent: {}
+[12.622694] (-) TimerEvent: {}
+[12.727573] (-) TimerEvent: {}
+[12.854562] (-) TimerEvent: {}
+[12.968653] (-) TimerEvent: {}
+[13.077476] (-) TimerEvent: {}
+[13.186233] (-) TimerEvent: {}
+[13.354385] (-) TimerEvent: {}
+[13.461168] (-) TimerEvent: {}
+[13.532013] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/srv/_device_info_s.c.o\x1b[0m\n'}
+[13.631124] (-) TimerEvent: {}
+[13.749328] (-) TimerEvent: {}
+[13.863391] (-) TimerEvent: {}
+[14.084996] (-) TimerEvent: {}
+[14.269015] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/msg/_rgbd_s.c.o\x1b[0m\n'}
+[14.269366] (-) TimerEvent: {}
+[14.374395] (-) TimerEvent: {}
+[14.475705] (-) TimerEvent: {}
+[14.732528] (-) TimerEvent: {}
+[14.913312] (-) TimerEvent: {}
+[15.014494] (-) TimerEvent: {}
+[15.210759] (-) TimerEvent: {}
+[15.366060] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/msg/_metadata_s.c.o\x1b[0m\n'}
+[15.366636] (-) TimerEvent: {}
+[15.607808] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_generator_py.dir/rosidl_generator_py/realsense2_camera_msgs/msg/_extrinsics_s.c.o\x1b[0m\n'}
+[15.608333] (-) TimerEvent: {}
+[15.762854] (-) TimerEvent: {}
+[15.866692] (-) TimerEvent: {}
+[15.984692] (-) TimerEvent: {}
+[16.085441] (-) TimerEvent: {}
+[16.193094] (-) TimerEvent: {}
+[16.229831] (pointcloud_to_grid) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[16.282764] (pointcloud_to_grid) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[16.328365] (-) TimerEvent: {}
+[16.385194] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/realsense2_camera_msgs/librealsense2_camera_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[16.445888] (-) TimerEvent: {}
+[16.557308] (-) TimerEvent: {}
+[16.696037] (-) TimerEvent: {}
+[16.805159] (-) TimerEvent: {}
+[16.872058] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 90%] Built target realsense2_camera_msgs__rosidl_generator_py\n'}
+[16.931267] (-) TimerEvent: {}
+[17.071303] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[17.071615] (-) TimerEvent: {}
+[17.184868] (-) TimerEvent: {}
+[17.422473] (-) TimerEvent: {}
+[17.522970] (pointcloud_to_grid) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[17.523316] (-) TimerEvent: {}
+[17.596993] (pointcloud_to_grid) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[17.617074] (pointcloud_to_grid) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[17.627461] (-) TimerEvent: {}
+[17.755591] (-) TimerEvent: {}
+[17.886494] (-) TimerEvent: {}
+[17.996418] (-) TimerEvent: {}
+[18.102594] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[18.103160] (-) TimerEvent: {}
+[18.256771] (-) TimerEvent: {}
+[18.300245] (diagnostic_updater) StdoutLine: {'line': b'[ 35%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[18.312657] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 93%] Built target realsense2_camera_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[18.375838] (-) TimerEvent: {}
+[18.513969] (-) TimerEvent: {}
+[18.542447] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[18.634105] (-) TimerEvent: {}
+[18.755104] (-) TimerEvent: {}
+[18.848397] (diagnostic_updater) StdoutLine: {'line': b'[ 35%] Built target gtest\n'}
+[18.856349] (-) TimerEvent: {}
+[18.871602] (pointcloud_to_grid) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[18.967592] (-) TimerEvent: {}
+[19.070374] (-) TimerEvent: {}
+[19.193335] (-) TimerEvent: {}
+[19.345543] (-) TimerEvent: {}
+[19.393666] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[19.451125] (-) TimerEvent: {}
+[19.553816] (-) TimerEvent: {}
+[19.554340] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 96%] Built target realsense2_camera_msgs__rosidl_typesupport_c__pyext\n'}
+[19.666856] (-) TimerEvent: {}
+[19.733957] (realsense2_camera_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32mBuilding C object CMakeFiles/realsense2_camera_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[19.781164] (-) TimerEvent: {}
+[19.781616] (pointcloud_to_grid) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[19.899994] (-) TimerEvent: {}
+[20.016964] (-) TimerEvent: {}
+[20.181010] (-) TimerEvent: {}
+[20.295602] (-) TimerEvent: {}
+[20.331909] (realsense2_camera_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[20.457842] (-) TimerEvent: {}
+[20.587601] (-) TimerEvent: {}
+[20.722986] (-) TimerEvent: {}
+[20.760099] (realsense2_camera_msgs) StdoutLine: {'line': b'[100%] Built target realsense2_camera_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[20.834891] (-) TimerEvent: {}
+[20.887705] (pointcloud_to_grid) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[20.927236] (realsense2_camera_msgs) CommandEnded: {'returncode': 0}
+[20.948952] (-) TimerEvent: {}
+[21.109637] (-) TimerEvent: {}
+[21.228117] (-) TimerEvent: {}
+[21.348938] (-) TimerEvent: {}
+[21.467106] (-) TimerEvent: {}
+[21.609388] (-) TimerEvent: {}
+[21.644131] (pointcloud_to_grid) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[21.644493] (pointcloud_to_grid) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/mewert/Desktop/luna/src/pointcloud_to_grid/include\n'}
+[21.644652] (pointcloud_to_grid) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[21.708784] (pointcloud_to_grid) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[21.711582] (-) TimerEvent: {}
+[21.756879] (pointcloud_to_grid) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[21.757785] (pointcloud_to_grid) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[21.792326] (pointcloud_to_grid) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[21.805197] (pointcloud_to_grid) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[21.805393] (pointcloud_to_grid) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[21.829056] (-) TimerEvent: {}
+[21.950117] (-) TimerEvent: {}
+[21.950893] (pointcloud_to_grid) StdoutLine: {'line': b'-- Configuring done\n'}
+[22.053169] (-) TimerEvent: {}
+[22.171946] (-) TimerEvent: {}
+[22.275464] (-) TimerEvent: {}
+[22.377517] (-) TimerEvent: {}
+[22.488253] (-) TimerEvent: {}
+[22.521846] (pointcloud_to_grid) StdoutLine: {'line': b'-- Generating done\n'}
+[22.527090] (pointcloud_to_grid) StdoutLine: {'line': b'-- Build files have been written to: /home/mewert/Desktop/luna/build/pointcloud_to_grid\n'}
+[22.559618] (diagnostic_aggregator) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking CXX executable add_analyzer\x1b[0m\n'}
+[22.619253] (-) TimerEvent: {}
+[22.725304] (-) TimerEvent: {}
+[22.853958] (-) TimerEvent: {}
+[22.924484] (pointcloud_to_grid) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/pointcloud_to_grid_node.dir/src/pointcloud_to_grid_node.cpp.o\x1b[0m\n'}
+[22.957317] (-) TimerEvent: {}
+[23.095448] (-) TimerEvent: {}
+[23.123438] (realsense2_camera_msgs) JobProgress: {'identifier': 'realsense2_camera_msgs', 'progress': 'install'}
+[23.155896] (realsense2_camera_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mewert/Desktop/luna/build/realsense2_camera_msgs'], 'cwd': '/home/mewert/Desktop/luna/build/realsense2_camera_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mewert'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mewert'), ('OLDPWD', '/home/mewert/Desktop/luna'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3194'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mewert/Desktop/luna/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mewert'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mewert'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/mewert/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Luna:@/tmp/.ICE-unix/3152,unix/Luna:/tmp/.ICE-unix/3152'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7c487d56_80ca_4859_b5f7_e5881b5d64d8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Y5XWX2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.420'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/pointcloud_to_grid:/home/mewert/Desktop/luna/install/open_cv_pkg:/home/mewert/Desktop/luna/install/my_pointcloud_pkg:/home/mewert/Desktop/luna/install/my_octomap_pkg:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mewert/Desktop/luna/build/realsense2_camera_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/mewert/Desktop/luna/build/open_cv_pkg:/home/mewert/Desktop/luna/install/open_cv_pkg/lib/python3.10/site-packages:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/local/lib/python3.10/dist-packages:/home/mewert/Desktop/luna/install/diagnostic_updater/local/lib/python3.10/dist-packages:/home/mewert/Desktop/luna/install/diagnostic_aggregator/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/pointcloud_to_grid:/home/mewert/Desktop/luna/install/my_pointcloud_pkg:/home/mewert/Desktop/luna/install/my_octomap_pkg:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble')]), 'shell': False}
+[23.204327] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[23.221139] (-) TimerEvent: {}
+[23.235486] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[23.235798] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/ament_index/resource_index/rosidl_interfaces/realsense2_camera_msgs\n'}
+[23.235993] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__functions.h\n'}
+[23.236162] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__struct.h\n'}
+[23.236245] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__type_support.h\n'}
+[23.236327] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__functions.h\n'}
+[23.236402] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__struct.h\n'}
+[23.236466] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__type_support.h\n'}
+[23.236530] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__functions.h\n'}
+[23.236593] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__struct.h\n'}
+[23.236656] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__type_support.h\n'}
+[23.236720] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__functions.h\n'}
+[23.236783] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__struct.h\n'}
+[23.236847] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__type_support.h\n'}
+[23.236911] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/extrinsics.h\n'}
+[23.236975] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/imu_info.h\n'}
+[23.237038] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/metadata.h\n'}
+[23.237100] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rgbd.h\n'}
+[23.237163] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[23.237236] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__functions.h\n'}
+[23.237300] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__struct.h\n'}
+[23.237366] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__type_support.h\n'}
+[23.237439] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/device_info.h\n'}
+[23.237502] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/library_path.sh\n'}
+[23.251445] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/library_path.dsv\n'}
+[23.251839] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_fastrtps_c.h\n'}
+[23.252036] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_fastrtps_c.h\n'}
+[23.252149] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_fastrtps_c.h\n'}
+[23.252256] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__rosidl_typesupport_fastrtps_c.h\n'}
+[23.252342] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[23.252431] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_fastrtps_c.h\n'}
+[23.252513] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_introspection_c.h\n'}
+[23.252588] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_introspection_c.h\n'}
+[23.252654] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_introspection_c.h\n'}
+[23.257617] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__rosidl_typesupport_introspection_c.h\n'}
+[23.257916] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[23.258082] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_introspection_c.h\n'}
+[23.258186] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__builder.hpp\n'}
+[23.258266] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__struct.hpp\n'}
+[23.258352] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__traits.hpp\n'}
+[23.258429] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__builder.hpp\n'}
+[23.258517] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__struct.hpp\n'}
+[23.258613] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__traits.hpp\n'}
+[23.280305] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__builder.hpp\n'}
+[23.280598] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__struct.hpp\n'}
+[23.280719] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__traits.hpp\n'}
+[23.280801] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__builder.hpp\n'}
+[23.280872] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__struct.hpp\n'}
+[23.339540] (-) TimerEvent: {}
+[23.371648] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__traits.hpp\n'}
+[23.371971] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/extrinsics.hpp\n'}
+[23.372087] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/imu_info.hpp\n'}
+[23.372200] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/metadata.hpp\n'}
+[23.372282] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rgbd.hpp\n'}
+[23.372351] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__builder.hpp\n'}
+[23.372420] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__struct.hpp\n'}
+[23.372487] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__traits.hpp\n'}
+[23.372552] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/device_info.hpp\n'}
+[23.372629] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[23.372829] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[23.372930] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[23.372996] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[23.373062] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[23.373138] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[23.373251] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/extrinsics__rosidl_typesupport_introspection_cpp.hpp\n'}
+[23.373346] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/imu_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[23.373420] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/metadata__rosidl_typesupport_introspection_cpp.hpp\n'}
+[23.373502] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/msg/detail/rgbd__rosidl_typesupport_introspection_cpp.hpp\n'}
+[23.373586] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/include/realsense2_camera_msgs/realsense2_camera_msgs/srv/detail/device_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[23.373661] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/pythonpath.sh\n'}
+[23.373728] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/pythonpath.dsv\n'}
+[23.373804] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.55.1-py3.10.egg-info/PKG-INFO\n'}
+[23.374139] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.55.1-py3.10.egg-info/SOURCES.txt\n'}
+[23.374285] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.55.1-py3.10.egg-info/dependency_links.txt\n'}
+[23.374377] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs-4.55.1-py3.10.egg-info/top_level.txt\n'}
+[23.374500] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/__init__.py\n'}
+[23.374591] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[23.374658] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[23.374722] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/_realsense2_camera_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[23.374787] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/librealsense2_camera_msgs__rosidl_generator_py.so\n'}
+[23.374862] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/__init__.py\n'}
+[23.374928] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_extrinsics.py\n'}
+[23.375011] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_extrinsics_s.c\n'}
+[23.375102] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_imu_info.py\n'}
+[23.375192] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_imu_info_s.c\n'}
+[23.375289] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_metadata.py\n'}
+[23.375374] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_metadata_s.c\n'}
+[23.375451] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_rgbd.py\n'}
+[23.375517] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg/_rgbd_s.c\n'}
+[23.375582] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[23.375648] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[23.375718] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[23.375791] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/__init__.py\n'}
+[23.375860] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_device_info.py\n'}
+[23.375926] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv/_device_info_s.c\n'}
+[23.405982] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[23.406371] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[23.406523] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/realsense2_camera_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[23.406682] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/IMUInfo.idl\n'}
+[23.406782] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Extrinsics.idl\n'}
+[23.406859] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Metadata.idl\n'}
+[23.406931] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/RGBD.idl\n'}
+[23.407011] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo.idl\n'}
+[23.407081] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/IMUInfo.msg\n'}
+[23.407151] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Extrinsics.msg\n'}
+[23.407218] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/Metadata.msg\n'}
+[23.407286] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/msg/RGBD.msg\n'}
+[23.407354] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo.srv\n'}
+[23.407420] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo_Request.msg\n'}
+[23.407496] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/srv/DeviceInfo_Response.msg\n'}
+[23.407563] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/ament_index/resource_index/package_run_dependencies/realsense2_camera_msgs\n'}
+[23.407649] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/ament_index/resource_index/parent_prefix_path/realsense2_camera_msgs\n'}
+[23.407739] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/ament_prefix_path.sh\n'}
+[23.407851] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/ament_prefix_path.dsv\n'}
+[23.407928] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/path.sh\n'}
+[23.408010] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/environment/path.dsv\n'}
+[23.408080] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.bash\n'}
+[23.408148] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.sh\n'}
+[23.408215] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.zsh\n'}
+[23.408281] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/local_setup.dsv\n'}
+[23.408346] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Symlinking: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.dsv\n'}
+[23.414355] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/ament_index/resource_index/packages/realsense2_camera_msgs\n'}
+[23.414613] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[23.414732] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[23.414819] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[23.414895] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[23.414964] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[23.415032] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[23.415121] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[23.418333] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgsConfig.cmake\n'}
+[23.418464] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgsConfig-version.cmake\n'}
+[23.418563] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.xml\n'}
+[23.421127] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_generator_c.so\n'}
+[23.424229] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[23.432902] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_introspection_c.so\n'}
+[23.438256] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_c.so\n'}
+[23.438569] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[23.440579] (-) TimerEvent: {}
+[23.442063] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Installing: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[23.442351] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[23.511604] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_cpp.so\n'}
+[23.545675] (-) TimerEvent: {}
+[23.647357] (-) TimerEvent: {}
+[23.750397] (-) TimerEvent: {}
+[23.771689] (realsense2_camera_msgs) StdoutLine: {'line': b"Listing '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs'...\n"}
+[23.771947] (realsense2_camera_msgs) StdoutLine: {'line': b"Listing '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/msg'...\n"}
+[23.772057] (realsense2_camera_msgs) StdoutLine: {'line': b"Listing '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages/realsense2_camera_msgs/srv'...\n"}
+[23.853570] (-) TimerEvent: {}
+[23.923346] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_generator_py.so\n'}
+[23.940923] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_cExport.cmake\n'}
+[23.941226] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[23.941336] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[23.941407] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[23.941478] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[23.941617] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[23.941710] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cExport.cmake\n'}
+[23.941775] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[23.941837] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_cppExport.cmake\n'}
+[23.941899] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[23.941962] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[23.942098] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[23.942171] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[23.942233] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[23.942301] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/realsense2_camera_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[23.942363] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_pyExport.cmake\n'}
+[23.942425] (realsense2_camera_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mewert/Desktop/luna/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake/export_realsense2_camera_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[23.957907] (realsense2_camera_msgs) CommandEnded: {'returncode': 0}
+[23.958671] (-) TimerEvent: {}
+[24.064320] (-) TimerEvent: {}
+[24.166708] (-) TimerEvent: {}
+[24.270345] (-) TimerEvent: {}
+[24.378306] (diagnostic_aggregator) StdoutLine: {'line': b'[ 41%] Built target add_analyzer\n'}
+[24.378610] (-) TimerEvent: {}
+[24.483208] (-) TimerEvent: {}
+[24.587484] (-) TimerEvent: {}
+[24.719831] (-) TimerEvent: {}
+[24.829299] (-) TimerEvent: {}
+[24.962827] (-) TimerEvent: {}
+[25.166618] (-) TimerEvent: {}
+[25.361966] (-) TimerEvent: {}
+[25.464058] (-) TimerEvent: {}
+[25.571272] (-) TimerEvent: {}
+[25.687230] (-) TimerEvent: {}
+[25.812570] (-) TimerEvent: {}
+[25.923176] (-) TimerEvent: {}
+[25.967343] (realsense2_camera_msgs) JobEnded: {'identifier': 'realsense2_camera_msgs', 'rc': 0}
+[25.968560] (realsense2_description) JobStarted: {'identifier': 'realsense2_description'}
+[26.031724] (-) TimerEvent: {}
+[26.071081] (realsense2_description) JobProgress: {'identifier': 'realsense2_description', 'progress': 'cmake'}
+[26.071201] (realsense2_description) JobProgress: {'identifier': 'realsense2_description', 'progress': 'build'}
+[26.071248] (realsense2_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mewert/Desktop/luna/build/realsense2_description', '--', '-j6', '-l6'], 'cwd': '/home/mewert/Desktop/luna/build/realsense2_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mewert'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mewert'), ('OLDPWD', '/home/mewert/Desktop/luna'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3194'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mewert/Desktop/luna/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mewert'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mewert'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/mewert/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Luna:@/tmp/.ICE-unix/3152,unix/Luna:/tmp/.ICE-unix/3152'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7c487d56_80ca_4859_b5f7_e5881b5d64d8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Y5XWX2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.420'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/pointcloud_to_grid:/home/mewert/Desktop/luna/install/open_cv_pkg:/home/mewert/Desktop/luna/install/my_pointcloud_pkg:/home/mewert/Desktop/luna/install/my_octomap_pkg:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mewert/Desktop/luna/build/realsense2_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/mewert/Desktop/luna/build/open_cv_pkg:/home/mewert/Desktop/luna/install/open_cv_pkg/lib/python3.10/site-packages:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/local/lib/python3.10/dist-packages:/home/mewert/Desktop/luna/install/diagnostic_updater/local/lib/python3.10/dist-packages:/home/mewert/Desktop/luna/install/diagnostic_aggregator/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/pointcloud_to_grid:/home/mewert/Desktop/luna/install/my_pointcloud_pkg:/home/mewert/Desktop/luna/install/my_octomap_pkg:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble')]), 'shell': False}
+[26.145435] (-) TimerEvent: {}
+[26.255737] (-) TimerEvent: {}
+[26.263238] (realsense2_description) CommandEnded: {'returncode': 0}
+[26.381572] (-) TimerEvent: {}
+[26.482487] (-) TimerEvent: {}
+[26.495058] (realsense2_description) JobProgress: {'identifier': 'realsense2_description', 'progress': 'install'}
+[26.495524] (realsense2_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mewert/Desktop/luna/build/realsense2_description'], 'cwd': '/home/mewert/Desktop/luna/build/realsense2_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mewert'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mewert'), ('OLDPWD', '/home/mewert/Desktop/luna'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3194'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mewert/Desktop/luna/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mewert'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mewert'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/mewert/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Luna:@/tmp/.ICE-unix/3152,unix/Luna:/tmp/.ICE-unix/3152'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7c487d56_80ca_4859_b5f7_e5881b5d64d8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Y5XWX2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.420'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/pointcloud_to_grid:/home/mewert/Desktop/luna/install/open_cv_pkg:/home/mewert/Desktop/luna/install/my_pointcloud_pkg:/home/mewert/Desktop/luna/install/my_octomap_pkg:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mewert/Desktop/luna/build/realsense2_description'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mewert/Desktop/luna/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:/home/mewert/Desktop/luna/build/open_cv_pkg:/home/mewert/Desktop/luna/install/open_cv_pkg/lib/python3.10/site-packages:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics/local/lib/python3.10/dist-packages:/home/mewert/Desktop/luna/install/diagnostic_updater/local/lib/python3.10/dist-packages:/home/mewert/Desktop/luna/install/diagnostic_aggregator/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/pointcloud_to_grid:/home/mewert/Desktop/luna/install/my_pointcloud_pkg:/home/mewert/Desktop/luna/install/my_octomap_pkg:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble')]), 'shell': False}
+[26.554072] (realsense2_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[26.555164] (realsense2_description) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[26.555297] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/launch/launch_utils.py\n'}
+[26.555383] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/launch/view_model.launch.py\n'}
+[26.555459] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/meshes/d405.stl\n'}
+[26.555525] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/meshes/d415.stl\n'}
+[26.555598] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/meshes/d435.dae\n'}
+[26.555660] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/meshes/d455.stl\n'}
+[26.555720] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/meshes/l515.dae\n'}
+[26.555779] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/meshes/plug.stl\n'}
+[26.555838] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/meshes/plug_collision.stl\n'}
+[26.555898] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/rviz/urdf.rviz\n'}
+[26.555959] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/urdf/_d405.urdf.xacro\n'}
+[26.556019] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/urdf/_d415.urdf.xacro\n'}
+[26.556076] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/urdf/_d435.urdf.xacro\n'}
+[26.556134] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/urdf/_d435i.urdf.xacro\n'}
+[26.556191] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/urdf/_d435i_imu_modules.urdf.xacro\n'}
+[26.556251] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/urdf/_d455.urdf.xacro\n'}
+[26.565359] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/urdf/_materials.urdf.xacro\n'}
+[26.565623] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/urdf/_r410.urdf.xacro\n'}
+[26.565877] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/urdf/_r430.urdf.xacro\n'}
+[26.566679] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/urdf/_usb_plug.urdf.xacro\n'}
+[26.567023] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/urdf/test_d405_camera.urdf.xacro\n'}
+[26.567380] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/urdf/test_d415_camera.urdf.xacro\n'}
+[26.567506] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/urdf/test_d435_camera.urdf.xacro\n'}
+[26.568551] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/urdf/test_d435_multiple_cameras.urdf.xacro\n'}
+[26.568655] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/urdf/test_d435i_camera.urdf.xacro\n'}
+[26.569267] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/urdf/test_d455_camera.urdf.xacro\n'}
+[26.569357] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/urdf/test_r410_camera.urdf.xacro\n'}
+[26.569416] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/urdf/test_r430_camera.urdf.xacro\n'}
+[26.569676] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/ament_index/resource_index/package_run_dependencies/realsense2_description\n'}
+[26.569747] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/ament_index/resource_index/parent_prefix_path/realsense2_description\n'}
+[26.569825] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/environment/ament_prefix_path.sh\n'}
+[26.569886] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/environment/ament_prefix_path.dsv\n'}
+[26.586902] (-) TimerEvent: {}
+[26.587395] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/environment/path.sh\n'}
+[26.587562] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/environment/path.dsv\n'}
+[26.594456] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/local_setup.bash\n'}
+[26.594567] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/local_setup.sh\n'}
+[26.617318] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/local_setup.zsh\n'}
+[26.618434] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/local_setup.dsv\n'}
+[26.618895] (realsense2_description) StdoutLine: {'line': b'-- Symlinking: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/package.dsv\n'}
+[26.624310] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/ament_index/resource_index/packages/realsense2_description\n'}
+[26.624783] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/cmake/realsense2_descriptionConfig.cmake\n'}
+[26.646858] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/cmake/realsense2_descriptionConfig-version.cmake\n'}
+[26.647506] (realsense2_description) StdoutLine: {'line': b'-- Up-to-date symlink: /home/mewert/Desktop/luna/install/realsense2_description/share/realsense2_description/package.xml\n'}
+[26.685107] (realsense2_description) CommandEnded: {'returncode': 0}
+[26.687868] (-) TimerEvent: {}
+[26.792164] (-) TimerEvent: {}
+[26.850318] (diagnostic_updater) StdoutLine: {'line': b'[ 42%] \x1b[32m\x1b[1mLinking CXX shared library libdiagnostic_updater.so\x1b[0m\n'}
+[26.910159] (-) TimerEvent: {}
+[27.019378] (realsense2_description) JobEnded: {'identifier': 'realsense2_description', 'rc': 0}
+[27.020151] (-) TimerEvent: {}
+[27.177346] (-) TimerEvent: {}
+[27.278921] (-) TimerEvent: {}
+[27.407060] (-) TimerEvent: {}
+[27.521549] (-) TimerEvent: {}
+[27.640263] (-) TimerEvent: {}
+[27.741279] (-) TimerEvent: {}
+[27.849068] (-) TimerEvent: {}
+[27.858423] (diagnostic_updater) StdoutLine: {'line': b'[ 50%] Built target diagnostic_updater\n'}
+[27.949860] (-) TimerEvent: {}
+[27.954344] (diagnostic_updater) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/diagnostic_status_wrapper_test.dir/test/diagnostic_status_wrapper_test.cpp.o\x1b[0m\n'}
+[28.050857] (-) TimerEvent: {}
+[28.159139] (-) TimerEvent: {}
+[28.267919] (-) TimerEvent: {}
+[28.368435] (-) TimerEvent: {}
+[28.475776] (-) TimerEvent: {}
+[28.610181] (-) TimerEvent: {}
+[28.741687] (-) TimerEvent: {}
+[28.845736] (-) TimerEvent: {}
+[28.957346] (-) TimerEvent: {}
+[29.059641] (-) TimerEvent: {}
+[29.161319] (-) TimerEvent: {}
+[29.271601] (-) TimerEvent: {}
+[29.380188] (-) TimerEvent: {}
+[29.496585] (-) TimerEvent: {}
+[29.644688] (-) TimerEvent: {}
+[29.757168] (-) TimerEvent: {}
+[29.868675] (-) TimerEvent: {}
+[29.981157] (-) TimerEvent: {}
+[30.108976] (-) TimerEvent: {}
+[30.212605] (-) TimerEvent: {}
+[30.352351] (-) TimerEvent: {}
+[30.455246] (-) TimerEvent: {}
+[30.567749] (-) TimerEvent: {}
+[30.716428] (-) TimerEvent: {}
+[30.843508] (-) TimerEvent: {}
+[30.955509] (-) TimerEvent: {}
+[31.077322] (-) TimerEvent: {}
+[31.189343] (-) TimerEvent: {}
+[31.307013] (-) TimerEvent: {}
+[31.424509] (-) TimerEvent: {}
+[31.540829] (-) TimerEvent: {}
+[31.644646] (-) TimerEvent: {}
+[31.649976] (diagnostic_updater) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX executable diagnostic_status_wrapper_test\x1b[0m\n'}
+[31.764722] (-) TimerEvent: {}
+[31.865792] (-) TimerEvent: {}
+[31.980843] (-) TimerEvent: {}
+[32.092739] (-) TimerEvent: {}
+[32.216242] (-) TimerEvent: {}
+[32.324484] (-) TimerEvent: {}
+[32.428535] (-) TimerEvent: {}
+[32.429096] (diagnostic_updater) StdoutLine: {'line': b'[ 57%] Built target diagnostic_status_wrapper_test\n'}
+[32.528823] (-) TimerEvent: {}
+[32.529306] (diagnostic_updater) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/status_msg_test.dir/test/status_msg_test.cpp.o\x1b[0m\n'}
+[32.633113] (-) TimerEvent: {}
+[32.738860] (-) TimerEvent: {}
+[32.842535] (-) TimerEvent: {}
+[32.957792] (-) TimerEvent: {}
+[33.065402] (-) TimerEvent: {}
+[33.177641] (-) TimerEvent: {}
+[33.291822] (-) TimerEvent: {}
+[33.432645] (-) TimerEvent: {}
+[33.560781] (-) TimerEvent: {}
+[33.679065] (-) TimerEvent: {}
+[33.791352] (-) TimerEvent: {}
+[33.905113] (-) TimerEvent: {}
+[34.028519] (-) TimerEvent: {}
+[34.186824] (-) TimerEvent: {}
+[34.291096] (-) TimerEvent: {}
+[34.398399] (-) TimerEvent: {}
+[34.510382] (-) TimerEvent: {}
+[34.638314] (-) TimerEvent: {}
+[34.750214] (-) TimerEvent: {}
+[34.855325] (-) TimerEvent: {}
+[34.959177] (-) TimerEvent: {}
+[35.075862] (-) TimerEvent: {}
+[35.187823] (-) TimerEvent: {}
+[35.300050] (-) TimerEvent: {}
+[35.427900] (-) TimerEvent: {}
+[35.540266] (-) TimerEvent: {}
+[35.646417] (-) TimerEvent: {}
+[35.758414] (-) TimerEvent: {}
+[35.870024] (-) TimerEvent: {}
+[35.986509] (-) TimerEvent: {}
+[36.114184] (-) TimerEvent: {}
+[36.242311] (-) TimerEvent: {}
+[36.354191] (-) TimerEvent: {}
+[36.466782] (-) TimerEvent: {}
+[36.596608] (-) TimerEvent: {}
+[36.699459] (-) TimerEvent: {}
+[36.803097] (-) TimerEvent: {}
+[36.915611] (-) TimerEvent: {}
+[37.088592] (-) TimerEvent: {}
+[37.204736] (-) TimerEvent: {}
+[37.316853] (-) TimerEvent: {}
+[37.417583] (-) TimerEvent: {}
+[37.550626] (-) TimerEvent: {}
+[37.657708] (-) TimerEvent: {}
+[37.785840] (-) TimerEvent: {}
+[37.897814] (-) TimerEvent: {}
+[38.015285] (-) TimerEvent: {}
+[38.122905] (-) TimerEvent: {}
+[38.228703] (-) TimerEvent: {}
+[38.378265] (-) TimerEvent: {}
+[38.516222] (-) TimerEvent: {}
+[38.628227] (-) TimerEvent: {}
+[38.731580] (-) TimerEvent: {}
+[38.836429] (-) TimerEvent: {}
+[38.981015] (-) TimerEvent: {}
+[39.123933] (-) TimerEvent: {}
+[39.238797] (-) TimerEvent: {}
+[39.348005] (-) TimerEvent: {}
+[39.482428] (-) TimerEvent: {}
+[39.584394] (-) TimerEvent: {}
+[39.686180] (-) TimerEvent: {}
+[39.810178] (-) TimerEvent: {}
+[39.914224] (-) TimerEvent: {}
+[40.025638] (-) TimerEvent: {}
+[40.140466] (-) TimerEvent: {}
+[40.256876] (-) TimerEvent: {}
+[40.368102] (-) TimerEvent: {}
+[40.480194] (-) TimerEvent: {}
+[40.582724] (-) TimerEvent: {}
+[40.689010] (-) TimerEvent: {}
+[40.812184] (-) TimerEvent: {}
+[40.945504] (-) TimerEvent: {}
+[41.091069] (-) TimerEvent: {}
+[41.218776] (-) TimerEvent: {}
+[41.319895] (-) TimerEvent: {}
+[41.425639] (-) TimerEvent: {}
+[41.538295] (-) TimerEvent: {}
+[41.685691] (-) TimerEvent: {}
+[41.822903] (-) TimerEvent: {}
+[41.924994] (-) TimerEvent: {}
+[42.027034] (-) TimerEvent: {}
+[42.151593] (-) TimerEvent: {}
+[42.252245] (-) TimerEvent: {}
+[42.353961] (-) TimerEvent: {}
+[42.454604] (-) TimerEvent: {}
+[42.557982] (-) TimerEvent: {}
+[42.668548] (-) TimerEvent: {}
+[42.771016] (-) TimerEvent: {}
+[42.877303] (-) TimerEvent: {}
+[42.979013] (-) TimerEvent: {}
+[43.080026] (-) TimerEvent: {}
+[43.194780] (-) TimerEvent: {}
+[43.300839] (-) TimerEvent: {}
+[43.401492] (-) TimerEvent: {}
+[43.506221] (-) TimerEvent: {}
+[43.614169] (-) TimerEvent: {}
+[43.717663] (-) TimerEvent: {}
+[43.833616] (-) TimerEvent: {}
+[43.954444] (-) TimerEvent: {}
+[44.059109] (-) TimerEvent: {}
+[44.171592] (-) TimerEvent: {}
+[44.301804] (-) TimerEvent: {}
+[44.402767] (-) TimerEvent: {}
+[44.508577] (-) TimerEvent: {}
+[44.613565] (-) TimerEvent: {}
+[44.726216] (-) TimerEvent: {}
+[44.839895] (-) TimerEvent: {}
+[44.951857] (-) TimerEvent: {}
+[45.054832] (-) TimerEvent: {}
+[45.163080] (-) TimerEvent: {}
+[45.266712] (-) TimerEvent: {}
+[45.372494] (-) TimerEvent: {}
+[45.475741] (-) TimerEvent: {}
+[45.589801] (-) TimerEvent: {}
+[45.693726] (-) TimerEvent: {}
+[45.794831] (-) TimerEvent: {}
+[45.895507] (-) TimerEvent: {}
+[46.002840] (-) TimerEvent: {}
+[46.105711] (-) TimerEvent: {}
+[46.213684] (-) TimerEvent: {}
+[46.324633] (-) TimerEvent: {}
+[46.457907] (-) TimerEvent: {}
+[46.585623] (-) TimerEvent: {}
+[46.697730] (-) TimerEvent: {}
+[46.809503] (-) TimerEvent: {}
+[46.912619] (-) TimerEvent: {}
+[47.016346] (-) TimerEvent: {}
+[47.120427] (-) TimerEvent: {}
+[47.205300] (diagnostic_aggregator) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX shared library libdiagnostic_aggregator.so\x1b[0m\n'}
+[47.224438] (-) TimerEvent: {}
+[47.343255] (-) TimerEvent: {}
+[47.453561] (-) TimerEvent: {}
+[47.565219] (-) TimerEvent: {}
+[47.679862] (-) TimerEvent: {}
+[47.796284] (-) TimerEvent: {}
+[47.910516] (-) TimerEvent: {}
+[48.012335] (-) TimerEvent: {}
+[48.114527] (-) TimerEvent: {}
+[48.225278] (-) TimerEvent: {}
+[48.330318] (-) TimerEvent: {}
+[48.521811] (-) TimerEvent: {}
+[48.622195] (-) TimerEvent: {}
+[48.694894] (diagnostic_aggregator) StdoutLine: {'line': b'[ 50%] Built target diagnostic_aggregator\n'}
+[48.744167] (-) TimerEvent: {}
+[48.816312] (diagnostic_aggregator) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/diagnostic_aggregator_analyzers.dir/src/generic_analyzer.cpp.o\x1b[0m\n'}
+[48.844956] (-) TimerEvent: {}
+[48.945816] (-) TimerEvent: {}
+[49.050327] (-) TimerEvent: {}
+[49.152435] (-) TimerEvent: {}
+[49.258161] (-) TimerEvent: {}
+[49.362638] (-) TimerEvent: {}
+[49.463294] (-) TimerEvent: {}
+[49.565861] (-) TimerEvent: {}
+[49.667932] (-) TimerEvent: {}
+[49.770128] (-) TimerEvent: {}
+[49.878810] (-) TimerEvent: {}
+[49.998852] (-) TimerEvent: {}
+[50.103406] (-) TimerEvent: {}
+[50.206347] (-) TimerEvent: {}
+[50.324750] (-) TimerEvent: {}
+[50.425443] (-) TimerEvent: {}
+[50.527797] (-) TimerEvent: {}
+[50.629659] (-) TimerEvent: {}
+[50.732454] (-) TimerEvent: {}
+[50.841186] (-) TimerEvent: {}
+[50.946814] (-) TimerEvent: {}
+[51.048264] (-) TimerEvent: {}
+[51.153614] (-) TimerEvent: {}
+[51.274530] (-) TimerEvent: {}
+[51.388933] (-) TimerEvent: {}
+[51.504250] (-) TimerEvent: {}
+[51.617035] (-) TimerEvent: {}
+[51.727650] (-) TimerEvent: {}
+[51.839814] (-) TimerEvent: {}
+[51.967977] (-) TimerEvent: {}
+[52.079413] (-) TimerEvent: {}
+[52.191295] (-) TimerEvent: {}
+[52.299637] (-) TimerEvent: {}
+[52.409858] (-) TimerEvent: {}
+[52.512580] (-) TimerEvent: {}
+[52.671625] (-) TimerEvent: {}
+[52.732684] (diagnostic_updater) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX executable status_msg_test\x1b[0m\n'}
+[52.783082] (-) TimerEvent: {}
+[52.899041] (-) TimerEvent: {}
+[53.006295] (-) TimerEvent: {}
+[53.119157] (-) TimerEvent: {}
+[53.219615] (-) TimerEvent: {}
+[53.242751] (diagnostic_updater) StdoutLine: {'line': b'[ 71%] Built target status_msg_test\n'}
+[53.346912] (-) TimerEvent: {}
+[53.364594] (diagnostic_updater) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/diagnostic_updater_test.dir/test/diagnostic_updater_test.cpp.o\x1b[0m\n'}
+[53.449772] (-) TimerEvent: {}
+[53.553158] (-) TimerEvent: {}
+[53.653933] (-) TimerEvent: {}
+[53.754620] (-) TimerEvent: {}
+[53.855424] (-) TimerEvent: {}
+[53.955995] (-) TimerEvent: {}
+[54.057109] (-) TimerEvent: {}
+[54.157797] (-) TimerEvent: {}
+[54.260056] (-) TimerEvent: {}
+[54.370152] (-) TimerEvent: {}
+[54.472130] (-) TimerEvent: {}
+[54.572880] (-) TimerEvent: {}
+[54.615778] (diagnostic_updater) StderrLine: {'line': b'gmake[2]: *** wait: No child processes.  Stop.\n'}
+[54.618329] (diagnostic_updater) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[54.618484] (diagnostic_updater) StderrLine: {'line': b'gmake[2]: *** wait: No child processes.  Stop.\n'}
+[54.618570] (diagnostic_updater) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:220: CMakeFiles/diagnostic_updater_test.dir/all] Error 2\n'}
+[54.618635] (diagnostic_aggregator) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/diagnostic_aggregator_analyzers.dir/build.make:76: CMakeFiles/diagnostic_aggregator_analyzers.dir/src/generic_analyzer.cpp.o] Interrupt\n'}
+[54.627728] (diagnostic_aggregator) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:172: CMakeFiles/diagnostic_aggregator_analyzers.dir/all] Interrupt\n'}
+[54.627995] (pointcloud_to_grid) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/pointcloud_to_grid_node.dir/build.make:76: CMakeFiles/pointcloud_to_grid_node.dir/src/pointcloud_to_grid_node.cpp.o] Interrupt\n'}
+[54.647497] (diagnostic_aggregator) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Interrupt\n'}
+[54.647825] (pointcloud_to_grid) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/pointcloud_to_grid_node.dir/all] Interrupt\n'}
+[54.647988] (diagnostic_updater) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Interrupt\n'}
+[54.648103] (pointcloud_to_grid) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Interrupt\n'}
+[54.664089] (diagnostic_updater) CommandEnded: {'returncode': -2}
+[54.677060] (diagnostic_aggregator) CommandEnded: {'returncode': -2}
+[54.685194] (-) TimerEvent: {}
+[54.765645] (diagnostic_updater) JobEnded: {'identifier': 'diagnostic_updater', 'rc': 'SIGINT'}
+[54.769147] (pointcloud_to_grid) JobEnded: {'identifier': 'pointcloud_to_grid', 'rc': 'SIGINT'}
+[54.769791] (diagnostic_aggregator) JobEnded: {'identifier': 'diagnostic_aggregator', 'rc': 'SIGINT'}
+[54.785718] (diagnostic_common_diagnostics) JobSkipped: {'identifier': 'diagnostic_common_diagnostics'}
+[54.785827] (-) TimerEvent: {}
+[54.786100] (realsense2_camera) JobSkipped: {'identifier': 'realsense2_camera'}
+[54.786135] (self_test) JobSkipped: {'identifier': 'self_test'}
+[54.786159] (diagnostics) JobSkipped: {'identifier': 'diagnostics'}
+[54.786182] (-) EventReactorShutdown: {}

@@ -1,0 +1,68 @@
+[0.016s] Invoking command in '/home/mewert/Desktop/luna/build/self_test': CMAKE_PREFIX_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/my_octomap_pkg:/home/mewert/Desktop/luna/install/my_pointcloud_pkg:/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/pointcloud_to_grid:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/mewert/Desktop/luna/diagnostics/self_test -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mewert/Desktop/luna/install/self_test
+[0.036s] -- Build for humble
+[0.036s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.284s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.291s] -- Found diagnostic_msgs: 4.2.4 (/opt/ros/humble/share/diagnostic_msgs/cmake)
+[0.340s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.340s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.349s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.367s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.396s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.475s] -- Found diagnostic_updater: 4.3.1 (/home/mewert/Desktop/luna/install/diagnostic_updater/share/diagnostic_updater/cmake)
+[0.530s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.545s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.697s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.776s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.888s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[0.919s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.919s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/mewert/Desktop/luna/diagnostics/self_test/include>
+[0.919s] -- Configured cppcheck exclude dirs and/or files: 
+[0.920s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.921s] -- Configured cpplint exclude dirs and/or files: 
+[0.921s] -- Added test 'lint_cmake' to check CMake code style
+[0.922s] -- Added test 'xmllint' to check XML markup files
+[0.924s] -- Configuring done
+[0.975s] -- Generating done
+[0.979s] -- Build files have been written to: /home/mewert/Desktop/luna/build/self_test
+[1.014s] Invoked command in '/home/mewert/Desktop/luna/build/self_test' returned '0': CMAKE_PREFIX_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/my_octomap_pkg:/home/mewert/Desktop/luna/install/my_pointcloud_pkg:/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/pointcloud_to_grid:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/mewert/Desktop/luna/diagnostics/self_test -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mewert/Desktop/luna/install/self_test
+[1.015s] Invoking command in '/home/mewert/Desktop/luna/build/self_test': CMAKE_PREFIX_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/my_octomap_pkg:/home/mewert/Desktop/luna/install/my_pointcloud_pkg:/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/pointcloud_to_grid:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/mewert/Desktop/luna/build/self_test -- -j6 -l6
+[1.079s] [35m[1mConsolidate compiler generated dependencies of target run_selftest[0m
+[1.081s] [35m[1mConsolidate compiler generated dependencies of target selftest_example[0m
+[1.114s] [35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[1.115s] [35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[1.128s] [ 12%] Built target run_selftest
+[1.129s] [ 25%] Built target selftest_example
+[1.134s] [ 37%] Built target gtest_main
+[1.138s] [ 50%] Built target gtest
+[1.160s] [35m[1mConsolidate compiler generated dependencies of target test_exception_selftest[0m
+[1.161s] [35m[1mConsolidate compiler generated dependencies of target test_nominal_selftest[0m
+[1.161s] [35m[1mConsolidate compiler generated dependencies of target test_no_id_selftest[0m
+[1.161s] [35m[1mConsolidate compiler generated dependencies of target test_error_selftest[0m
+[1.178s] [ 62%] Built target test_exception_selftest
+[1.183s] [ 87%] Built target test_nominal_selftest
+[1.183s] [ 87%] Built target test_no_id_selftest
+[1.192s] [100%] Built target test_error_selftest
+[1.205s] Invoked command in '/home/mewert/Desktop/luna/build/self_test' returned '0': CMAKE_PREFIX_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/my_octomap_pkg:/home/mewert/Desktop/luna/install/my_pointcloud_pkg:/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/pointcloud_to_grid:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/mewert/Desktop/luna/build/self_test -- -j6 -l6
+[1.249s] Invoking command in '/home/mewert/Desktop/luna/build/self_test': CMAKE_PREFIX_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/my_octomap_pkg:/home/mewert/Desktop/luna/install/my_pointcloud_pkg:/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/pointcloud_to_grid:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/mewert/Desktop/luna/build/self_test
+[1.258s] -- Install configuration: ""
+[1.259s] -- Execute custom install script
+[1.260s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/self_test/include/self_test/test_runner.hpp
+[1.260s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/self_test/lib/self_test/run_selftest
+[1.260s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/self_test/lib/self_test/selftest_example
+[1.260s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/self_test/share/ament_index/resource_index/package_run_dependencies/self_test
+[1.261s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/self_test/share/ament_index/resource_index/parent_prefix_path/self_test
+[1.261s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/self_test/share/self_test/environment/ament_prefix_path.sh
+[1.261s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/self_test/share/self_test/environment/ament_prefix_path.dsv
+[1.262s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/self_test/share/self_test/environment/path.sh
+[1.262s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/self_test/share/self_test/environment/path.dsv
+[1.262s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/self_test/share/self_test/local_setup.bash
+[1.262s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/self_test/share/self_test/local_setup.sh
+[1.262s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/self_test/share/self_test/local_setup.zsh
+[1.263s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/self_test/share/self_test/local_setup.dsv
+[1.263s] -- Symlinking: /home/mewert/Desktop/luna/install/self_test/share/self_test/package.dsv
+[1.278s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/self_test/share/ament_index/resource_index/packages/self_test
+[1.279s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/self_test/share/self_test/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.279s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/self_test/share/self_test/cmake/self_testConfig.cmake
+[1.279s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/self_test/share/self_test/cmake/self_testConfig-version.cmake
+[1.279s] -- Up-to-date symlink: /home/mewert/Desktop/luna/install/self_test/share/self_test/package.xml
+[1.281s] Invoked command in '/home/mewert/Desktop/luna/build/self_test' returned '0': CMAKE_PREFIX_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/my_octomap_pkg:/home/mewert/Desktop/luna/install/my_pointcloud_pkg:/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/pointcloud_to_grid:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/mewert/Desktop/luna/build/self_test
