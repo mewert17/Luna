@@ -1,1 +1,3 @@
 setuptools
+tf2_sensor_msgs
+tf2_ros

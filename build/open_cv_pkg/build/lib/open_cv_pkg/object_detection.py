@@ -14,6 +14,9 @@ class ObjectDetectionNode(Node):
 
         # Publisher to publish detected boulders (PointCloud2)
         self.pub = self.create_publisher(PointCloud2, '/detected_boulders', 10)
+        
+        self.filtered_pub = self.create_publisher(PointCloud2, '/filtered_points', 10)
+
 
         # Subscribe to point cloud topics
         self.pointcloud_subscriber = self.create_subscription(
@@ -35,6 +38,9 @@ class ObjectDetectionNode(Node):
 
         # Debugging: Log point cloud data size
         self.get_logger().info(f"Point cloud data received with {len(points_array)} points.")
+
+        filtered_cloud = self.filter_noise(points_array)
+    self.get_logger().info(f"Filtered cloud has {len(filtered_cloud)} points.")
 
         # Log minimum and maximum depth values for debugging
         if len(points_array) > 0:
@@ -64,7 +70,7 @@ class ObjectDetectionNode(Node):
             return
 
         min_depth = np.min(point_cloud_data[:, 2])
-        crater_threshold = min_depth - 0.05  # Depth threshold for crater detection (e.g., 5 cm below minimum)
+        crater_threshold = min_depth - 0.2  # Depth threshold for crater detection (e.g., 5 cm below minimum)
 
         # Find points below the crater threshold
         crater_points = point_cloud_data[point_cloud_data[:, 2] < crater_threshold]
@@ -82,8 +88,8 @@ class ObjectDetectionNode(Node):
             return
 
         # Set a range of depths to detect boulders (e.g., between 30 cm and 1 meter)
-        depth_min = 0.1  # Minimum depth (e.g., 10 cm)
-        depth_max = 10.0  # Maximum depth (e.g., 1 meter)
+        depth_min = 0.2  # Minimum depth (e.g., 10 cm)
+        depth_max = 2.0  # Maximum depth (e.g., 1 meter)
 
         # Filter points within the depth range
         detected_points = point_cloud_data[
@@ -93,7 +99,7 @@ class ObjectDetectionNode(Node):
         self.get_logger().info(f"Detected {len(detected_points)} points within the specified depth range.")
 
         # Optionally, apply size threshold for detecting objects like boulders
-        size_threshold = 0.05  # Minimum size for an object to be considered a boulder (e.g., 10 cm)
+        size_threshold = 0.2  # Minimum size for an object to be considered a boulder (e.g., 10 cm)
         if len(detected_points) > size_threshold * 1000:  # Assuming each object is at least 10 cm large
             self.get_logger().info("Boulder detected based on size and depth threshold.")
             self.visualize_boulders(detected_points)
