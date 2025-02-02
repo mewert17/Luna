@@ -41,8 +41,8 @@ class OccupancyGridFromPointCloud(Node):
 
         # Define grid parameters
         self.grid_size = 0.2  # The resolution of grid cells (meters per cell)
-        self.grid_width = 25  # Grid width (number of columns)
-        self.grid_height = 25  # Grid height (number of rows)
+        self.grid_width = int(10 / self.grid_size)  # Grid width (number of columns) CHANGED FROM 25
+        self.grid_height = int(10 / self.grid_size)  # Grid height (number of rows)
         self.occupancy_grid = np.full((self.grid_height, self.grid_width), 50)  # Initialize grid with unknown values
 
         # Debugging control
@@ -102,7 +102,7 @@ class OccupancyGridFromPointCloud(Node):
         for point in filtered_points:
             x, y, z = point
             grid_x = int((y / self.grid_size) + self.grid_width / 2)
-            grid_y = int((x / self.grid_size) + self.grid_height / 2)
+            grid_y = int(self.grid_height / 2 - (x / self.grid_size))                                #grid_y = int((x / self.grid_size) + self.grid_height / 2)
 
             if 0 <= grid_x < self.grid_width and 0 <= grid_y < self.grid_height:
                 if z < 0.5:  # Boulders
