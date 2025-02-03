@@ -2,9 +2,10 @@ CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o: \
  /home/mewert/Desktop/luna/src/realsense-ros/realsense2_camera/src/base_realsense_node.cpp \
  /usr/include/stdc-predef.h \
  /home/mewert/Desktop/luna/src/realsense-ros/realsense2_camera/src/../include/base_realsense_node.h \
- /usr/include/librealsense2/rs.hpp /usr/include/librealsense2/rs.h \
- /usr/include/librealsense2/rsutil.h /usr/include/c++/11/stdlib.h \
- /usr/include/c++/11/cstdlib \
+ /opt/ros/humble/include/librealsense2/rs.hpp \
+ /opt/ros/humble/include/librealsense2/rs.h \
+ /opt/ros/humble/include/librealsense2/rsutil.h \
+ /usr/include/c++/11/stdlib.h /usr/include/c++/11/cstdlib \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -97,28 +98,28 @@ CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o: \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
  /usr/include/c++/11/tr1/riemann_zeta.tcc \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
- /usr/include/librealsense2/h/rs_types.h \
- /usr/include/librealsense2/h/rs_sensor.h \
- /usr/include/librealsense2/h/rs_types.h \
- /usr/include/librealsense2/h/rs_context.h \
- /usr/include/librealsense2/h/rs_device.h \
- /usr/include/librealsense2/h/rs_sensor.h \
- /usr/include/librealsense2/h/rs_frame.h \
- /usr/include/librealsense2/h/rs_option.h \
- /usr/include/librealsense2/h/rs_processing.h \
- /usr/include/librealsense2/h/rs_option.h \
- /usr/include/librealsense2/h/rs_record_playback.h \
- /usr/include/librealsense2/hpp/rs_types.hpp \
- /usr/include/librealsense2/rs.h \
- /usr/include/librealsense2/h/rs_context.h \
- /usr/include/librealsense2/h/rs_device.h \
- /usr/include/librealsense2/h/rs_frame.h \
- /usr/include/librealsense2/h/rs_processing.h \
- /usr/include/librealsense2/h/rs_record_playback.h \
- /usr/include/librealsense2/h/rs_sensor.h \
- /usr/include/librealsense2/h/rs_pipeline.h \
- /usr/include/librealsense2/h/rs_config.h /usr/include/c++/11/string \
- /usr/include/c++/11/bits/stringfwd.h \
+ /opt/ros/humble/include/librealsense2/h/rs_types.h \
+ /opt/ros/humble/include/librealsense2/h/rs_sensor.h \
+ /opt/ros/humble/include/librealsense2/h/rs_types.h \
+ /opt/ros/humble/include/librealsense2/h/rs_context.h \
+ /opt/ros/humble/include/librealsense2/h/rs_device.h \
+ /opt/ros/humble/include/librealsense2/h/rs_sensor.h \
+ /opt/ros/humble/include/librealsense2/h/rs_frame.h \
+ /opt/ros/humble/include/librealsense2/h/rs_option.h \
+ /opt/ros/humble/include/librealsense2/h/rs_processing.h \
+ /opt/ros/humble/include/librealsense2/h/rs_option.h \
+ /opt/ros/humble/include/librealsense2/h/rs_record_playback.h \
+ /opt/ros/humble/include/librealsense2/hpp/rs_types.hpp \
+ /opt/ros/humble/include/librealsense2/rs.h \
+ /opt/ros/humble/include/librealsense2/h/rs_context.h \
+ /opt/ros/humble/include/librealsense2/h/rs_device.h \
+ /opt/ros/humble/include/librealsense2/h/rs_frame.h \
+ /opt/ros/humble/include/librealsense2/h/rs_processing.h \
+ /opt/ros/humble/include/librealsense2/h/rs_record_playback.h \
+ /opt/ros/humble/include/librealsense2/h/rs_sensor.h \
+ /opt/ros/humble/include/librealsense2/h/rs_pipeline.h \
+ /opt/ros/humble/include/librealsense2/h/rs_config.h \
+ /usr/include/c++/11/string /usr/include/c++/11/bits/stringfwd.h \
  /usr/include/c++/11/bits/memoryfwd.h \
  /usr/include/c++/11/bits/char_traits.h \
  /usr/include/c++/11/bits/postypes.h /usr/include/c++/11/cwchar \
@@ -238,26 +239,26 @@ CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o: \
  /usr/include/c++/11/bits/sstream.tcc /usr/include/c++/11/chrono \
  /usr/include/c++/11/ratio /usr/include/c++/11/ctime \
  /usr/include/c++/11/bits/parse_numbers.h \
- /usr/include/librealsense2/hpp/rs_context.hpp \
- /usr/include/librealsense2/hpp/rs_types.hpp \
- /usr/include/librealsense2/hpp/rs_record_playback.hpp \
- /usr/include/librealsense2/hpp/rs_device.hpp \
- /usr/include/librealsense2/hpp/rs_sensor.hpp \
- /usr/include/librealsense2/hpp/rs_frame.hpp \
- /usr/include/librealsense2/hpp/rs_processing.hpp \
- /usr/include/librealsense2/hpp/rs_options.hpp \
- /usr/include/librealsense2/h/rs_types.h /usr/include/c++/11/cstring \
- /usr/include/string.h /usr/include/strings.h \
+ /opt/ros/humble/include/librealsense2/hpp/rs_context.hpp \
+ /opt/ros/humble/include/librealsense2/hpp/rs_types.hpp \
+ /opt/ros/humble/include/librealsense2/hpp/rs_record_playback.hpp \
+ /opt/ros/humble/include/librealsense2/hpp/rs_device.hpp \
+ /opt/ros/humble/include/librealsense2/hpp/rs_sensor.hpp \
+ /opt/ros/humble/include/librealsense2/hpp/rs_frame.hpp \
+ /opt/ros/humble/include/librealsense2/hpp/rs_processing.hpp \
+ /opt/ros/humble/include/librealsense2/hpp/rs_options.hpp \
+ /opt/ros/humble/include/librealsense2/h/rs_types.h \
+ /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
  /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
  /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
- /usr/include/librealsense2/hpp/rs_device.hpp \
- /usr/include/librealsense2/hpp/rs_frame.hpp \
- /usr/include/librealsense2/hpp/rs_processing.hpp \
- /usr/include/librealsense2/hpp/rs_record_playback.hpp \
- /usr/include/librealsense2/hpp/rs_sensor.hpp \
- /usr/include/librealsense2/hpp/rs_pipeline.hpp \
- /usr/include/librealsense2/hpp/rs_context.hpp \
- /usr/include/librealsense2/rsutil.h \
+ /opt/ros/humble/include/librealsense2/hpp/rs_device.hpp \
+ /opt/ros/humble/include/librealsense2/hpp/rs_frame.hpp \
+ /opt/ros/humble/include/librealsense2/hpp/rs_processing.hpp \
+ /opt/ros/humble/include/librealsense2/hpp/rs_record_playback.hpp \
+ /opt/ros/humble/include/librealsense2/hpp/rs_sensor.hpp \
+ /opt/ros/humble/include/librealsense2/hpp/rs_pipeline.hpp \
+ /opt/ros/humble/include/librealsense2/hpp/rs_context.hpp \
+ /opt/ros/humble/include/librealsense2/rsutil.h \
  /home/mewert/Desktop/luna/src/realsense-ros/realsense2_camera/src/../include/constants.h \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal /usr/include/signal.h \
@@ -749,12 +750,12 @@ CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o: \
  /home/mewert/Desktop/luna/build/realsense2_camera_msgs/rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/device_info__struct.hpp \
  /home/mewert/Desktop/luna/build/realsense2_camera_msgs/rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/device_info__builder.hpp \
  /home/mewert/Desktop/luna/build/realsense2_camera_msgs/rosidl_generator_cpp/realsense2_camera_msgs/srv/detail/device_info__traits.hpp \
- /usr/include/librealsense2/hpp/rs_processing.hpp \
- /usr/include/librealsense2/rs_advanced_mode.hpp \
- /usr/include/librealsense2/rs.hpp \
- /usr/include/librealsense2/rs_advanced_mode.h \
- /usr/include/librealsense2/h/rs_advanced_mode_command.h \
- /usr/include/librealsense2/hpp/rs_serializable_device.hpp \
+ /opt/ros/humble/include/librealsense2/hpp/rs_processing.hpp \
+ /opt/ros/humble/include/librealsense2/rs_advanced_mode.hpp \
+ /opt/ros/humble/include/librealsense2/rs.hpp \
+ /opt/ros/humble/include/librealsense2/rs_advanced_mode.h \
+ /opt/ros/humble/include/librealsense2/h/rs_advanced_mode_command.h \
+ /opt/ros/humble/include/librealsense2/hpp/rs_serializable_device.hpp \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/camera_info.hpp \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__builder.hpp \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/imu.hpp \
@@ -766,11 +767,12 @@ CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o: \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
  /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.h \
- /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.h \
- /opt/ros/humble/include/tf2/tf2/LinearMath/Scalar.h \
- /opt/ros/humble/include/tf2/tf2/LinearMath/MinMax.h \
+ /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp \
+ /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp \
+ /opt/ros/humble/include/tf2/tf2/LinearMath/Scalar.hpp \
+ /opt/ros/humble/include/tf2/tf2/LinearMath/MinMax.hpp \
  /opt/ros/humble/include/tf2/tf2/visibility_control.h \
- /opt/ros/humble/include/tf2/tf2/LinearMath/QuadWord.h \
+ /opt/ros/humble/include/tf2/tf2/LinearMath/QuadWord.hpp \
  /opt/ros/humble/include/tf2_ros/tf2_ros/transform_broadcaster.h \
  /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.h \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp \

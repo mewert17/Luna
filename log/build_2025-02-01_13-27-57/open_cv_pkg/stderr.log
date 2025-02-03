@@ -1,3 +1,0 @@
-/home/mewert/.local/lib/python3.10/site-packages/setuptools/command/easy_install.py:157: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
-  warnings.warn(
-Sorry: IndentationError: unexpected indent (object_detection.py, line 46)

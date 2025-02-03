@@ -719,6 +719,8 @@ CMakeFiles/grid_trajectory.dir/src/grid_trajectory.cpp.o
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__traits.hpp
  /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/uv_coordinate__traits.hpp
  /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/mesh_file__traits.hpp
+ /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/detail/marker_array__type_support.hpp
+ /opt/ros/humble/include/visualization_msgs/visualization_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
  /usr/include/pcl-1.12/pcl/point_cloud.h
  /usr/include/eigen3/Eigen/StdVector
  /usr/include/eigen3/Eigen/Core

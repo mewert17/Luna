@@ -1,9 +1,0 @@
-[0.083s] Invoking command in '/home/mewert/Desktop/luna/build/self_test': CMAKE_PREFIX_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater:/home/mewert/Desktop/luna/install/my_octomap_pkg:/home/mewert/Desktop/luna/install/my_pointcloud_pkg:/home/mewert/Desktop/luna/install/diagnostics:/home/mewert/Desktop/luna/install/self_test:/home/mewert/Desktop/luna/install/realsense2_description:/home/mewert/Desktop/luna/install/realsense2_camera:/home/mewert/Desktop/luna/install/realsense2_camera_msgs:/home/mewert/Desktop/luna/install/pointcloud_to_grid:/home/mewert/Desktop/luna/install/diagnostic_common_diagnostics:/home/mewert/Desktop/luna/install/diagnostic_aggregator:/home/mewert/Desktop/luna/install/open_cv_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/mewert/Desktop/luna/install/diagnostic_updater/lib:/home/mewert/Desktop/luna/install/realsense2_camera/lib:/home/mewert/Desktop/luna/install/realsense2_camera_msgs/lib:/home/mewert/Desktop/luna/install/diagnostic_aggregator/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/mewert/Desktop/luna/build/self_test -- -j6 -l6
-[0.176s] [ 12%] Built target gtest_main
-[0.180s] [ 25%] Built target run_selftest
-[0.184s] [ 37%] Built target gtest
-[0.184s] [ 50%] Built target selftest_example
-[0.256s] [ 62%] Built target test_error_selftest
-[0.256s] [ 75%] Built target test_exception_selftest
-[0.257s] [ 87%] Built target test_nominal_selftest
-[0.261s] [100%] Built target test_no_id_selftest

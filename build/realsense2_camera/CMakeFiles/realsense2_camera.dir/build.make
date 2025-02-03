@@ -284,7 +284,7 @@ librealsense2_camera.so: CMakeFiles/realsense2_camera.dir/src/image_publisher.cp
 librealsense2_camera.so: CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o
 librealsense2_camera.so: CMakeFiles/realsense2_camera.dir/src/ros_param_backend.cpp.o
 librealsense2_camera.so: CMakeFiles/realsense2_camera.dir/build.make
-librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/librealsense2.so.2.55.1
+librealsense2_camera.so: /opt/ros/humble/lib/x86_64-linux-gnu/librealsense2.so.2.55.1
 librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d
 librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d
 librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.5.4d
@@ -342,7 +342,7 @@ librealsense2_camera.so: /opt/ros/humble/lib/libnav_msgs__rosidl_typesupport_cpp
 librealsense2_camera.so: /opt/ros/humble/lib/libnav_msgs__rosidl_generator_py.so
 librealsense2_camera.so: /opt/ros/humble/lib/libstatic_transform_broadcaster_node.so
 librealsense2_camera.so: /home/mewert/Desktop/luna/install/diagnostic_updater/lib/libdiagnostic_updater.so
-librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/librsutils.a
+librealsense2_camera.so: /opt/ros/humble/lib/x86_64-linux-gnu/librsutils.a
 librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.4.5.4d
 librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.4.5.4d
 librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libopencv_plot.so.4.5.4d

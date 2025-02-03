@@ -1,1 +1,1 @@
-cv_bridge:opencv:pcl:rclpy:sensor_msgs:std_msgs:tf2_ros:tf2_sensor_msgs
+opencv:pcl:rclpy:sensor_msgs:std_msgs:tf2_ros:tf2_sensor_msgs

@@ -1,4 +1,0 @@
-gmake[2]: *** Deleting file 'CMakeFiles/status_msg_test.dir/test/status_msg_test.cpp.o'
-gmake[2]: *** [CMakeFiles/status_msg_test.dir/build.make:76: CMakeFiles/status_msg_test.dir/test/status_msg_test.cpp.o] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:275: CMakeFiles/status_msg_test.dir/all] Interrupt
-gmake: *** [Makefile:146: all] Interrupt

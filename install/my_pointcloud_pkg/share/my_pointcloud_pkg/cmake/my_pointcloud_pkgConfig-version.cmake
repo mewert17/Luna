@@ -1,1 +1,0 @@
-/home/mewert/Desktop/luna/build/my_pointcloud_pkg/ament_cmake_core/my_pointcloud_pkgConfig-version.cmake

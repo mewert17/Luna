@@ -1,5 +1,0 @@
-[ 50%] [32m[1mLinking CXX executable octomap_launch[0m
-gmake[2]: *** Deleting file 'octomap_launch'
-gmake[2]: *** [CMakeFiles/octomap_launch.dir/build.make:1172: octomap_launch] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/octomap_launch.dir/all] Interrupt
-gmake: *** [Makefile:146: all] Interrupt
