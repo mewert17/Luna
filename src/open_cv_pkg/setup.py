@@ -15,6 +15,8 @@ setup(
         'setuptools',
         'tf2_sensor_msgs',  # Add this
         'tf2_ros'  # Add this as well
+        'numpy' ,
+        'transforms3d' ,
     ],
     zip_safe=True,
     maintainer='mewert',
@@ -26,6 +28,7 @@ setup(
         'console_scripts': [
             'object_detection_node = open_cv_pkg.object_detection:main',
             'og_from_pointcloud = open_cv_pkg.og_from_pointcloud:main',
+            'markers = open_cv_pkg.markers:main'
         ],
     },
 )
