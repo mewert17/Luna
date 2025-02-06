@@ -33,12 +33,12 @@ class PointCloudFilteringNode(Node):
         self.frame_counter = 0
         self.output_frequency = 5  # Log every 5 frames
 
+        self.get_logger().info('PointCloud Filtering Node started.')
+
         # Initial thresholds
         self.x_min, self.x_max = -5.0, 5.0
         self.y_min, self.y_max = 0.5, 2.0
         self.z_min, self.z_max = 0.0, 10.0
-
-        self.get_logger().info('PointCloud Filtering Node started.')
 
     def pointcloud_callback(self, msg):
         """Process and filter point cloud data."""
@@ -88,15 +88,6 @@ class PointCloudFilteringNode(Node):
 
         # Publish the filtered point cloud
         self.publish_pointcloud(filtered_points, self.filtered_pub, "camera_link")
-
-        # Publish the threshold marker using the function from markers.py
-        publish_threshold_marker(
-            self.threshold_marker_pub,
-            self.x_min, self.x_max,
-            self.y_min, self.y_max,
-            self.z_min, self.z_max,
-            self.get_clock().now()
-        )
 
         # Slow down terminal output
         self.frame_counter += 1
