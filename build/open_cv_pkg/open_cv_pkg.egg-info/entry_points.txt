@@ -1,5 +1,6 @@
 [console_scripts]
 filtering = open_cv_pkg.filtering:main
+grid = open_cv_pkg.grid:main
 markers = open_cv_pkg.markers:main
 object_detection_node = open_cv_pkg.object_detection:main
 

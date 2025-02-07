@@ -28,7 +28,8 @@ setup(
         'console_scripts': [
             'object_detection_node = open_cv_pkg.object_detection:main',
             'filtering = open_cv_pkg.filtering:main',
-            'markers = open_cv_pkg.markers:main'
+            'markers = open_cv_pkg.markers:main',
+            'grid = open_cv_pkg.grid:main',
         ],
     },
 )
