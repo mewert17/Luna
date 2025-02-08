@@ -30,6 +30,7 @@ setup(
             'filtering = open_cv_pkg.filtering:main',
             'markers = open_cv_pkg.markers:main',
             'grid = open_cv_pkg.grid:main',
+            'og = open_cv_pkg.og:main',
         ],
     },
 )

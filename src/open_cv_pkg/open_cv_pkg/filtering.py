@@ -56,7 +56,7 @@ class PointCloudFilteringNode(Node):
         transformed_points = self.transform_pointcloud(downsampled_points, msg.header.frame_id)
 
         # Pre-filter the point cloud to remove high points
-        filtered_points = self.filter_high_points(transformed_points, max_height=0.5)
+        filtered_points = self.filter_high_points(transformed_points, max_height=0.4)
 
         # Segment ground and non-ground points
         ground_points, non_ground_points = self.segment_ground(filtered_points)
@@ -148,7 +148,7 @@ class PointCloudFilteringNode(Node):
                     f"Detected plane normal: {normal}, alignment with expected axis: {alignment:.3f}"
                 )
 
-            if alignment > 0.9:  # Strict alignment requirement for the Z-axis
+            if alignment > 0.95:  # Strict alignment requirement for the Z-axis
                 ground_points = points[indices]
                 non_ground_points = np.delete(points, indices, axis=0)
 
