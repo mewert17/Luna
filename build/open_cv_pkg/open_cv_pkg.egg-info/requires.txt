@@ -1,4 +1,4 @@
 setuptools
-tf2_sensor_msgs
 tf2_rosnumpy
+tf2_sensor_msgs
 transforms3d
