@@ -34,7 +34,7 @@ class PointCloudFilteringNode(Node):
 
         # Rate limiting parameters
         self.last_log_time = time.time()
-        self.log_interval = 1.0  # Minimum time between logs (in seconds)
+        self.log_interval = 2.0  # Minimum time between logs (in seconds)
 
         self.get_logger().info('PointCloud Filtering Node started.')
 
@@ -55,16 +55,17 @@ class PointCloudFilteringNode(Node):
         # Transform the downsampled point cloud
         transformed_points = self.transform_pointcloud(downsampled_points, msg.header.frame_id)
 
+        # Pre-filter the point cloud to remove high points
+        filtered_points = self.filter_high_points(transformed_points, max_height=0.5)
+
         # Segment ground and non-ground points
-        ground_points, non_ground_points = self.segment_ground(transformed_points)
+        ground_points, non_ground_points = self.segment_ground(filtered_points)
 
         # Publish results
         self.publish_pointcloud(downsampled_points, self.downsampled_pub, "camera_link")
         self.publish_pointcloud(transformed_points, self.transformed_pub, "camera_link")
-        if len(ground_points) > 0:
-            self.publish_pointcloud(ground_points, self.ground_pub, "camera_link")
-        if len(non_ground_points) > 0:
-            self.publish_pointcloud(non_ground_points, self.non_ground_pub, "camera_link")
+        self.publish_pointcloud(ground_points, self.ground_pub, "camera_link")
+        self.publish_pointcloud(non_ground_points, self.non_ground_pub, "camera_link")
 
     def read_pointcloud(self, msg):
         """Convert the raw PointCloud2 message into a NumPy array."""
@@ -113,8 +114,15 @@ class PointCloudFilteringNode(Node):
 
         return (points @ rotation_matrix.T) + translation
 
+    def filter_high_points(self, points, max_height):
+        """Filter out points above a specified height."""
+        filtered_points = points[points[:, 2] < max_height]
+        if self.should_log():
+            self.get_logger().info(f"Filtered points: {len(filtered_points)} remaining below {max_height}m.")
+        return filtered_points
+
     def segment_ground(self, points):
-        """Segment the ground plane using RANSAC with alignment constraints for any axis."""
+        """Segment the ground plane using RANSAC with strict alignment constraints for the Z-axis."""
         if len(points) == 0:
             return np.empty((0, 3)), np.empty((0, 3))
 
@@ -124,33 +132,32 @@ class PointCloudFilteringNode(Node):
         seg.set_method_type(pcl.SAC_RANSAC)
         seg.set_distance_threshold(0.03)  # Adjust for sensor noise
 
-        max_attempts = 5
+        expected_ground_axis = np.array([0.0, 0.0, 1.0])  # Z-axis is expected to be the ground normal
 
-        for attempt in range(max_attempts):
+        for _ in range(5):  # Try multiple iterations to find a valid ground plane
             indices, coefficients = seg.segment()
             if len(indices) == 0:
-                if self.should_log():
-                    self.get_logger().warn("No ground plane found.")
-                return np.empty((0, 3)), points
+                continue  # Skip if no valid plane was found
 
             # Extract normal vector of the detected plane
             normal = np.array(coefficients[:3])
-            alignment = np.linalg.norm(normal)  # General alignment for any axis
+            alignment = abs(np.dot(normal, expected_ground_axis))  # Measure alignment with the Z-axis
 
             if self.should_log():
                 self.get_logger().info(
-                    f"Detected plane normal: {normal}, alignment magnitude: {alignment:.3f}"
+                    f"Detected plane normal: {normal}, alignment with expected axis: {alignment:.3f}"
                 )
 
-            if alignment > 0.9:  # Strong alignment with any axis
+            if alignment > 0.9:  # Strict alignment requirement for the Z-axis
                 ground_points = points[indices]
                 non_ground_points = np.delete(points, indices, axis=0)
-                if self.should_log():
-                    self.get_logger().info(f"Segmented {len(ground_points)} ground points and {len(non_ground_points)} non-ground points.")
+
+                self.get_logger().info(
+                    f"Segmented {len(ground_points)} ground points and {len(non_ground_points)} non-ground points."
+                )
                 return ground_points, non_ground_points
 
-        if self.should_log():
-            self.get_logger().warn("Could not find a valid ground plane after multiple attempts.")
+        self.get_logger().warn("Could not find a valid ground plane along the Z-axis.")
         return np.empty((0, 3)), points
 
     def publish_pointcloud(self, points, publisher, frame_id):
