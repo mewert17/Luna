@@ -55,8 +55,9 @@ class PointCloudFilteringNode(Node):
         # Transform the downsampled point cloud
         transformed_points = self.transform_pointcloud(downsampled_points, msg.header.frame_id)
 
-        # Pre-filter the point cloud to remove high points
-        filtered_points = self.filter_high_points(transformed_points, max_height=0.4)
+        # Pre-filter the point cloud to remove high points and distant points
+        filtered_points = self.filter_high_points(transformed_points, max_height=0.3)
+        filtered_points = self.filter_far_points(filtered_points, max_depth=2.5)  # Limit Z distance
 
         # Segment ground and non-ground points
         ground_points, non_ground_points = self.segment_ground(filtered_points)
@@ -72,7 +73,7 @@ class PointCloudFilteringNode(Node):
         points = list(pc2.read_points(msg, field_names=("x", "y", "z"), skip_nans=True))
         return np.array([(p[0], p[1], p[2]) for p in points], dtype=np.float32)
 
-    def downsample_pointcloud(self, points, leaf_size=0.02):
+    def downsample_pointcloud(self, points, leaf_size=0.03):
         """Downsample the point cloud using a voxel grid filter."""
         if len(points) == 0:
             return points
@@ -116,13 +117,17 @@ class PointCloudFilteringNode(Node):
 
     def filter_high_points(self, points, max_height):
         """Filter out points above a specified height."""
-        filtered_points = points[points[:, 2] < max_height]
+        return points[points[:, 2] < max_height]
+
+    def filter_far_points(self, points, max_depth):
+        """Filter out points beyond a specified Z-depth."""
+        filtered_points = points[points[:, 0] < max_depth]
         if self.should_log():
-            self.get_logger().info(f"Filtered points: {len(filtered_points)} remaining below {max_height}m.")
+            self.get_logger().info(f"Filtered far points: {len(filtered_points)} remaining within {max_depth}m.")
         return filtered_points
 
     def segment_ground(self, points):
-        """Segment the ground plane using RANSAC with strict alignment constraints for the Z-axis."""
+        """Segment the ground plane using RANSAC."""
         if len(points) == 0:
             return np.empty((0, 3)), np.empty((0, 3))
 
@@ -130,35 +135,13 @@ class PointCloudFilteringNode(Node):
         seg = cloud.make_segmenter()
         seg.set_model_type(pcl.SACMODEL_PLANE)
         seg.set_method_type(pcl.SAC_RANSAC)
-        seg.set_distance_threshold(0.03)  # Adjust for sensor noise
+        seg.set_distance_threshold(0.065) #how much tolerance you can have in either dir in cm
 
-        expected_ground_axis = np.array([0.0, 0.0, 1.0])  # Z-axis is expected to be the ground normal
+        indices, coefficients = seg.segment()
+        ground_points = points[indices] if indices else np.empty((0, 3))
+        non_ground_points = np.delete(points, indices, axis=0) if indices else points
 
-        for _ in range(5):  # Try multiple iterations to find a valid ground plane
-            indices, coefficients = seg.segment()
-            if len(indices) == 0:
-                continue  # Skip if no valid plane was found
-
-            # Extract normal vector of the detected plane
-            normal = np.array(coefficients[:3])
-            alignment = abs(np.dot(normal, expected_ground_axis))  # Measure alignment with the Z-axis
-
-            if self.should_log():
-                self.get_logger().info(
-                    f"Detected plane normal: {normal}, alignment with expected axis: {alignment:.3f}"
-                )
-
-            if alignment > 0.95:  # Strict alignment requirement for the Z-axis
-                ground_points = points[indices]
-                non_ground_points = np.delete(points, indices, axis=0)
-
-                self.get_logger().info(
-                    f"Segmented {len(ground_points)} ground points and {len(non_ground_points)} non-ground points."
-                )
-                return ground_points, non_ground_points
-
-        self.get_logger().warn("Could not find a valid ground plane along the Z-axis.")
-        return np.empty((0, 3)), points
+        return ground_points, non_ground_points
 
     def publish_pointcloud(self, points, publisher, frame_id):
         """Publish a point cloud as a PointCloud2 message."""
