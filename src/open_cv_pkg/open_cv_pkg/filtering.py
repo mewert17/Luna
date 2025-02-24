@@ -152,7 +152,7 @@ class PointCloudFilteringNode(Node):
             self.get_logger().info(f"Segmented ground: {len(ground_points)} points, {len(non_ground_points)} non-ground points.")
         return ground_points, non_ground_points
 
-    def segment_walls(self, points, normal_threshold=0.3, distance_threshold=0.065):
+    def segment_walls(self, points, normal_threshold=0.3, distance_threshold=0.2):
         """
         Segment vertical wall planes from non-ground points using RANSAC.
         
