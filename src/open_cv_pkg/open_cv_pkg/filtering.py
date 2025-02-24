@@ -36,7 +36,7 @@ class PointCloudFilteringNode(Node):
 
         # Rate limiting parameters for logging
         self.last_log_time = time.time()
-        self.log_interval = 2.0  # seconds
+        self.log_interval = 3.0  # seconds
 
         self.get_logger().info('PointCloud Filtering Node started.')
 
@@ -52,14 +52,14 @@ class PointCloudFilteringNode(Node):
         """Process and filter point cloud data."""
         # Convert the raw PointCloud2 message into a NumPy array and downsample
         raw_points = self.read_pointcloud(msg)
-        downsampled_points = self.downsample_pointcloud(raw_points, leaf_size=0.02)
+        downsampled_points = self.downsample_pointcloud(raw_points, leaf_size=0.04)
 
         # Transform the downsampled point cloud to the "camera_link" frame
         transformed_points = self.transform_pointcloud(downsampled_points, msg.header.frame_id)
 
         # Pre-filter: remove points above a certain height and points too far away
         filtered_points = self.filter_high_points(transformed_points, max_height=0.4)
-        filtered_points = self.filter_far_points(filtered_points, max_depth=3.5)
+        filtered_points = self.filter_far_points(filtered_points, max_depth=3.0)
 
         # Segment ground from non-ground points using RANSAC
         ground_points, non_ground_points = self.segment_ground(filtered_points)
