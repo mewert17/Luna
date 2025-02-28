@@ -142,7 +142,7 @@ class PointCloudFilteringNode(Node):
         seg = cloud.make_segmenter()
         seg.set_model_type(pcl.SACMODEL_PLANE)
         seg.set_method_type(pcl.SAC_RANSAC)
-        seg.set_distance_threshold(0.065)  # Tolerance for ground segmentation
+        seg.set_distance_threshold(0.05)  # 0.065 Tolerance for ground segmentation
 
         indices, coefficients = seg.segment()
         ground_points = points[indices] if indices else np.empty((0, 3))
@@ -152,7 +152,7 @@ class PointCloudFilteringNode(Node):
             self.get_logger().info(f"Segmented ground: {len(ground_points)} points, {len(non_ground_points)} non-ground points.")
         return ground_points, non_ground_points
 
-    def segment_walls(self, points, normal_threshold=0.3, distance_threshold=0.2):
+    def segment_walls(self, points, normal_threshold=0.6, distance_threshold=0.3):
         """
         Segment vertical wall planes from non-ground points using RANSAC.
         
