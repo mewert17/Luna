@@ -67,11 +67,15 @@ class PointCloudFilteringNode(Node):
         # Further segment vertical wall planes from the non-ground points using RANSAC.
         wall_points, non_wall_points = self.segment_walls(non_ground_points, normal_threshold=0.3, distance_threshold=0.065)
 
-        # Publish all results
+        # Apply Euclidean clustering on non-wall points with relaxed cluster size filtering.
+        # Clusters with at least 30 points and no more than 1000 points are retained.
+        clustered_obstacle_points = self.apply_clustering(non_wall_points)
+
+        # Publish all results. The final obstacle cloud (post-clustering) is published on non_ground_pub.
         self.publish_pointcloud(downsampled_points, self.downsampled_pub, "camera_link")
         self.publish_pointcloud(transformed_points, self.transformed_pub, "camera_link")
         self.publish_pointcloud(ground_points, self.ground_pub, "camera_link")
-        self.publish_pointcloud(non_wall_points, self.non_ground_pub, "camera_link")
+        self.publish_pointcloud(clustered_obstacle_points, self.non_ground_pub, "camera_link")
         # Publish wall points for debugging (optional)
         self.publish_pointcloud(wall_points, self.wall_pub, "camera_link")
 
@@ -142,7 +146,7 @@ class PointCloudFilteringNode(Node):
         seg = cloud.make_segmenter()
         seg.set_model_type(pcl.SACMODEL_PLANE)
         seg.set_method_type(pcl.SAC_RANSAC)
-        seg.set_distance_threshold(0.05)  # 0.065 Tolerance for ground segmentation
+        seg.set_distance_threshold(0.05)  # Tolerance for ground segmentation
 
         indices, coefficients = seg.segment()
         ground_points = points[indices] if indices else np.empty((0, 3))
@@ -179,7 +183,7 @@ class PointCloudFilteringNode(Node):
         if not indices:
             return np.empty((0, 3)), points
 
-        # coefficients are [a, b, c, d]. For a vertical wall, the z component |c| should be small.
+        # For a vertical wall, the z component (|c|) should be small.
         if abs(coefficients[2]) < normal_threshold:
             wall_points = points[indices]
             remaining_points = np.delete(points, indices, axis=0)
@@ -189,8 +193,39 @@ class PointCloudFilteringNode(Node):
         else:
             return np.empty((0, 3)), points
 
+    def apply_clustering(self, points):
+        """
+        Apply Euclidean clustering on the given points and filter clusters based on size.
+        Only clusters with at least 30 points and no more than 1000 points are retained.
+        """
+        if len(points) == 0:
+            return points
+
+        # Convert numpy array to a PCL point cloud.
+        cloud = pcl.PointCloud(points.astype(np.float32))
+
+        # Create a KD-Tree for the point cloud.
+        tree = cloud.make_kdtree()
+
+        # Setup Euclidean Clustering with relaxed thresholds.
+        ec = cloud.make_EuclideanClusterExtraction()
+        ec.set_ClusterTolerance(0.1)  # Adjust based on your resolution.
+        ec.set_MinClusterSize(15)     # Lower minimum cluster size.
+        ec.set_MaxClusterSize(500)   # Increase maximum cluster size.
+        ec.set_SearchMethod(tree)
+
+        # Extract clusters (each cluster is a list of point indices).
+        cluster_indices = ec.Extract()
+
+        filtered_points = []
+        for indices in cluster_indices:
+            if len(indices) >= 15 and len(indices) <= 500:  # Valid obstacle cluster.
+                for idx in indices:
+                    filtered_points.append(points[idx])
+        return np.array(filtered_points, dtype=np.float32)
+
     def publish_pointcloud(self, points, publisher, frame_id):
-        """Publish a point cloud as a PointCloud2 message."""
+        """Publish a point cloud as a PointCloud2 messae."""
         header = Header()
         header.stamp = self.get_clock().now().to_msg()
         header.frame_id = frame_id
